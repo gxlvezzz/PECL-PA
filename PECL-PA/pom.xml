@@ -7,8 +7,8 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>25</maven.compiler.release>
+        <maven.compiler.release>21</maven.compiler.release>
         <exec.mainClass>com.mycompany.pecl.pa.PECLPA</exec.mainClass>
     </properties>
-    <name>PECL_PA</name>
+    <name>PECL-PA</name>
 </project>

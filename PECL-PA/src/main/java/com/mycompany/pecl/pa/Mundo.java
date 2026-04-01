@@ -24,6 +24,9 @@ public class Mundo {
     private List <Niños> niñosCallePrincipal = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosSotanoByers = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosRadioWSQK = Collections.synchronizedList(new ArrayList<>());
+    
+    private final int[] esperandoEnPortal = new int[5];
+    
     private int niñosEnColmena=0;
     private int contadorDemogorgons=1;
     
@@ -46,6 +49,29 @@ public class Mundo {
                 break;
         }
 }
+    
+    public synchronized void salirNiño(int zona, Niños n) {
+        switch (zona) {
+            case 1: niñosBosque.remove(n); break;
+            case 2: niñosLaboratorio.remove(n); break;
+            case 3: niñosCentroComercial.remove(n); break;
+            case 4: niñosAlcantarillado.remove(n); break;
+        }
+    }
+    
+    
+    public synchronized void esperarEnPortal(int zona, Niños n) throws InterruptedException {
+        int capacidad = (zona == 1 || zona == 4) ? 2 : (zona == 2 ? 3 : 4);
+        esperandoEnPortal[zona]++;
+
+        if (esperandoEnPortal[zona] < capacidad) {
+            wait(); 
+        } else {
+            esperandoEnPortal[zona] = 0; 
+            notifyAll(); 
+        }
+        Thread.sleep(1000); 
+    }
     
     public synchronized void entrarDemogorgon(int zona, Demogorgons d){
         switch(zona){
@@ -92,77 +118,49 @@ public class Mundo {
   
     
     public void demogorgonAtacar(int num, Demogorgons d){
-        int probabilidad = (int)(Math.random()*3)+1;
+        int probabilidad = (int) (Math.random() * 3) + 1;
         Niños objetivo = null;
 
-        synchronized(this){
-            if(hay_niño(num)){
-                int index = 0;
-
-                switch(num){
-                    case 1:
-                        index = (int)(Math.random()*niñosBosque.size());
-                        objetivo = niñosBosque.get(index);
-                        break;
-                    case 2: 
-                        index = (int)(Math.random()*niñosLaboratorio.size());
-                        objetivo = niñosLaboratorio.get(index);
-                        break;
-                    case 3:
-                        index = (int)(Math.random()*niñosCentroComercial.size());
-                        objetivo = niñosCentroComercial.get(index);
-                        break;
-                    case 4:
-                        index = (int)(Math.random()*niñosAlcantarillado.size());
-                        objetivo = niñosAlcantarillado.get(index);
-                        break;
+        synchronized (this) {
+            if (hay_niño(num)) {
+                List<Niños> lista = switch (num) {
+                    case 1 -> niñosBosque;
+                    case 2 -> niñosLaboratorio;
+                    case 3 -> niñosCentroComercial;
+                    case 4 -> niñosAlcantarillado;
+                    default -> null;
+                };
+                if (lista != null && !lista.isEmpty()) {
+                    objetivo = lista.get((int) (Math.random() * lista.size()));
                 }
             }
         }
 
-        if(objetivo != null){
-            try{
-                Thread.sleep((int)(Math.random()*1000)+500);
-            }catch(Exception e){
-            }
+        if (objetivo != null) {
+            try { Thread.sleep((int) (Math.random() * 1000) + 500); } catch (Exception e) {}
 
-            if(probabilidad==3){
-                synchronized(this){
-                    niñosEnColmena += 1;
+            if (probabilidad == 3) {
+                synchronized (this) {
+                    niñosEnColmena++;
+                    objetivo.setCapturado(true); 
+                    
+                    switch (num) {
+                        case 1 -> niñosBosque.remove(objetivo);
+                        case 2 -> niñosLaboratorio.remove(objetivo);
+                        case 3 -> niñosCentroComercial.remove(objetivo);
+                        case 4 -> niñosAlcantarillado.remove(objetivo);
+                    }
 
                     if (niñosEnColmena % 8 == 0) {
-                        Demogorgons nuevo = new Demogorgons(this, contadorDemogorgons++);
-                        nuevo.start();
+                        new Demogorgons(this, contadorDemogorgons++).start();
                     }
-
-                    switch(num){
-                        case 1:
-                            niñosBosque.remove(objetivo);
-                            break;
-                        case 2: 
-                            niñosLaboratorio.remove(objetivo);
-                            break;
-                        case 3:
-                            niñosCentroComercial.remove(objetivo);
-                            break;
-                        case 4:
-                            niñosAlcantarillado.remove(objetivo);
-                            break;
-                    }
-
                     d.incrementar_capturas();
-                }
-
-                try{
-                    Thread.sleep((int)(Math.random()*500)+500);
-                }catch(Exception e){
                 }
             }
         } else {
-            try{
-                Thread.sleep((int)(Math.random()*1000)+4000);
-            }catch(Exception e){
-            }
+            try { Thread.sleep(4000); } catch (Exception e) {}
         }
+    
+        
     }
 }
