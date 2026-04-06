@@ -45,6 +45,14 @@ public class Mundo {
             case 4:
                 niñosAlcantarillado.add(n);
                 break;
+            case 5:
+                niñosCallePrincipal.add(n);
+                break;
+            case 6:
+                niñosSotanoByers.add(n);
+                break;
+            case 7:
+                niñosRadioWSQK.add(n);
             default:
                 break;
         }
@@ -93,11 +101,21 @@ public class Mundo {
 }
 
     
-    public synchronized void eliminarListaDemogorgon(Demogorgons d){
-        demogorgonsBosque.remove(d);
-        demogorgonsAlcantarillado.remove(d);
-        demogorgonsCentroComercial.remove(d);
-        demogorgonsLaboratorio.remove(d);
+    public synchronized void eliminarListaDemogorgon(int zona, Demogorgons d){
+        switch (zona) {
+            case 1: 
+                demogorgonsBosque.remove(d); 
+                break;
+            case 2: 
+                demogorgonsLaboratorio.remove(d); 
+                break;
+            case 3: 
+                demogorgonsCentroComercial.remove(d); 
+                break;
+            case 4: 
+                demogorgonsAlcantarillado.remove(d); 
+                break;
+        }
     }
     
     
@@ -139,9 +157,8 @@ public class Mundo {
         if (objetivo != null) {
             try { Thread.sleep((int) (Math.random() * 1000) + 500); } catch (Exception e) {}
 
-            if (probabilidad == 3) {
+            if (probabilidad == 3) {  
                 synchronized (this) {
-                    niñosEnColmena++;
                     objetivo.setCapturado(true); 
                     
                     switch (num) {
@@ -150,11 +167,12 @@ public class Mundo {
                         case 3 -> niñosCentroComercial.remove(objetivo);
                         case 4 -> niñosAlcantarillado.remove(objetivo);
                     }
-
+                    niñosEnColmena++;
+                    System.out.println("Ninos en Colmena " + niñosEnColmena);
+                    d.incrementar_capturas();
                     if (niñosEnColmena % 8 == 0) {
                         new Demogorgons(this, contadorDemogorgons++).start();
-                    }
-                    d.incrementar_capturas();
+                    }       
                 }
             }
         } else {

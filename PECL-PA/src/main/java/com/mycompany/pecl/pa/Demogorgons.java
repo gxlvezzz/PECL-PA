@@ -26,8 +26,24 @@ public class Demogorgons extends Thread {
     private void moverse(){
         zona = (int)(Math.random()*4)+1;
         mundo.entrarDemogorgon(zona, this);
+        System.out.println("Demogorgon " + this.id + " ha entrado en " + zonaString(zona));
     }
     
+    private String zonaString(int zona){
+        switch(zona){
+            case 1:
+                return "El Bosque";
+            case 2: 
+                return "El Laboratorio";
+            case 3:
+                return "El Centro Comercial";
+            case 4:
+                return "El Alcantarillado";
+                
+                default:
+                return null;
+        }
+    }
 
     public void incrementar_capturas(){
         capturas++;
@@ -37,7 +53,7 @@ public class Demogorgons extends Thread {
     public void run(){
         System.out.println(this.id);
         while(true){
-        mundo.eliminarListaDemogorgon(this);
+        mundo.eliminarListaDemogorgon(zona, this);
         moverse();        
         mundo.demogorgonAtacar(zona, this);        
         }

@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 public class Niños extends Thread {
     private Mundo mundo;
-    public String id;
+    private String id;
     private boolean capturado = false; 
 
     public Niños(Mundo mundo, int numid) {
@@ -17,39 +17,66 @@ public class Niños extends Thread {
         this.id = String.format("N%04d", numid);
     }
 
-    public void setCapturado(boolean estado) {
+    public synchronized void setCapturado(boolean estado) {
         this.capturado = estado;
+    }
+
+
+    public synchronized boolean esCapturado() {
+    return capturado;
+    }
+    
+    private String zonaString(int zona){
+        switch(zona){
+            case 1:
+                return " El Bosque";
+            case 2: 
+                return "El Laboratorio";
+            case 3:
+                return "El Centro Comercial";
+            case 4:
+                return "El Alcantarillado";
+                
+                default:
+                return null;
+        }
     }
 
     @Override
     public void run() {
         try {
-            System.out.println("Niño " + id + " en Calle Principal.");
+            mundo.entrarNiño(5, this);
+            System.out.println("Nino " + id + " en la Calle Principal.");
             Thread.sleep((long) (Math.random() * 2000) + 3000);
 
-            while (!capturado) {
-                System.out.println("Niño " + id + " entra al Sótano.");
+            while (!esCapturado()) {
+                mundo.salirNiño(5, this);
+                mundo.entrarNiño(6, this);
+                System.out.println("Nino " + id + " entra al Sotano.");
                 Thread.sleep((long) (Math.random() * 1000) + 1000);
 
                 int zonaElegida = (int) (Math.random() * 4) + 1;
+                mundo.salirNiño(6, this);
                 mundo.esperarEnPortal(zonaElegida, this);
 
-                if (capturado) break;
+                if (esCapturado()) break;
 
                 mundo.entrarNiño(zonaElegida, this);
-                System.out.println("Niño " + id + " recolectando en zona " + zonaElegida);
+                System.out.println("Nino " + id + " recolectando en " + zonaString(zonaElegida));
                 
                 Thread.sleep((long) (Math.random() * 2000) + 3000);
 
-                if (capturado) break;
+                if (esCapturado()) break;
 
                 mundo.salirNiño(zonaElegida, this);
-                System.out.println("Niño " + id + " en Radio WSQK.");
+                mundo.entrarNiño(7, this);
+                System.out.println("Nino " + id + " en Radio WSQK.");
                 Thread.sleep((long) (Math.random() * 2000) + 2000);
 
-                if (capturado) break;
-
-                System.out.println("Niño " + id + " vuelve a Calle Principal.");
+                if (esCapturado()) break;
+                mundo.salirNiño(7, this);
+                mundo.entrarNiño(5, this);
+                System.out.println("Nino " + id + " vuelve a la Calle Principal.");
                 Thread.sleep((long) (Math.random() * 2000) + 3000);
             }
 
