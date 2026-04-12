@@ -6,6 +6,8 @@ package com.mycompany.pecl.pa;
 
 import static java.lang.Thread.sleep;
 import java.util.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 
 /**
@@ -29,6 +31,10 @@ public class Mundo {
     
     private int niñosEnColmena=0;
     private int contadorDemogorgons=1;
+    private int contadorSangre=0;
+    
+    private Lock atacar = new ReentrantLock();
+   
     
 
     public synchronized void entrarNiño(int zona, Niños n){
@@ -79,6 +85,10 @@ public class Mundo {
             notifyAll(); 
         }
         Thread.sleep(1000); 
+    }
+    
+    public synchronized void incrementarSangre(){
+        contadorSangre++;
     }
     
     public synchronized void entrarDemogorgon(int zona, Demogorgons d){
@@ -136,10 +146,11 @@ public class Mundo {
   
     
     public void demogorgonAtacar(int num, Demogorgons d){
-        int probabilidad = (int) (Math.random() * 3) + 1;
+        int probabilidad = (int)(Math.random() * 3) + 1;
         Niños objetivo = null;
 
-        synchronized (this) {
+        atacar.lock();
+        try{
             if (hay_niño(num)) {
                 List<Niños> lista = switch (num) {
                     case 1 -> niñosBosque;
@@ -148,37 +159,57 @@ public class Mundo {
                     case 4 -> niñosAlcantarillado;
                     default -> null;
                 };
+
                 if (lista != null && !lista.isEmpty()) {
-                    objetivo = lista.get((int) (Math.random() * lista.size()));
-                }
-            }
-        }
-
-        if (objetivo != null) {
-            try { Thread.sleep((int) (Math.random() * 1000) + 500); } catch (Exception e) {}
-
-            if (probabilidad == 3) {  
-                synchronized (this) {
-                    objetivo.setCapturado(true); 
-                    
-                    switch (num) {
-                        case 1 -> niñosBosque.remove(objetivo);
-                        case 2 -> niñosLaboratorio.remove(objetivo);
-                        case 3 -> niñosCentroComercial.remove(objetivo);
-                        case 4 -> niñosAlcantarillado.remove(objetivo);
+                    Niños candidato = lista.get((int)(Math.random() * lista.size()));
+                    if (candidato.intentarSerAtacado()) {
+                        objetivo = candidato;
                     }
-                    niñosEnColmena++;
-                    System.out.println("Ninos en Colmena " + niñosEnColmena);
-                    d.incrementar_capturas();
-                    if (niñosEnColmena % 8 == 0) {
-                        new Demogorgons(this, contadorDemogorgons++).start();
-                    }       
                 }
             }
-        } else {
-            try { Thread.sleep(4000); } catch (Exception e) {}
+        } catch(Exception e){
+        } finally {
+            atacar.unlock();
         }
-    
-        
+
+        if (objetivo == null) {
+            try {
+                Thread.sleep(4000);
+            } catch (Exception e) {
+            }
+            return;
+        }
+
+        try {
+            Thread.sleep((int)(Math.random() * 1000) + 500);
+        } catch (Exception e) {
+        }
+
+        atacar.lock();
+        try {
+            if (probabilidad == 3) {
+                switch (num) {
+                    case 1 -> niñosBosque.remove(objetivo);
+                    case 2 -> niñosLaboratorio.remove(objetivo);
+                    case 3 -> niñosCentroComercial.remove(objetivo);
+                    case 4 -> niñosAlcantarillado.remove(objetivo);
+                }
+
+                niñosEnColmena++;
+                System.out.println("Ninos en Colmena " + niñosEnColmena);
+                d.incrementar_capturas();
+
+                if (niñosEnColmena % 8 == 0) {
+                    new Demogorgons(this, contadorDemogorgons++).start();
+                }
+
+                objetivo.finalizarAtaque(true);
+            } else {
+                objetivo.finalizarAtaque(false);
+            }
+        } catch(Exception e){
+        } finally {
+            atacar.unlock();
+        }     
     }
 }

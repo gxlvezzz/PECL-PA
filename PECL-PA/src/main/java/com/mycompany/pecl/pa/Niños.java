@@ -11,6 +11,7 @@ public class Niños extends Thread {
     private Mundo mundo;
     private String id;
     private boolean capturado = false; 
+    private boolean siendoAtacado = false;
 
     public Niños(Mundo mundo, int numid) {
         this.mundo = mundo;
@@ -41,7 +42,21 @@ public class Niños extends Thread {
                 return null;
         }
     }
+    
+    public synchronized boolean intentarSerAtacado() {
+        if (capturado || siendoAtacado) {
+            return false;
+        }
+        siendoAtacado = true;
+        return true;
+    }
 
+    public synchronized void finalizarAtaque(boolean capturado) {
+        this.capturado = capturado;
+        this.siendoAtacado = false;
+    }
+    
+    
     @Override
     public void run() {
         try {
@@ -69,6 +84,8 @@ public class Niños extends Thread {
                 if (esCapturado()) break;
 
                 mundo.salirNiño(zonaElegida, this);
+                // aqui el niño tiene que volver a pasar por el portal
+                mundo.incrementarSangre();
                 mundo.entrarNiño(7, this);
                 System.out.println("Nino " + id + " en Radio WSQK.");
                 Thread.sleep((long) (Math.random() * 2000) + 2000);

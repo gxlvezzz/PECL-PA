@@ -13,7 +13,8 @@ import java.util.*;
 public class Demogorgons extends Thread {
     private Mundo mundo;
     private String id;
-    private int zona;
+    private int zona=0;
+    private int zona_anterior=0;
     private int capturas = 0;
 
     
@@ -24,13 +25,19 @@ public class Demogorgons extends Thread {
     }
     
     private void moverse(){
+        zona_anterior = zona;
         zona = (int)(Math.random()*4)+1;
+        while(zona_anterior==zona){
+            zona = (int)(Math.random()*4)+1;
+        }
         mundo.entrarDemogorgon(zona, this);
         System.out.println("Demogorgon " + this.id + " ha entrado en " + zonaString(zona));
     }
     
     private String zonaString(int zona){
         switch(zona){
+            case 0:
+                return "Sin zona";
             case 1:
                 return "El Bosque";
             case 2: 
@@ -53,7 +60,9 @@ public class Demogorgons extends Thread {
     public void run(){
         System.out.println(this.id);
         while(true){
-        mundo.eliminarListaDemogorgon(zona, this);
+            if (zona != 0) {
+                mundo.eliminarListaDemogorgon(zona, this);
+            }
         moverse();        
         mundo.demogorgonAtacar(zona, this);        
         }
