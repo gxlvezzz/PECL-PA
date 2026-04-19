@@ -6,6 +6,8 @@ package com.mycompany.pecl.pa;
 
 import static java.lang.Thread.sleep;
 import java.util.*;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -27,8 +29,18 @@ public class Mundo {
     private List <Niños> niñosSotanoByers = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosRadioWSQK = Collections.synchronizedList(new ArrayList<>());
     
-    private final int[] esperandoEnPortal = new int[5];
-    
+
+    //Para los portales
+    private CyclicBarrier portalBosque = new CyclicBarrier(2);
+    private CyclicBarrier portalLaboratorio = new CyclicBarrier(3);
+    private CyclicBarrier portalCentro = new CyclicBarrier(4);
+    private CyclicBarrier portalAlcantarillado = new CyclicBarrier(2);
+    private Lock lockBosque = new ReentrantLock();
+    private Lock lockLaboratorio = new ReentrantLock();
+    private Lock lockCentro = new ReentrantLock();
+    private Lock lockAlcantarillado = new ReentrantLock();
+
+
     private int niñosEnColmena=0;
     private int contadorDemogorgons=1;
     private int contadorSangre=0;
@@ -74,18 +86,54 @@ public class Mundo {
     }
     
     
-    public synchronized void esperarEnPortal(int zona, Niños n) throws InterruptedException {
-        int capacidad = (zona == 1 || zona == 4) ? 2 : (zona == 2 ? 3 : 4);
-        esperandoEnPortal[zona]++;
+    public void esperarEnPortal(int zona, Niños n) {
 
-        if (esperandoEnPortal[zona] < capacidad) {
-            wait(); 
-        } else {
-            esperandoEnPortal[zona] = 0; 
-            notifyAll(); 
-        }
-        Thread.sleep(1000); 
+    CyclicBarrier barrier;
+    Lock lock;
+    String destino;
+
+    switch (zona) {
+        case 1:
+            barrier = portalBosque;
+            lock = lockBosque;
+            destino = "BOSQUE";
+            break;
+        case 2:
+            barrier = portalLaboratorio;
+            lock = lockLaboratorio;
+            destino = "LABORATORIO";
+            break;
+        case 3:
+            barrier = portalCentro;
+            lock = lockCentro;
+            destino = "CENTRO COMERCIAL";
+            break;
+        case 4:
+            barrier = portalAlcantarillado;
+            lock = lockAlcantarillado;
+            destino = "ALCANTARILLADO";
+            break;
+        default:
+            throw new IllegalArgumentException("Zona inválida");
     }
+
+    try {
+        System.out.println("Niño " + n.getId() + " espera portal " + destino);
+
+        barrier.await();
+
+        lock.lock();
+        try {
+            System.out.println("Niño " + n.getId() + " cruza portal a " + destino);
+            Thread.sleep(1000);
+        } finally {
+            lock.unlock();
+        }
+
+    } catch (InterruptedException | BrokenBarrierException e) {
+        Thread.currentThread().interrupt();
+    }
+}
     
     public synchronized void incrementarSangre(){
         contadorSangre++;
