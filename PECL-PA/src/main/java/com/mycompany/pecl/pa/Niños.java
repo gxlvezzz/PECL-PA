@@ -66,13 +66,13 @@ public class Niños extends Thread {
         try {
             mundo.entrarNiño(5, this);
             System.out.println("Nino " + id + " en la Calle Principal.");
-            Thread.sleep((long) (Math.random() * 2000) + 3000);
+            Thread.sleep((int) (Math.random() * 2000) + 3000);
 
             while (!esCapturado()) {
                 mundo.salirNiño(5, this);
                 mundo.entrarNiño(6, this);
                 System.out.println("Nino " + id + " entra al Sotano.");
-                Thread.sleep((long) (Math.random() * 1000) + 1000);
+                Thread.sleep((int) (Math.random() * 1000) + 1000);
 
                 int zonaElegida = (int) (Math.random() * 4) + 1;
                 mundo.salirNiño(6, this);
@@ -83,7 +83,11 @@ public class Niños extends Thread {
                 mundo.entrarNiño(zonaElegida, this);
                 System.out.println("Nino " + id + " recolectando en " + zonaString(zonaElegida));
                 
-                Thread.sleep((long) (Math.random() * 2000) + 3000);
+                if(mundo.hayTormenta()){
+                    Thread.sleep(((int) (Math.random() * 2000) + 3000)*2); 
+                }else{
+                    Thread.sleep((int) (Math.random() * 2000) + 3000);
+                }
 
                 if (esCapturado()) break;
 
@@ -92,13 +96,13 @@ public class Niños extends Thread {
                 mundo.incrementarSangre();
                 mundo.entrarNiño(7, this);
                 System.out.println("Nino " + id + " en Radio WSQK.");
-                Thread.sleep((long) (Math.random() * 2000) + 2000);
+                Thread.sleep((int) (Math.random() * 2000) + 2000);
 
                 if (esCapturado()) break;
                 mundo.salirNiño(7, this);
                 mundo.entrarNiño(5, this);
                 System.out.println("Nino " + id + " vuelve a la Calle Principal.");
-                Thread.sleep((long) (Math.random() * 2000) + 3000);
+                Thread.sleep((int) (Math.random() * 2000) + 3000);
             }
 
             System.out.println(">>> El hilo de " + id + " ha TERMINADO (Capturado).");

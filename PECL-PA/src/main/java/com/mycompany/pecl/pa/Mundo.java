@@ -46,6 +46,7 @@ public class Mundo {
     private int contadorSangre=0;
     
     private Lock atacar = new ReentrantLock();
+    private Eventos eventos;
    
     
 
@@ -206,6 +207,11 @@ public class Mundo {
     niñosRadioWSQK.remove(n);
     niñosColmena.remove(n);
 }
+    
+    
+    public boolean hayTormenta() {
+        return eventos.hayTormenta();
+    }
   
     
     public void demogorgonAtacar(int num, Demogorgons d){
@@ -238,16 +244,24 @@ public class Mundo {
 
         if (objetivo == null) {
             try {
-                Thread.sleep((int)(Math.random()*1000)+4000);
+                if(eventos.hayTormenta()){
+                    Thread.sleep(((int)(Math.random()*1000)+4000)/2);
+                }else{
+                    Thread.sleep((int)(Math.random()*1000)+4000);
+                }
             } catch (Exception e) {
             }
             return;
         }
-
         try {
-            Thread.sleep((int)(Math.random() * 1000) + 500);
-        } catch (Exception e) {
-        }
+                if(eventos.hayTormenta()){
+                    Thread.sleep(((int)(Math.random() * 1000) + 500)/2);
+                }else{
+                    Thread.sleep((int)(Math.random() * 1000) + 500);
+                }
+            } catch (Exception e) {
+            }
+        
 
         atacar.lock();
         try {
@@ -272,10 +286,13 @@ public class Mundo {
             atacar.unlock();
         }
         if(capturado){
-            try{
-                Thread.sleep((int)(Math.random()*500)+500);    
-            }catch(Exception e){
-
+            try {
+                if(eventos.hayTormenta()){
+                    Thread.sleep(((int)(Math.random() * 500) + 500)/2);
+                }else{
+                    Thread.sleep((int)(Math.random() * 500) + 500);
+                }
+            } catch (Exception e) {
             }    
         }
         
