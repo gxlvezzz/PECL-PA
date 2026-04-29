@@ -27,6 +27,10 @@ public class Niños extends Thread {
     return capturado;
     }
     
+    public String getIdNiño(){
+        return id;
+    }
+    
     private String zonaString(int zona){
         switch(zona){
             case 1:

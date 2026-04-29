@@ -28,7 +28,7 @@ public class Mundo {
     private List <Niños> niñosCallePrincipal = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosSotanoByers = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosRadioWSQK = Collections.synchronizedList(new ArrayList<>());
-    
+    private List <Niños> niñosColmena = Collections.synchronizedList(new ArrayList<>());
 
     //Para los portales
     private CyclicBarrier portalBosque = new CyclicBarrier(2);
@@ -71,6 +71,7 @@ public class Mundo {
                 break;
             case 7:
                 niñosRadioWSQK.add(n);
+                break;
             default:
                 break;
         }
@@ -82,6 +83,9 @@ public class Mundo {
             case 2: niñosLaboratorio.remove(n); break;
             case 3: niñosCentroComercial.remove(n); break;
             case 4: niñosAlcantarillado.remove(n); break;
+            case 5: niñosCallePrincipal.remove(n); break;
+            case 6: niñosSotanoByers.remove(n); break;
+            case 7: niñosRadioWSQK.remove(n); break;
         }
     }
     
@@ -118,13 +122,13 @@ public class Mundo {
     }
 
     try {
-        System.out.println("Niño " + n.getId() + " espera portal " + destino);
+        System.out.println("Niño " + n.getIdNiño()+ " espera portal " + destino);
 
         barrier.await();
 
         lock.lock();
         try {
-            System.out.println("Niño " + n.getId() + " cruza portal a " + destino);
+            System.out.println("Niño " + n.getIdNiño()+ " cruza portal a " + destino);
             Thread.sleep(1000);
         } finally {
             lock.unlock();
@@ -191,11 +195,23 @@ public class Mundo {
                 return false;
         }
     }
+    
+    private synchronized void eliminarNiñoDeTodasLasListas(Niños n) {
+    niñosBosque.remove(n);
+    niñosLaboratorio.remove(n);
+    niñosCentroComercial.remove(n);
+    niñosAlcantarillado.remove(n);
+    niñosCallePrincipal.remove(n);
+    niñosSotanoByers.remove(n);
+    niñosRadioWSQK.remove(n);
+    niñosColmena.remove(n);
+}
   
     
     public void demogorgonAtacar(int num, Demogorgons d){
         int probabilidad = (int)(Math.random() * 3) + 1;
         Niños objetivo = null;
+        boolean capturado=false;
 
         atacar.lock();
         try{
@@ -222,7 +238,7 @@ public class Mundo {
 
         if (objetivo == null) {
             try {
-                Thread.sleep(4000);
+                Thread.sleep((int)(Math.random()*1000)+4000);
             } catch (Exception e) {
             }
             return;
@@ -236,13 +252,9 @@ public class Mundo {
         atacar.lock();
         try {
             if (probabilidad == 3) {
-                switch (num) {
-                    case 1 -> niñosBosque.remove(objetivo);
-                    case 2 -> niñosLaboratorio.remove(objetivo);
-                    case 3 -> niñosCentroComercial.remove(objetivo);
-                    case 4 -> niñosAlcantarillado.remove(objetivo);
-                }
-
+                capturado=true;
+                eliminarNiñoDeTodasLasListas(objetivo);
+                niñosColmena.add(objetivo);    
                 niñosEnColmena++;
                 System.out.println("Ninos en Colmena " + niñosEnColmena);
                 d.incrementar_capturas();
@@ -258,6 +270,15 @@ public class Mundo {
         } catch(Exception e){
         } finally {
             atacar.unlock();
-        }     
+        }
+        if(capturado){
+            try{
+                Thread.sleep((int)(Math.random()*500)+500);    
+            }catch(Exception e){
+
+            }    
+        }
+        
+       
     }
 }
