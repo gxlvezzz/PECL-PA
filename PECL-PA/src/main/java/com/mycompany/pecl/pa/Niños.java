@@ -78,7 +78,12 @@ public class Niños extends Thread {
                 mundo.salirNiño(6, this);
                 mundo.esperarEnPortal(zonaElegida, this);
 
-                if (esCapturado()) break;
+                while(esCapturado()){
+                    try{
+                        sleep(500);
+                    }catch(Exception e){
+                    }    
+                }
 
                 mundo.entrarNiño(zonaElegida, this);
                 System.out.println("Nino " + id + " recolectando en " + zonaString(zonaElegida));
@@ -89,7 +94,12 @@ public class Niños extends Thread {
                     Thread.sleep((int) (Math.random() * 2000) + 3000);
                 }
 
-                if (esCapturado()) break;
+                while(esCapturado()){
+                    try{
+                        sleep(500);
+                    }catch(Exception e){
+                    }    
+                }
 
                 mundo.salirNiño(zonaElegida, this);
                 // aqui el niño tiene que volver a pasar por el portal
@@ -98,7 +108,12 @@ public class Niños extends Thread {
                 System.out.println("Nino " + id + " en Radio WSQK.");
                 Thread.sleep((int) (Math.random() * 2000) + 2000);
 
-                if (esCapturado()) break;
+                while(esCapturado()){
+                    try{
+                        sleep(500);
+                    }catch(Exception e){
+                    }    
+                }
                 mundo.salirNiño(7, this);
                 mundo.entrarNiño(5, this);
                 System.out.println("Nino " + id + " vuelve a la Calle Principal.");

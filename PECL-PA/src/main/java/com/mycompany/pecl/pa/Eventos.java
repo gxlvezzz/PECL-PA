@@ -9,7 +9,7 @@ package com.mycompany.pecl.pa;
  * @author julia_ntxs1ki
  */
 public class Eventos extends Thread {
-
+    private Mundo mundo;
     private int num = 0;
     private boolean apagon = false;
     private boolean tormenta = false;
@@ -83,6 +83,9 @@ public class Eventos extends Thread {
         }
 
         desactivarEvento(num);
+        if(num==2){
+            mundo.revivirNiños();
+        }
     }
 
     public void run(){

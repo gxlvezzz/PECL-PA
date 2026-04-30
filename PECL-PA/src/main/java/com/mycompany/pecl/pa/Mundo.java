@@ -44,6 +44,7 @@ public class Mundo {
     private int niñosEnColmena=0;
     private int contadorDemogorgons=1;
     private int contadorSangre=0;
+    private int contadorSangreDuranteEleven = 0;
     
     private Lock atacar = new ReentrantLock();
     private Eventos eventos;
@@ -72,6 +73,9 @@ public class Mundo {
                 break;
             case 7:
                 niñosRadioWSQK.add(n);
+                break;
+            case 8:
+                niñosColmena.add(n);
                 break;
             default:
                 break;
@@ -142,6 +146,9 @@ public class Mundo {
     
     public synchronized void incrementarSangre(){
         contadorSangre++;
+        if(eventos.hayEleven()){
+            contadorSangreDuranteEleven++;
+        }
     }
     
     public synchronized void entrarDemogorgon(int zona, Demogorgons d){
@@ -211,6 +218,27 @@ public class Mundo {
     
     public boolean hayTormenta() {
         return eventos.hayTormenta();
+    }
+    
+    
+    public synchronized int getContadorSangreDuranteEleven(){
+        return contadorSangreDuranteEleven;
+    }
+    
+    
+    public synchronized void revivirNiños(){
+        Niños niñoRevivido = null;
+        for(int i=0; i<getContadorSangreDuranteEleven(); i++){
+            if(!niñosColmena.isEmpty()){
+                niñoRevivido = niñosColmena.get(0);
+                niñosColmena.remove(niñoRevivido);
+                niñoRevivido.finalizarAtaque(false);
+            }else{
+                break;
+            }
+        }
+        contadorSangreDuranteEleven = 0;
+        //booleano para que en el run de niño lo reconozca y comience de nuevo en la calle principal
     }
   
     
