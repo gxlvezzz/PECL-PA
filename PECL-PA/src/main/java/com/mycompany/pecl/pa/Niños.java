@@ -62,13 +62,14 @@ public class Niños extends Thread {
     
     
     @Override
-    public void run() {
+public void run() {
         try {
             mundo.entrarNiño(5, this);
             System.out.println("Nino " + id + " en la Calle Principal.");
             Thread.sleep((int) (Math.random() * 2000) + 3000);
 
             while (!esCapturado()) {
+
                 mundo.salirNiño(5, this);
                 mundo.entrarNiño(6, this);
                 System.out.println("Nino " + id + " entra al Sotano.");
@@ -76,13 +77,12 @@ public class Niños extends Thread {
 
                 int zonaElegida = (int) (Math.random() * 4) + 1;
                 mundo.salirNiño(6, this);
+
                 mundo.esperarEnPortal(zonaElegida, this);
+                System.out.println("Nino " + id + " ha cruzado al Upside Down.");
 
                 while(esCapturado()){
-                    try{
-                        sleep(500);
-                    }catch(Exception e){
-                    }    
+                    try { sleep(200); } catch(Exception e){}
                 }
 
                 mundo.entrarNiño(zonaElegida, this);
@@ -90,30 +90,26 @@ public class Niños extends Thread {
                 
                 if(mundo.hayTormenta()){
                     Thread.sleep(((int) (Math.random() * 2000) + 3000)*2); 
-                }else{
+                } else {
                     Thread.sleep((int) (Math.random() * 2000) + 3000);
                 }
 
                 while(esCapturado()){
-                    try{
-                        sleep(500);
-                    }catch(Exception e){
-                    }    
+                    try { sleep(200); } catch(Exception e){}
                 }
 
                 mundo.salirNiño(zonaElegida, this);
-                // aqui el niño tiene que volver a pasar por el portal
+                mundo.volverDePortal(zonaElegida, this);
+
                 mundo.incrementarSangre();
                 mundo.entrarNiño(7, this);
                 System.out.println("Nino " + id + " en Radio WSQK.");
                 Thread.sleep((int) (Math.random() * 2000) + 2000);
 
                 while(esCapturado()){
-                    try{
-                        sleep(500);
-                    }catch(Exception e){
-                    }    
+                    try { sleep(200); } catch(Exception e){}
                 }
+
                 mundo.salirNiño(7, this);
                 mundo.entrarNiño(5, this);
                 System.out.println("Nino " + id + " vuelve a la Calle Principal.");
@@ -123,7 +119,7 @@ public class Niños extends Thread {
             System.out.println(">>> El hilo de " + id + " ha TERMINADO (Capturado).");
 
         } catch (InterruptedException ex) {
-          
+            Thread.currentThread().interrupt();
         }
     }
 }

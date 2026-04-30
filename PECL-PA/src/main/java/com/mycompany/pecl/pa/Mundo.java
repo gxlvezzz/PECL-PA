@@ -30,16 +30,6 @@ public class Mundo {
     private List <Niños> niñosRadioWSQK = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosColmena = Collections.synchronizedList(new ArrayList<>());
 
-    //Para los portales
-    private CyclicBarrier portalBosque = new CyclicBarrier(2);
-    private CyclicBarrier portalLaboratorio = new CyclicBarrier(3);
-    private CyclicBarrier portalCentro = new CyclicBarrier(4);
-    private CyclicBarrier portalAlcantarillado = new CyclicBarrier(2);
-    private Lock lockBosque = new ReentrantLock();
-    private Lock lockLaboratorio = new ReentrantLock();
-    private Lock lockCentro = new ReentrantLock();
-    private Lock lockAlcantarillado = new ReentrantLock();
-
 
     private int niñosEnColmena=0;
     private int contadorDemogorgons=1;
@@ -49,8 +39,116 @@ public class Mundo {
     private Lock atacar = new ReentrantLock();
     private Eventos eventos;
    
-    
 
+    private class Portal {
+        int capacidad;
+        int esperandoIda = 0;
+        int esperandoVuelta = 0;
+        int cruzando = 0;
+        int enGrupo = 0; 
+        boolean grupoFormado = false;
+    }
+    
+        private Portal bosque = new Portal();
+    private Portal laboratorio = new Portal();
+    private Portal centro = new Portal();
+    private Portal alcantarillado = new Portal();
+
+
+    public Mundo() {
+        bosque.capacidad = 2;
+        laboratorio.capacidad = 3;
+        centro.capacidad = 4;
+        alcantarillado.capacidad = 2;
+    }
+    
+    private Portal getPortal(int zona) {
+        return switch (zona) {
+            case 1 -> bosque;
+            case 2 -> laboratorio;
+            case 3 -> centro;
+            case 4 -> alcantarillado;
+            default -> throw new IllegalArgumentException();
+        };
+    }
+
+    private String nombreZona(int zona) {
+        return switch (zona) {
+            case 1 -> "BOSQUE";
+            case 2 -> "LABORATORIO";
+            case 3 -> "CENTRO COMERCIAL";
+            case 4 -> "ALCANTARILLADO";
+            default -> "DESCONOCIDO";
+        };
+    }
+    
+    public void esperarEnPortal(int zona, Niños n) {
+    Portal p = getPortal(zona);
+    String destino = nombreZona(zona);
+
+    synchronized (p) {
+        p.esperandoIda++;
+        System.out.println("Niño " + n.getIdNiño() + " espera portal hacia " + destino);
+
+        while (p.grupoFormado || p.esperandoIda < p.capacidad) {
+            try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+        }
+
+        p.grupoFormado = true;
+        p.enGrupo = p.capacidad;
+        p.notifyAll();
+    }
+
+    synchronized (p) {
+        while (p.cruzando > 0 || p.esperandoVuelta > 0) {
+            try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+        }
+        p.cruzando++;
+    }
+
+   
+    System.out.println("Niño " + n.getIdNiño() + " cruza hacia " + destino);
+    try { Thread.sleep(1000); } catch (Exception e) {}
+
+    synchronized (p) {
+        p.cruzando--;
+        p.enGrupo--;
+        p.esperandoIda--;
+
+        
+        if (p.enGrupo == 0) {
+            p.grupoFormado = false;
+        }
+
+        p.notifyAll();
+    }
+}
+    public void volverDePortal(int zona, Niños n) {
+    Portal p = getPortal(zona);
+    String origen = nombreZona(zona);
+
+    synchronized (p) {
+        p.esperandoVuelta++;
+        p.notifyAll(); 
+    }
+
+    synchronized (p) {
+        while (p.cruzando > 0) {
+            try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+        }
+        p.cruzando++;
+    }
+
+    System.out.println("Niño " + n.getIdNiño() + " REGRESA desde " + origen);
+    try { Thread.sleep(1000); } catch (Exception e) {}
+
+    synchronized (p) {
+        p.cruzando--;
+        p.esperandoVuelta--;
+        p.notifyAll();
+    }
+}
+    
     public synchronized void entrarNiño(int zona, Niños n){
         switch(zona){
             case 1:
@@ -93,57 +191,7 @@ public class Mundo {
             case 7: niñosRadioWSQK.remove(n); break;
         }
     }
-    
-    
-    public void esperarEnPortal(int zona, Niños n) {
-
-    CyclicBarrier barrier;
-    Lock lock;
-    String destino;
-
-    switch (zona) {
-        case 1:
-            barrier = portalBosque;
-            lock = lockBosque;
-            destino = "BOSQUE";
-            break;
-        case 2:
-            barrier = portalLaboratorio;
-            lock = lockLaboratorio;
-            destino = "LABORATORIO";
-            break;
-        case 3:
-            barrier = portalCentro;
-            lock = lockCentro;
-            destino = "CENTRO COMERCIAL";
-            break;
-        case 4:
-            barrier = portalAlcantarillado;
-            lock = lockAlcantarillado;
-            destino = "ALCANTARILLADO";
-            break;
-        default:
-            throw new IllegalArgumentException("Zona inválida");
-    }
-
-    try {
-        System.out.println("Niño " + n.getIdNiño()+ " espera portal " + destino);
-
-        barrier.await();
-
-        lock.lock();
-        try {
-            System.out.println("Niño " + n.getIdNiño()+ " cruza portal a " + destino);
-            Thread.sleep(1000);
-        } finally {
-            lock.unlock();
-        }
-
-    } catch (InterruptedException | BrokenBarrierException e) {
-        Thread.currentThread().interrupt();
-    }
-}
-    
+        
     public synchronized void incrementarSangre(){
         contadorSangre++;
         if(eventos.hayEleven()){
