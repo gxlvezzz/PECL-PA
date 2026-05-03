@@ -12,6 +12,7 @@ import java.util.*;
  */
 public class Demogorgons extends Thread {
     private Mundo mundo;
+    private Eventos evento;
     private String id;
     private int zona=0;
     private int zona_anterior=0;
@@ -19,12 +20,19 @@ public class Demogorgons extends Thread {
 
     
     
-    public Demogorgons(Mundo mundo, int numid){
+    public Demogorgons(Mundo mundo, Eventos eventos, int numid){
         this.mundo = mundo;
+        this.evento = eventos;
         this.id = String.format("D%04d", numid);
     }
     
     private void moverse(){
+        while(evento.hayEleven()){
+            try {
+                sleep(500);
+            } catch (Exception e) {
+            }
+        }
         zona_anterior = zona;
         zona = (int)(Math.random()*4)+1;
         while(zona_anterior==zona){
@@ -63,7 +71,7 @@ public class Demogorgons extends Thread {
             if (zona != 0) {
                 mundo.eliminarListaDemogorgon(zona, this);
             }
-        moverse();        
+        moverse();  
         mundo.demogorgonAtacar(zona, this);        
         }
     }

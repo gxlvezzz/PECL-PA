@@ -12,12 +12,15 @@ import static java.lang.Thread.sleep;
  */
 public class PECLPA {
     private static Mundo mundo = new Mundo();
+    private static Eventos eventos = new Eventos(mundo);
     
-    public static void main(String[] args) {
-        Demogorgons d = new Demogorgons(mundo,0);
+    public static void main(String[] args){     
+        mundo.setEventos(eventos);
+        eventos.start();
+        Demogorgons d = new Demogorgons(mundo,eventos,0);
         d.start();
         for (int i=0; i<1500; i++){
-            Niños n = new Niños(mundo,i);
+            Niños n = new Niños(mundo,eventos,i);
             n.start();
             try{
                 Thread.sleep((int)(Math.random()*1500)+500);

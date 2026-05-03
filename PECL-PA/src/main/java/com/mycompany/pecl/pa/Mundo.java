@@ -40,6 +40,10 @@ public class Mundo {
     private Eventos eventos;
    
 
+    public void setEventos(Eventos eventos) {
+    this.eventos = eventos;
+}
+    
     private class Portal {
         int capacidad;
         int esperandoIda = 0;
@@ -252,7 +256,7 @@ public class Mundo {
         }
     }
     
-    private synchronized void eliminarNiñoDeTodasLasListas(Niños n) {
+    public synchronized void eliminarNiñoDeTodasLasListas(Niños n) {
     niñosBosque.remove(n);
     niñosLaboratorio.remove(n);
     niñosCentroComercial.remove(n);
@@ -275,18 +279,21 @@ public class Mundo {
     
     
     public synchronized void revivirNiños(){
-        Niños niñoRevivido = null;
-        for(int i=0; i<getContadorSangreDuranteEleven(); i++){
-            if(!niñosColmena.isEmpty()){
-                niñoRevivido = niñosColmena.get(0);
-                niñosColmena.remove(niñoRevivido);
-                niñoRevivido.finalizarAtaque(false);
-            }else{
-                break;
-            }
+        int cantidad = Math.min(contadorSangreDuranteEleven, niñosColmena.size());
+
+        for(int i = 0; i < cantidad; i++){
+            Niños niñoRevivido = niñosColmena.remove(0);
+
+            niñosEnColmena--;
+
+            niñoRevivido.liberarPorEleven();
+            entrarNiño(5, niñoRevivido);
+
+            System.out.println("Eleven libera a " + niñoRevivido.getIdNiño()
+                    + " y vuelve a la Calle Principal.");
         }
+
         contadorSangreDuranteEleven = 0;
-        //booleano para que en el run de niño lo reconozca y comience de nuevo en la calle principal
     }
   
     
@@ -294,7 +301,13 @@ public class Mundo {
         int probabilidad = (int)(Math.random() * 3) + 1;
         Niños objetivo = null;
         boolean capturado=false;
-
+        
+        while(eventos.hayEleven()){
+            try {
+                Thread.sleep(500);
+            } catch (Exception e) {
+            }
+        }
         atacar.lock();
         try{
             if (hay_niño(num)) {
@@ -317,6 +330,12 @@ public class Mundo {
         } finally {
             atacar.unlock();
         }
+        while(eventos.hayEleven()){
+            try {
+                Thread.sleep(500);
+            } catch (Exception e) {
+            }
+        }
 
         if (objetivo == null) {
             try {
@@ -329,6 +348,14 @@ public class Mundo {
             }
             return;
         }
+        
+        while(eventos.hayEleven()){
+            try {
+                Thread.sleep(500);
+            } catch (Exception e) {
+            }
+        }
+        
         try {
                 if(eventos.hayTormenta()){
                     Thread.sleep(((int)(Math.random() * 1000) + 500)/2);
@@ -338,7 +365,12 @@ public class Mundo {
             } catch (Exception e) {
             }
         
-
+        while(eventos.hayEleven()){
+            try {
+                Thread.sleep(500);
+            } catch (Exception e) {
+            }
+        }
         atacar.lock();
         try {
             if (probabilidad == 3) {
@@ -350,7 +382,7 @@ public class Mundo {
                 d.incrementar_capturas();
 
                 if (niñosEnColmena % 8 == 0) {
-                    new Demogorgons(this, contadorDemogorgons++).start();
+                    new Demogorgons(this,eventos, contadorDemogorgons++).start();
                 }
 
                 objetivo.finalizarAtaque(true);
@@ -360,6 +392,12 @@ public class Mundo {
         } catch(Exception e){
         } finally {
             atacar.unlock();
+        }
+        while(eventos.hayEleven()){
+            try {
+                Thread.sleep(500);
+            } catch (Exception e) {
+            }
         }
         if(capturado){
             try {

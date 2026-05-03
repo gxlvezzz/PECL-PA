@@ -15,6 +15,10 @@ public class Eventos extends Thread {
     private boolean tormenta = false;
     private boolean eleven = false;
     private boolean redMental = false;
+    
+    public Eventos(Mundo mundo){
+        this.mundo = mundo;
+    }
 
     public synchronized boolean hayApagon() {
         return apagon;

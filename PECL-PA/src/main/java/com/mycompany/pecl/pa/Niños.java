@@ -9,12 +9,15 @@ import java.util.logging.Logger;
 
 public class Niños extends Thread {
     private Mundo mundo;
+    private Eventos eventos;
     private String id;
     private boolean capturado = false; 
     private boolean siendoAtacado = false;
+    private boolean liberadoPorEleven = false;
 
-    public Niños(Mundo mundo, int numid) {
+    public Niños(Mundo mundo, Eventos eventos, int numid) {
         this.mundo = mundo;
+        this.eventos = eventos;
         this.id = String.format("N%04d", numid);
     }
 
@@ -60,15 +63,31 @@ public class Niños extends Thread {
         this.siendoAtacado = false;
     }
     
+    public synchronized void liberarPorEleven() {
+        capturado = false;
+        siendoAtacado = false;
+        liberadoPorEleven = true;
+    }
+    
+    public synchronized boolean fueLiberadoPorEleven() {
+        return liberadoPorEleven;
+    }
+
+    public synchronized void resetLiberadoPorEleven() {
+        liberadoPorEleven = false;
+    }
+    
     
     @Override
 public void run() {
-        try {
-            mundo.entrarNiño(5, this);
-            System.out.println("Nino " + id + " en la Calle Principal.");
-            Thread.sleep((int) (Math.random() * 2000) + 3000);
+        while (true) {
+            try {
+                mundo.eliminarNiñoDeTodasLasListas(this);
+                mundo.entrarNiño(5, this);
+                System.out.println("Nino " + id + " en la Calle Principal.");
+                Thread.sleep((int) (Math.random() * 2000) + 3000);
 
-            while (!esCapturado()) {
+            
 
                 mundo.salirNiño(5, this);
                 mundo.entrarNiño(6, this);
@@ -84,6 +103,11 @@ public void run() {
                 while(esCapturado()){
                     try { sleep(200); } catch(Exception e){}
                 }
+                
+                if (fueLiberadoPorEleven()) {
+                    resetLiberadoPorEleven();
+                    continue;
+                }
 
                 mundo.entrarNiño(zonaElegida, this);
                 System.out.println("Nino " + id + " recolectando en " + zonaString(zonaElegida));
@@ -97,6 +121,11 @@ public void run() {
                 while(esCapturado()){
                     try { sleep(200); } catch(Exception e){}
                 }
+                
+                if (fueLiberadoPorEleven()) {
+                    resetLiberadoPorEleven();
+                    continue;
+                }
 
                 mundo.salirNiño(zonaElegida, this);
                 mundo.volverDePortal(zonaElegida, this);
@@ -109,17 +138,16 @@ public void run() {
                 while(esCapturado()){
                     try { sleep(200); } catch(Exception e){}
                 }
+                
+                if (fueLiberadoPorEleven()) {
+                    resetLiberadoPorEleven();
+                    continue;
+                }
 
                 mundo.salirNiño(7, this);
-                mundo.entrarNiño(5, this);
-                System.out.println("Nino " + id + " vuelve a la Calle Principal.");
-                Thread.sleep((int) (Math.random() * 2000) + 3000);
             }
-
-            System.out.println(">>> El hilo de " + id + " ha TERMINADO (Capturado).");
-
-        } catch (InterruptedException ex) {
-            Thread.currentThread().interrupt();
+         catch (Exception e) {
+        }
         }
     }
 }
