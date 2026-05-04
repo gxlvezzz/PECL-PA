@@ -94,7 +94,7 @@ public class Mundo {
         p.esperandoIda++;
         System.out.println("Niño " + n.getIdNiño() + " espera portal hacia " + destino);
 
-        while (p.grupoFormado || p.esperandoIda < p.capacidad) {
+        while (hayApagon() || p.grupoFormado || p.esperandoIda < p.capacidad) {
             try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
         }
 
@@ -104,7 +104,7 @@ public class Mundo {
     }
 
     synchronized (p) {
-        while (p.cruzando > 0 || p.esperandoVuelta > 0) {
+        while (p.cruzando > 0 || p.esperandoVuelta > 0 || hayApagon()) {
             try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
         }
         p.cruzando++;
@@ -137,7 +137,7 @@ public class Mundo {
     }
 
     synchronized (p) {
-        while (p.cruzando > 0) {
+        while (p.cruzando > 0 || hayApagon()) {
             try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
         }
         p.cruzando++;
@@ -151,6 +151,18 @@ public class Mundo {
         p.esperandoVuelta--;
         p.notifyAll();
     }
+}
+    
+    public boolean hayApagon() {
+    return eventos != null && eventos.hayApagon();
+}
+    
+    
+    public void despertarPortales() {
+    synchronized (bosque) { bosque.notifyAll(); }
+    synchronized (laboratorio) { laboratorio.notifyAll(); }
+    synchronized (centro) { centro.notifyAll(); }
+    synchronized (alcantarillado) { alcantarillado.notifyAll(); }
 }
     
     public synchronized void entrarNiño(int zona, Niños n){
@@ -409,7 +421,27 @@ public class Mundo {
             } catch (Exception e) {
             }    
         }
-        
-       
+          
     }
+    
+    
+    public synchronized int zonaConMasNiños() {
+        int max = niñosBosque.size();
+        int zona = 1;
+
+        if (niñosLaboratorio.size() > max) {
+            max = niñosLaboratorio.size();
+            zona = 2;
+        }
+        if (niñosCentroComercial.size() > max) {
+            max = niñosCentroComercial.size();
+            zona = 3;
+        }
+        if (niñosAlcantarillado.size() > max) {
+            zona = 4;
+        }
+
+        return zona;
+    }
+    
 }

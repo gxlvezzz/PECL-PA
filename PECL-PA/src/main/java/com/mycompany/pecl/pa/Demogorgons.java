@@ -33,10 +33,21 @@ public class Demogorgons extends Thread {
             } catch (Exception e) {
             }
         }
+        while(evento.hayApagon()){
+            try {
+                sleep(200);
+            } catch (Exception e) {
+            }
+        }
+        
         zona_anterior = zona;
-        zona = (int)(Math.random()*4)+1;
-        while(zona_anterior==zona){
+        if(evento.hayRedMental()){
+            zona = mundo.zonaConMasNiños();
+        } else {
             zona = (int)(Math.random()*4)+1;
+            while(zona_anterior == zona){
+                zona = (int)(Math.random()*4)+1;
+            }
         }
         mundo.entrarDemogorgon(zona, this);
         System.out.println("Demogorgon " + this.id + " ha entrado en " + zonaString(zona));
@@ -72,6 +83,11 @@ public class Demogorgons extends Thread {
                 mundo.eliminarListaDemogorgon(zona, this);
             }
         moverse();  
+       if(evento.hayRedMental()){
+           try { sleep(500); 
+           } 
+           catch (Exception e) {}
+        }
         mundo.demogorgonAtacar(zona, this);        
         }
     }

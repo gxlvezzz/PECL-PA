@@ -61,6 +61,7 @@ public class Eventos extends Thread {
         switch(num){
             case 0:
                 apagon = false;
+                mundo.despertarPortales();
                 break;
             case 1:
                 tormenta = false;

@@ -25,7 +25,6 @@ public class Niños extends Thread {
         this.capturado = estado;
     }
 
-
     public synchronized boolean esCapturado() {
     return capturado;
     }
