@@ -75,6 +75,9 @@ public class Demogorgons extends Thread {
         capturas++;
     }
     
+    public String toString() {
+        return id;
+    }
     
     public void run(){
         System.out.println(this.id);

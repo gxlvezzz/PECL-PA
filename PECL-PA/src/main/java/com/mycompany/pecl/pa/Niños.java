@@ -78,75 +78,80 @@ public class Niños extends Thread {
     
     
     @Override
-public void run() {
-        while (true) {
-            try {
-                mundo.eliminarNiñoDeTodasLasListas(this);
-                mundo.entrarNiño(5, this);
-                System.out.println("Nino " + id + " en la Calle Principal.");
-                Thread.sleep((int) (Math.random() * 2000) + 3000);
-
-            
-
-                mundo.salirNiño(5, this);
-                mundo.entrarNiño(6, this);
-                System.out.println("Nino " + id + " entra al Sotano.");
-                Thread.sleep((int) (Math.random() * 1000) + 1000);
-
-                int zonaElegida = (int) (Math.random() * 4) + 1;
-                mundo.salirNiño(6, this);
-
-                mundo.esperarEnPortal(zonaElegida, this);
-                System.out.println("Nino " + id + " ha cruzado al Upside Down.");
-
-                while(esCapturado()){
-                    try { sleep(200); } catch(Exception e){}
-                }
-                
-                if (fueLiberadoPorEleven()) {
-                    resetLiberadoPorEleven();
-                    continue;
-                }
-
-                mundo.entrarNiño(zonaElegida, this);
-                System.out.println("Nino " + id + " recolectando en " + zonaString(zonaElegida));
-                
-                if(mundo.hayTormenta()){
-                    Thread.sleep(((int) (Math.random() * 2000) + 3000)*2); 
-                } else {
+    
+    public String toString() {
+        return id; // Devuelve directamente "N0001", "N0002", etc.
+    }
+    
+    public void run() {
+            while (true) {
+                try {
+                    mundo.eliminarNiñoDeTodasLasListas(this);
+                    mundo.entrarNiño(5, this);
+                    System.out.println("Nino " + id + " en la Calle Principal.");
                     Thread.sleep((int) (Math.random() * 2000) + 3000);
-                }
 
-                while(esCapturado()){
-                    try { sleep(200); } catch(Exception e){}
-                }
-                
-                if (fueLiberadoPorEleven()) {
-                    resetLiberadoPorEleven();
-                    continue;
-                }
 
-                mundo.salirNiño(zonaElegida, this);
-                mundo.volverDePortal(zonaElegida, this);
 
-                mundo.incrementarSangre();
-                mundo.entrarNiño(7, this);
-                System.out.println("Nino " + id + " en Radio WSQK.");
-                Thread.sleep((int) (Math.random() * 2000) + 2000);
+                    mundo.salirNiño(5, this);
+                    mundo.entrarNiño(6, this);
+                    System.out.println("Nino " + id + " entra al Sotano.");
+                    Thread.sleep((int) (Math.random() * 1000) + 1000);
 
-                while(esCapturado()){
-                    try { sleep(200); } catch(Exception e){}
+                    int zonaElegida = (int) (Math.random() * 4) + 1;
+                    mundo.salirNiño(6, this);
+
+                    mundo.esperarEnPortal(zonaElegida, this);
+                    System.out.println("Nino " + id + " ha cruzado al Upside Down.");
+
+                    while(esCapturado()){
+                        try { sleep(200); } catch(Exception e){}
+                    }
+
+                    if (fueLiberadoPorEleven()) {
+                        resetLiberadoPorEleven();
+                        continue;
+                    }
+
+                    mundo.entrarNiño(zonaElegida, this);
+                    System.out.println("Nino " + id + " recolectando en " + zonaString(zonaElegida));
+
+                    if(mundo.hayTormenta()){
+                        Thread.sleep(((int) (Math.random() * 2000) + 3000)*2); 
+                    } else {
+                        Thread.sleep((int) (Math.random() * 2000) + 3000);
+                    }
+
+                    while(esCapturado()){
+                        try { sleep(200); } catch(Exception e){}
+                    }
+
+                    if (fueLiberadoPorEleven()) {
+                        resetLiberadoPorEleven();
+                        continue;
+                    }
+
+                    mundo.salirNiño(zonaElegida, this);
+                    mundo.volverDePortal(zonaElegida, this);
+
+                    mundo.incrementarSangre();
+                    mundo.entrarNiño(7, this);
+                    System.out.println("Nino " + id + " en Radio WSQK.");
+                    Thread.sleep((int) (Math.random() * 2000) + 2000);
+
+                    while(esCapturado()){
+                        try { sleep(200); } catch(Exception e){}
+                    }
+
+                    if (fueLiberadoPorEleven()) {
+                        resetLiberadoPorEleven();
+                        continue;
+                    }
+
+                    mundo.salirNiño(7, this);
                 }
-                
-                if (fueLiberadoPorEleven()) {
-                    resetLiberadoPorEleven();
-                    continue;
-                }
-
-                mundo.salirNiño(7, this);
+             catch (Exception e) {
             }
-         catch (Exception e) {
-        }
         }
     }
 }
