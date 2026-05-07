@@ -93,6 +93,7 @@ public class Niños extends Thread {
     }
     
     public void run() {
+        mundo.registrarHilo(this);
         LogHawkins.escribir("Niño " + id + " inicia ejecución");
             while (true) {
                 mundo.comprobarPausa();
@@ -103,14 +104,16 @@ public class Niños extends Thread {
                     LogHawkins.escribir("Niño " + id + " entra en Calle Principal");
                     Thread.sleep((int) (Math.random() * 2000) + 3000);
 
-
+                    mundo.comprobarPausa();
 
                     mundo.salirNiño(5, this);
                     mundo.entrarNiño(6, this);
                     System.out.println("Nino " + id + " entra al Sotano.");
                     LogHawkins.escribir("Niño " + id + " entra en el Sótano de los Byers");
                     Thread.sleep((int) (Math.random() * 1000) + 1000);
-
+                    
+                    mundo.comprobarPausa();
+                    
                     int zonaElegida = (int) (Math.random() * 4) + 1;
                     mundo.salirNiño(6, this);
                     
@@ -119,8 +122,12 @@ public class Niños extends Thread {
                     System.out.println("Nino " + id + " ha cruzado al Upside Down.");
                     LogHawkins.escribir("Niño " + id + " cruza al Upside Down hacia " + zonaString(zonaElegida));
                     
+                    mundo.comprobarPausa();
+                    
                     while(esCapturado()){
-                        try { sleep(200); } catch(Exception e){}
+                        try { sleep(200); 
+                        mundo.comprobarPausa();
+                        } catch(Exception e){}
                     }
 
                     if (fueLiberadoPorEleven()) {
@@ -138,18 +145,21 @@ public class Niños extends Thread {
                     }
 
                     while(esCapturado()){
-                        try { sleep(200); } catch(Exception e){}
+                        try { sleep(200); 
+                        mundo.comprobarPausa();
+                        } catch(Exception e){}
                     }
 
                     if (fueLiberadoPorEleven()) {
                         resetLiberadoPorEleven();
                         continue;
                     }
-                    
+                    mundo.comprobarPausa();
                     LogHawkins.escribir("Niño " + id + " intenta regresar desde " + zonaString(zonaElegida));
                     mundo.salirNiño(zonaElegida, this);
                     mundo.volverDePortal(zonaElegida, this);
-
+                    
+                    mundo.comprobarPausa();
                     mundo.incrementarSangre();
                     LogHawkins.escribir("Niño " + id + " entrega sangre contaminada");
                     mundo.entrarNiño(7, this);
@@ -158,7 +168,9 @@ public class Niños extends Thread {
                     Thread.sleep((int) (Math.random() * 2000) + 2000);
                     
                     while(esCapturado()){
-                        try { sleep(200); } catch(Exception e){}
+                        try { sleep(200); 
+                        mundo.comprobarPausa();
+                        } catch(Exception e){}
                     }
 
                     if (fueLiberadoPorEleven()) {

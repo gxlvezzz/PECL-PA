@@ -30,7 +30,7 @@ public class Mundo {
     private List<Niños> niñosColmena = new CopyOnWriteArrayList<>();
     private List <Niños> niñosSotanoByers = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosRadioWSQK = Collections.synchronizedList(new ArrayList<>());
-
+    private List<Thread> hilosActivos = Collections.synchronizedList(new ArrayList<>());
 
 
     private int niñosEnColmena=0;
@@ -41,8 +41,10 @@ public class Mundo {
     private Lock atacar = new ReentrantLock();
     private Eventos eventos;
     
-    private boolean pausado = false;
-   
+
+    private final Object lockPausa = new Object(); // Objeto dedicado solo a la pausa
+    private volatile boolean pausado = false;
+    
     private LogHawkins log = new LogHawkins();
 
     public void setEventos(Eventos eventos) {
@@ -99,6 +101,7 @@ public class Mundo {
     }
     
     public void esperarEnPortal(int zona, Niños n) {
+        comprobarPausa();
         Portal p = getPortal(zona);
         String destino = nombreZona(zona);
 
@@ -582,23 +585,33 @@ public class Mundo {
         return eventos.getEventoActual();
     }
     
-    public synchronized void comprobarPausa() {
-        while (pausado) {
-            try {
-                wait(); // El hilo se queda durmiendo aquí hasta que llamen a notifyAll()
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+    public void comprobarPausa() {
+        synchronized (lockPausa) {
+            while (pausado) {
+                try {
+                    lockPausa.wait(); // El hilo se duerme aquí sin bloquear a Mundo
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
         }
     }
 
-    public synchronized void pausar() {
-        pausado = true;
+    public void pausar() {
+        pausado = true; // No necesita synchronized(this)
     }
 
-    public synchronized void reanudar() {
-        pausado = false;
-        notifyAll(); // Despierta a todos los hilos que estaban en el wait()
+    public void reanudar() {
+        synchronized (lockPausa) {
+            pausado = false;
+            lockPausa.notifyAll(); // Despierta a todos los hilos
+        }
+    }
+    
+    
+
+    public void registrarHilo(Thread t) {
+        hilosActivos.add(t);
     }
     
     public LogHawkins getLog() {

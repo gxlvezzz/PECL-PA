@@ -81,6 +81,7 @@ public class Demogorgons extends Thread {
     }
     
     public void run(){
+        mundo.registrarHilo(this);
         System.out.println(this.id);
          LogHawkins.escribir("Demogorgon " + id + " inicia ejecución");
 

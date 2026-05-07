@@ -295,3 +295,2385 @@
 2026-05-07 18:14:58 - Niño N0006 entrega sangre contaminada
 2026-05-07 18:14:58 - Niño N0006 entra en Radio WSQK
 2026-05-07 18:14:58 - El niño N0002 ha regresado a Hawkins desde CENTRO COMERCIAL
+2026-05-07 18:47:37 - Demogorgon D0000 creado
+2026-05-07 18:47:37 - Demogorgon D0000 inicia ejecución
+2026-05-07 18:47:37 - Niño N0000 creado
+2026-05-07 18:47:37 - Demogorgon D0000 entra en El Bosque
+2026-05-07 18:47:37 - Niño N0000 inicia ejecución
+2026-05-07 18:47:37 - Niño N0000 entra en Calle Principal
+2026-05-07 18:47:38 - Niño N0001 creado
+2026-05-07 18:47:38 - Niño N0001 inicia ejecución
+2026-05-07 18:47:38 - Niño N0001 entra en Calle Principal
+2026-05-07 18:47:40 - Niño N0002 creado
+2026-05-07 18:47:40 - Niño N0002 inicia ejecución
+2026-05-07 18:47:40 - Niño N0002 entra en Calle Principal
+2026-05-07 18:47:41 - Niño N0000 entra en el Sótano de los Byers
+2026-05-07 18:47:41 - Niño N0003 creado
+2026-05-07 18:47:41 - Niño N0003 inicia ejecución
+2026-05-07 18:47:41 - Niño N0003 entra en Calle Principal
+2026-05-07 18:47:42 - Demogorgon D0000 abandona El Bosque
+2026-05-07 18:47:42 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 18:47:42 - Niño N0004 creado
+2026-05-07 18:47:42 - Niño N0004 inicia ejecución
+2026-05-07 18:47:42 - Niño N0004 entra en Calle Principal
+2026-05-07 18:47:42 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 18:47:43 - Niño N0000 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:47:43 - Niño N0002 entra en el Sótano de los Byers
+2026-05-07 18:47:43 - Niño N0005 creado
+2026-05-07 18:47:43 - Niño N0005 inicia ejecución
+2026-05-07 18:47:43 - Niño N0005 entra en Calle Principal
+2026-05-07 18:47:44 - Niño N0001 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:47:44 - Niño N0006 creado
+2026-05-07 18:47:44 - Niño N0006 inicia ejecución
+2026-05-07 18:47:44 - Niño N0006 entra en Calle Principal
+2026-05-07 18:47:45 - Niño N0002 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:47:45 - Niño N0003 entra en el Sótano de los Byers
+2026-05-07 18:47:45 - Niño N0007 creado
+2026-05-07 18:47:45 - Niño N0007 inicia ejecución
+2026-05-07 18:47:45 - Niño N0007 entra en Calle Principal
+2026-05-07 18:47:46 - Niño N0005 entra en el Sótano de los Byers
+2026-05-07 18:47:46 - Niño N0003 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:47:46 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 18:47:46 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-07 18:47:46 - Niño N0004 entra en el Sótano de los Byers
+2026-05-07 18:47:47 - Niño N0008 creado
+2026-05-07 18:47:47 - Niño N0008 inicia ejecución
+2026-05-07 18:47:47 - Niño N0008 entra en Calle Principal
+2026-05-07 18:47:48 - Niño N0006 entra en el Sótano de los Byers
+2026-05-07 18:47:48 - Niño N0009 creado
+2026-05-07 18:47:48 - Niño N0009 inicia ejecución
+2026-05-07 18:47:48 - Niño N0009 entra en Calle Principal
+2026-05-07 18:47:48 - Niño N0004 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:47:48 - Niño N0005 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:47:48 - El niño N0005 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 18:47:48 - El niño N0002 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 18:47:49 - Niño N0006 espera para cruzar al portal de  El Bosque
+2026-05-07 18:47:49 - Niño N0005 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:47:49 - Niño N0002 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:47:49 - Niño N0010 creado
+2026-05-07 18:47:49 - Niño N0010 inicia ejecución
+2026-05-07 18:47:49 - Niño N0010 entra en Calle Principal
+2026-05-07 18:47:50 - Niño N0007 entra en el Sótano de los Byers
+2026-05-07 18:47:51 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-07 18:47:51 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 18:47:51 - Niño N0009 entra en el Sótano de los Byers
+2026-05-07 18:47:51 - Niño N0011 creado
+2026-05-07 18:47:51 - Niño N0011 inicia ejecución
+2026-05-07 18:47:51 - Niño N0011 entra en Calle Principal
+2026-05-07 18:47:52 - Niño N0008 entra en el Sótano de los Byers
+2026-05-07 18:47:52 - Niño N0007 espera para cruzar al portal de  El Bosque
+2026-05-07 18:47:52 - El niño N0007 ha cruzado el portal hacia BOSQUE
+2026-05-07 18:47:52 - El niño N0006 ha cruzado el portal hacia BOSQUE
+2026-05-07 18:47:52 - Niño N0002 ha sobrevivido al ataque
+2026-05-07 18:47:52 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 18:47:52 - Demogorgon D0000 entra en El Bosque
+2026-05-07 18:47:52 - Niño N0012 creado
+2026-05-07 18:47:52 - Niño N0012 inicia ejecución
+2026-05-07 18:47:52 - Niño N0012 entra en Calle Principal
+2026-05-07 18:47:52 - Niño N0002 intenta regresar desde El Alcantarillado
+2026-05-07 18:47:52 - El niño N0002 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-07 18:47:52 - Niño N0009 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:47:52 - El niño N0009 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:47:52 - El niño N0003 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:47:52 - El niño N0001 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:47:53 - Niño N0007 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:47:53 - Niño N0006 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:47:53 - Niño N0008 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:47:53 - Niño N0005 intenta regresar desde El Alcantarillado
+2026-05-07 18:47:53 - Niño N0010 entra en el Sótano de los Byers
+2026-05-07 18:47:53 - El niño N0005 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-07 18:47:53 - Niño N0002 entrega sangre contaminada
+2026-05-07 18:47:53 - Niño N0002 entra en Radio WSQK
+2026-05-07 18:47:53 - Niño N0009 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:47:53 - Niño N0003 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:47:53 - Niño N0001 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:47:54 - Niño N0013 creado
+2026-05-07 18:47:54 - Niño N0013 inicia ejecución
+2026-05-07 18:47:54 - Niño N0013 entra en Calle Principal
+2026-05-07 18:47:54 - Niño N0005 entrega sangre contaminada
+2026-05-07 18:47:54 - Niño N0004 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:47:54 - Niño N0000 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:47:54 - Niño N0008 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:47:54 - Niño N0005 entra en Radio WSQK
+2026-05-07 18:47:56 - Niño N0014 creado
+2026-05-07 18:47:56 - Niño N0014 inicia ejecución
+2026-05-07 18:47:57 - Niño N0015 creado
+2026-05-07 18:47:57 - Niño N0015 inicia ejecución
+2026-05-07 18:47:58 - Niño N0011 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0009 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0012 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0007 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0001 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0004 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0005 entra en Calle Principal
+2026-05-07 18:47:58 - Demogorgon D0000 abandona El Bosque
+2026-05-07 18:47:58 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-07 18:47:58 - Niño N0006 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0015 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0000 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0008 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0014 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0013 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0010 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0003 entra en Calle Principal
+2026-05-07 18:47:58 - Niño N0002 entra en Calle Principal
+2026-05-07 18:47:59 - Niño N0016 creado
+2026-05-07 18:47:59 - Niño N0016 inicia ejecución
+2026-05-07 18:47:59 - Niño N0016 entra en Calle Principal
+2026-05-07 18:48:00 - Niño N0017 creado
+2026-05-07 18:48:00 - Niño N0017 inicia ejecución
+2026-05-07 18:48:00 - Niño N0017 entra en Calle Principal
+2026-05-07 18:48:01 - Niño N0006 entra en el Sótano de los Byers
+2026-05-07 18:48:01 - Niño N0018 creado
+2026-05-07 18:48:01 - Niño N0018 inicia ejecución
+2026-05-07 18:48:01 - Niño N0018 entra en Calle Principal
+2026-05-07 18:48:02 - Niño N0004 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0011 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0015 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0019 creado
+2026-05-07 18:48:02 - Niño N0019 inicia ejecución
+2026-05-07 18:48:02 - Niño N0019 entra en Calle Principal
+2026-05-07 18:48:02 - Niño N0016 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0002 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0010 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-07 18:48:02 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 18:48:02 - Niño N0007 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0012 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0003 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0006 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:02 - Niño N0005 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0013 entra en el Sótano de los Byers
+2026-05-07 18:48:02 - Niño N0000 entra en el Sótano de los Byers
+2026-05-07 18:48:03 - Niño N0008 entra en el Sótano de los Byers
+2026-05-07 18:48:03 - Niño N0004 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:03 - El niño N0004 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-07 18:48:03 - El niño N0006 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-07 18:48:03 - Niño N0014 entra en el Sótano de los Byers
+2026-05-07 18:48:03 - Niño N0009 entra en el Sótano de los Byers
+2026-05-07 18:48:03 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 18:48:03 - Niño N0006 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:48:03 - Niño N0004 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:48:03 - Niño N0020 creado
+2026-05-07 18:48:03 - Niño N0020 inicia ejecución
+2026-05-07 18:48:04 - Niño N0021 creado
+2026-05-07 18:48:04 - Niño N0021 inicia ejecución
+2026-05-07 18:48:06 - Niño N0022 creado
+2026-05-07 18:48:06 - Niño N0022 inicia ejecución
+2026-05-07 18:48:07 - Niño N0023 creado
+2026-05-07 18:48:07 - Niño N0023 inicia ejecución
+2026-05-07 18:48:07 - Niño N0008 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0013 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0019 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0005 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0014 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0015 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0006 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0002 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0004 entra en Calle Principal
+2026-05-07 18:48:07 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 18:48:07 - Niño N0020 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0021 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0022 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0023 entra en Calle Principal
+2026-05-07 18:48:07 - Demogorgon D0000 entra en El Laboratorio
+2026-05-07 18:48:07 - Niño N0000 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0016 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0007 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0018 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0010 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0017 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0003 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0009 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0011 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0001 entra en Calle Principal
+2026-05-07 18:48:07 - Niño N0012 entra en Calle Principal
+2026-05-07 18:48:08 - Niño N0024 creado
+2026-05-07 18:48:08 - Niño N0024 inicia ejecución
+2026-05-07 18:48:08 - Niño N0024 entra en Calle Principal
+2026-05-07 18:48:10 - Niño N0025 creado
+2026-05-07 18:48:10 - Niño N0025 inicia ejecución
+2026-05-07 18:48:10 - Niño N0025 entra en Calle Principal
+2026-05-07 18:48:10 - Niño N0002 entra en el Sótano de los Byers
+2026-05-07 18:48:10 - Niño N0004 entra en el Sótano de los Byers
+2026-05-07 18:48:10 - Niño N0021 entra en el Sótano de los Byers
+2026-05-07 18:48:10 - Niño N0022 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0015 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0018 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0006 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0016 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0008 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0011 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0010 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0005 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0000 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0020 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0026 creado
+2026-05-07 18:48:11 - Niño N0026 inicia ejecución
+2026-05-07 18:48:11 - Niño N0026 entra en Calle Principal
+2026-05-07 18:48:11 - Niño N0014 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0003 entra en el Sótano de los Byers
+2026-05-07 18:48:11 - Niño N0013 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0009 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0022 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:12 - El niño N0022 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 18:48:12 - Niño N0016 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:12 - Niño N0021 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:12 - Niño N0023 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0006 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:12 - Niño N0017 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0018 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:12 - Niño N0024 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0015 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:12 - El niño N0015 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:48:12 - El niño N0021 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:48:12 - El niño N0016 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:48:12 - Demogorgon D0000 abandona El Laboratorio
+2026-05-07 18:48:12 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 18:48:12 - Niño N0007 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0012 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0002 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:12 - Niño N0019 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0010 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:12 - Niño N0004 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:12 - El niño N0004 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-07 18:48:12 - Niño N0027 creado
+2026-05-07 18:48:12 - Niño N0027 inicia ejecución
+2026-05-07 18:48:12 - Niño N0027 entra en Calle Principal
+2026-05-07 18:48:12 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 18:48:12 - Niño N0020 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:12 - El niño N0020 ha cruzado el portal hacia BOSQUE
+2026-05-07 18:48:12 - El niño N0002 ha cruzado el portal hacia BOSQUE
+2026-05-07 18:48:12 - Niño N0011 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:12 - Niño N0008 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:13 - Niño N0000 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:13 - Niño N0013 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:13 - Niño N0005 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:13 - Niño N0022 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:48:13 - Niño N0009 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:13 - Niño N0014 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:13 - Niño N0028 creado
+2026-05-07 18:48:13 - Niño N0028 inicia ejecución
+2026-05-07 18:48:13 - Niño N0028 entra en Calle Principal
+2026-05-07 18:48:13 - Niño N0015 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:13 - Niño N0021 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:13 - El niño N0010 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:48:13 - El niño N0011 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:48:13 - El niño N0009 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:48:13 - Niño N0016 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:13 - Niño N0003 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:13 - Niño N0004 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:48:13 - Niño N0020 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:48:13 - Niño N0002 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:48:13 - El niño N0005 ha cruzado el portal hacia BOSQUE
+2026-05-07 18:48:13 - El niño N0013 ha cruzado el portal hacia BOSQUE
+2026-05-07 18:48:13 - Niño N0024 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:13 - Niño N0001 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:13 - Niño N0007 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:13 - Niño N0017 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:13 - Niño N0000 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:48:13 - Niño N0007 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:48:13 - Niño N0010 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:13 - Niño N0011 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:13 - Niño N0017 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:48:13 - Niño N0006 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:48:13 - Niño N0014 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:48:13 - Niño N0003 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:14 - Niño N0009 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:14 - Niño N0005 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:48:14 - Niño N0001 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:48:14 - Niño N0018 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:48:14 - Niño N0024 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:48:14 - Niño N0013 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:48:14 - Niño N0008 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:48:14 - Niño N0029 creado
+2026-05-07 18:48:14 - Niño N0029 inicia ejecución
+2026-05-07 18:48:15 - Niño N0030 creado
+2026-05-07 18:48:15 - Niño N0030 inicia ejecución
+2026-05-07 18:48:15 - EVENTO GLOBAL: LA RED MENTAL iniciada
+2026-05-07 18:48:16 - Niño N0012 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0011 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0010 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0030 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0006 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0014 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0005 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0003 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0009 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0001 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0018 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0024 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0013 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0008 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0029 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0002 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0019 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0016 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0025 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0004 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0020 entra en Calle Principal
+2026-05-07 18:48:16 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 18:48:16 - Niño N0015 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0026 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0027 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0023 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0021 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0022 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0028 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0000 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0007 entra en Calle Principal
+2026-05-07 18:48:16 - Niño N0017 entra en Calle Principal
+2026-05-07 18:48:16 - Demogorgon D0000 se dirige por RED MENTAL hacia El Bosque
+2026-05-07 18:48:16 - Demogorgon D0000 entra en El Bosque
+2026-05-07 18:48:16 - Niño N0031 creado
+2026-05-07 18:48:16 - Niño N0031 inicia ejecución
+2026-05-07 18:48:16 - Niño N0031 entra en Calle Principal
+2026-05-07 18:48:17 - Niño N0032 creado
+2026-05-07 18:48:17 - Niño N0032 inicia ejecución
+2026-05-07 18:48:17 - Niño N0032 entra en Calle Principal
+2026-05-07 18:48:18 - Niño N0033 creado
+2026-05-07 18:48:18 - Niño N0033 inicia ejecución
+2026-05-07 18:48:18 - Niño N0033 entra en Calle Principal
+2026-05-07 18:48:19 - Niño N0023 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0026 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0010 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0020 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0014 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0024 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0015 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0022 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0008 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0002 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0006 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0013 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0017 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0003 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0004 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0025 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0021 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0027 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0007 entra en el Sótano de los Byers
+2026-05-07 18:48:19 - Niño N0034 creado
+2026-05-07 18:48:19 - Niño N0034 inicia ejecución
+2026-05-07 18:48:19 - Niño N0034 entra en Calle Principal
+2026-05-07 18:48:19 - Niño N0005 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0011 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0016 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Demogorgon D0000 abandona El Bosque
+2026-05-07 18:48:20 - Demogorgon D0000 se dirige por RED MENTAL hacia El Bosque
+2026-05-07 18:48:20 - Demogorgon D0000 entra en El Bosque
+2026-05-07 18:48:20 - Niño N0018 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0008 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:20 - Niño N0031 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0009 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0010 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:20 - El niño N0010 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:48:20 - El niño N0008 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:48:20 - Niño N0012 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0022 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:20 - Niño N0002 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:20 - Niño N0000 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0028 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0006 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:20 - Niño N0030 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0020 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:20 - Niño N0017 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:20 - Niño N0029 entra en el Sótano de los Byers
+2026-05-07 18:48:20 - Niño N0023 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:21 - Niño N0019 entra en el Sótano de los Byers
+2026-05-07 18:48:21 - Niño N0004 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:21 - Niño N0026 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:21 - Niño N0024 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:21 - Niño N0014 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:21 - Niño N0015 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:21 - Niño N0032 entra en el Sótano de los Byers
+2026-05-07 18:48:21 - Niño N0011 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:21 - Niño N0001 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:21 - El niño N0001 ha cruzado el portal hacia BOSQUE
+2026-05-07 18:48:21 - Niño N0018 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:21 - Niño N0010 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:21 - Niño N0008 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:48:21 - Niño N0013 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:21 - Niño N0025 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:21 - Niño N0003 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:21 - Niño N0035 creado
+2026-05-07 18:48:21 - Niño N0035 inicia ejecución
+2026-05-07 18:48:21 - Niño N0035 entra en Calle Principal
+2026-05-07 18:48:21 - Niño N0007 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:21 - Niño N0021 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:21 - Niño N0027 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:48:21 - Niño N0016 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:21 - Niño N0031 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:21 - Niño N0012 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:21 - Niño N0005 espera para cruzar al portal de  El Bosque
+2026-05-07 18:48:21 - Niño N0009 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:48:21 - Niño N0029 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:48:22 - Niño N0000 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:57:08 - Demogorgon D0000 creado
+2026-05-07 18:57:08 - Demogorgon D0000 inicia ejecución
+2026-05-07 18:57:08 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 18:57:08 - Niño N0000 creado
+2026-05-07 18:57:08 - Niño N0000 inicia ejecución
+2026-05-07 18:57:08 - Niño N0000 entra en Calle Principal
+2026-05-07 18:57:10 - Niño N0001 creado
+2026-05-07 18:57:10 - Niño N0001 inicia ejecución
+2026-05-07 18:57:10 - Niño N0001 entra en Calle Principal
+2026-05-07 18:57:11 - Niño N0000 entra en el Sótano de los Byers
+2026-05-07 18:57:11 - Niño N0002 creado
+2026-05-07 18:57:11 - Niño N0002 inicia ejecución
+2026-05-07 18:57:11 - Niño N0002 entra en Calle Principal
+2026-05-07 18:57:12 - Niño N0003 creado
+2026-05-07 18:57:12 - Niño N0003 inicia ejecución
+2026-05-07 18:57:12 - Niño N0003 entra en Calle Principal
+2026-05-07 18:57:12 - Niño N0000 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:57:12 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 18:57:12 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-07 18:57:13 - Niño N0004 creado
+2026-05-07 18:57:13 - Niño N0004 inicia ejecución
+2026-05-07 18:57:13 - Niño N0004 entra en Calle Principal
+2026-05-07 18:57:14 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 18:57:15 - Niño N0005 creado
+2026-05-07 18:57:15 - Niño N0005 inicia ejecución
+2026-05-07 18:57:15 - Niño N0005 entra en Calle Principal
+2026-05-07 18:57:15 - Niño N0002 entra en el Sótano de los Byers
+2026-05-07 18:57:15 - Niño N0001 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:57:15 - El niño N0000 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 18:57:15 - El niño N0001 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 18:57:16 - Niño N0006 creado
+2026-05-07 18:57:16 - Niño N0006 inicia ejecución
+2026-05-07 18:57:16 - Niño N0006 entra en Calle Principal
+2026-05-07 18:57:16 - Niño N0002 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:57:16 - Niño N0000 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:57:16 - Niño N0001 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:57:16 - Niño N0003 entra en el Sótano de los Byers
+2026-05-07 18:57:16 - Niño N0007 creado
+2026-05-07 18:57:16 - Niño N0007 inicia ejecución
+2026-05-07 18:57:16 - Niño N0007 entra en Calle Principal
+2026-05-07 18:57:17 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-07 18:57:17 - Demogorgon D0000 entra en El Bosque
+2026-05-07 18:57:17 - Niño N0003 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:57:18 - Niño N0008 creado
+2026-05-07 18:57:18 - Niño N0008 inicia ejecución
+2026-05-07 18:57:18 - Niño N0008 entra en Calle Principal
+2026-05-07 18:57:18 - Niño N0004 entra en el Sótano de los Byers
+2026-05-07 18:57:19 - Niño N0009 creado
+2026-05-07 18:57:19 - Niño N0009 inicia ejecución
+2026-05-07 18:57:19 - Niño N0009 entra en Calle Principal
+2026-05-07 18:57:19 - Niño N0005 entra en el Sótano de los Byers
+2026-05-07 18:57:20 - Niño N0010 creado
+2026-05-07 18:57:20 - Niño N0010 inicia ejecución
+2026-05-07 18:57:20 - Niño N0010 entra en Calle Principal
+2026-05-07 18:57:20 - Niño N0001 intenta regresar desde El Alcantarillado
+2026-05-07 18:57:20 - El niño N0001 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-07 18:57:20 - Niño N0004 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:57:20 - Niño N0000 intenta regresar desde El Alcantarillado
+2026-05-07 18:57:20 - Niño N0006 entra en el Sótano de los Byers
+2026-05-07 18:57:20 - Niño N0005 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:57:21 - El niño N0000 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-07 18:57:21 - Niño N0001 entrega sangre contaminada
+2026-05-07 18:57:21 - Niño N0001 entra en Radio WSQK
+2026-05-07 18:57:21 - Niño N0007 entra en el Sótano de los Byers
+2026-05-07 18:57:21 - Niño N0006 espera para cruzar al portal de El Centro Comercial
+2026-05-07 18:57:21 - Niño N0011 creado
+2026-05-07 18:57:21 - Niño N0011 inicia ejecución
+2026-05-07 18:57:21 - Niño N0011 entra en Calle Principal
+2026-05-07 18:57:22 - Demogorgon D0000 abandona El Bosque
+2026-05-07 18:57:22 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 18:57:22 - Niño N0000 entrega sangre contaminada
+2026-05-07 18:57:22 - Niño N0000 entra en Radio WSQK
+2026-05-07 18:57:22 - El niño N0004 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 18:57:22 - El niño N0003 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 18:57:22 - Niño N0007 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:57:22 - Niño N0008 entra en el Sótano de los Byers
+2026-05-07 18:57:22 - Niño N0012 creado
+2026-05-07 18:57:22 - Niño N0012 inicia ejecución
+2026-05-07 18:57:22 - Niño N0012 entra en Calle Principal
+2026-05-07 18:57:23 - Niño N0004 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:57:23 - Niño N0003 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:57:23 - Niño N0001 entra en Calle Principal
+2026-05-07 18:57:23 - Niño N0009 entra en el Sótano de los Byers
+2026-05-07 18:57:23 - Niño N0010 entra en el Sótano de los Byers
+2026-05-07 18:57:23 - Niño N0008 espera para cruzar al portal de  El Bosque
+2026-05-07 18:57:24 - Niño N0013 creado
+2026-05-07 18:57:24 - Niño N0013 inicia ejecución
+2026-05-07 18:57:24 - Niño N0013 entra en Calle Principal
+2026-05-07 18:57:24 - Niño N0009 espera para cruzar al portal de El Laboratorio
+2026-05-07 18:57:24 - El niño N0007 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:57:24 - El niño N0009 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:57:24 - El niño N0005 ha cruzado el portal hacia LABORATORIO
+2026-05-07 18:57:25 - Niño N0000 entra en Calle Principal
+2026-05-07 18:57:25 - Niño N0010 espera para cruzar al portal de El Alcantarillado
+2026-05-07 18:57:25 - Niño N0005 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:57:25 - Niño N0006 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:57:25 - Niño N0007 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:57:25 - Niño N0002 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 18:57:25 - Niño N0008 cruza al Upside Down hacia  El Bosque
+2026-05-07 18:57:25 - Niño N0009 cruza al Upside Down hacia El Laboratorio
+2026-05-07 18:57:25 - Niño N0010 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 18:57:25 - Niño N0014 creado
+2026-05-07 18:57:25 - Niño N0014 inicia ejecución
+2026-05-07 18:57:27 - Niño N0015 creado
+2026-05-07 18:57:27 - Niño N0015 inicia ejecución
+2026-05-07 18:57:28 - Niño N0016 creado
+2026-05-07 18:57:28 - Niño N0016 inicia ejecución
+2026-05-07 18:57:29 - Niño N0017 creado
+2026-05-07 18:57:29 - Niño N0017 inicia ejecución
+2026-05-07 18:57:31 - Niño N0018 creado
+2026-05-07 18:57:31 - Niño N0018 inicia ejecución
+2026-05-07 18:57:32 - Niño N0019 creado
+2026-05-07 18:57:32 - Niño N0019 inicia ejecución
+2026-05-07 18:57:32 - Niño N0020 creado
+2026-05-07 18:57:32 - Niño N0020 inicia ejecución
+2026-05-07 18:57:34 - Niño N0021 creado
+2026-05-07 18:57:34 - Niño N0021 inicia ejecución
+2026-05-07 18:57:35 - Niño N0022 creado
+2026-05-07 18:57:35 - Niño N0022 inicia ejecución
+2026-05-07 18:57:37 - Niño N0023 creado
+2026-05-07 18:57:37 - Niño N0023 inicia ejecución
+2026-05-07 18:57:39 - Niño N0024 creado
+2026-05-07 18:57:39 - Niño N0024 inicia ejecución
+2026-05-07 18:57:40 - Niño N0025 creado
+2026-05-07 18:57:40 - Niño N0025 inicia ejecución
+2026-05-07 18:57:41 - Niño N0026 creado
+2026-05-07 18:57:41 - Niño N0026 inicia ejecución
+2026-05-07 18:57:43 - Niño N0027 creado
+2026-05-07 18:57:43 - Niño N0027 inicia ejecución
+2026-05-07 18:57:45 - Niño N0028 creado
+2026-05-07 18:57:45 - Niño N0028 inicia ejecución
+2026-05-07 18:57:47 - Niño N0029 creado
+2026-05-07 18:57:47 - Niño N0029 inicia ejecución
+2026-05-07 18:57:47 - Niño N0030 creado
+2026-05-07 18:57:47 - Niño N0030 inicia ejecución
+2026-05-07 18:57:49 - Niño N0031 creado
+2026-05-07 18:57:49 - Niño N0031 inicia ejecución
+2026-05-07 18:57:50 - Niño N0032 creado
+2026-05-07 18:57:50 - Niño N0032 inicia ejecución
+2026-05-07 18:57:51 - Niño N0033 creado
+2026-05-07 18:57:51 - Niño N0033 inicia ejecución
+2026-05-07 18:57:52 - EVENTO GLOBAL: INTERVENCION DE ELEVEN iniciada
+2026-05-07 18:57:53 - Niño N0034 creado
+2026-05-07 18:57:53 - Niño N0034 inicia ejecución
+2026-05-07 18:57:55 - Niño N0035 creado
+2026-05-07 18:57:55 - Niño N0035 inicia ejecución
+2026-05-07 18:57:57 - Niño N0036 creado
+2026-05-07 18:57:57 - Niño N0036 inicia ejecución
+2026-05-07 18:57:58 - Niño N0037 creado
+2026-05-07 18:57:58 - Niño N0037 inicia ejecución
+2026-05-07 18:57:59 - EVENTO GLOBAL: INTERVENCION DE ELEVEN finalizada
+2026-05-07 18:57:59 - Eleven comienza a liberar niños de la Colmena
+2026-05-07 18:57:59 - Niño N0038 creado
+2026-05-07 18:57:59 - Niño N0038 inicia ejecución
+2026-05-07 18:58:00 - Niño N0039 creado
+2026-05-07 18:58:00 - Niño N0039 inicia ejecución
+2026-05-07 18:58:01 - Niño N0040 creado
+2026-05-07 18:58:01 - Niño N0040 inicia ejecución
+2026-05-07 18:58:02 - Niño N0041 creado
+2026-05-07 18:58:02 - Niño N0041 inicia ejecución
+2026-05-07 18:58:03 - Niño N0042 creado
+2026-05-07 18:58:03 - Niño N0042 inicia ejecución
+2026-05-07 18:58:04 - Niño N0043 creado
+2026-05-07 18:58:04 - Niño N0043 inicia ejecución
+2026-05-07 18:58:05 - Niño N0044 creado
+2026-05-07 18:58:05 - Niño N0044 inicia ejecución
+2026-05-07 18:58:06 - Niño N0045 creado
+2026-05-07 18:58:06 - Niño N0045 inicia ejecución
+2026-05-07 18:58:07 - Niño N0046 creado
+2026-05-07 18:58:07 - Niño N0046 inicia ejecución
+2026-05-07 18:58:08 - Niño N0047 creado
+2026-05-07 18:58:08 - Niño N0047 inicia ejecución
+2026-05-07 18:58:10 - Niño N0048 creado
+2026-05-07 18:58:10 - Niño N0048 inicia ejecución
+2026-05-07 18:58:11 - Niño N0049 creado
+2026-05-07 18:58:11 - Niño N0049 inicia ejecución
+2026-05-07 18:58:13 - Niño N0050 creado
+2026-05-07 18:58:13 - Niño N0050 inicia ejecución
+2026-05-07 18:58:14 - Niño N0051 creado
+2026-05-07 18:58:14 - Niño N0051 inicia ejecución
+2026-05-07 18:58:15 - Niño N0052 creado
+2026-05-07 18:58:15 - Niño N0052 inicia ejecución
+2026-05-07 18:58:16 - Niño N0053 creado
+2026-05-07 18:58:16 - Niño N0053 inicia ejecución
+2026-05-07 18:58:17 - Niño N0054 creado
+2026-05-07 18:58:17 - Niño N0054 inicia ejecución
+2026-05-07 18:58:19 - Niño N0055 creado
+2026-05-07 18:58:19 - Niño N0055 inicia ejecución
+2026-05-07 18:58:20 - Niño N0056 creado
+2026-05-07 18:58:20 - Niño N0056 inicia ejecución
+2026-05-07 18:58:21 - Niño N0057 creado
+2026-05-07 18:58:21 - Niño N0057 inicia ejecución
+2026-05-07 18:58:23 - Niño N0058 creado
+2026-05-07 18:58:23 - Niño N0058 inicia ejecución
+2026-05-07 18:58:25 - Niño N0059 creado
+2026-05-07 18:58:25 - Niño N0059 inicia ejecución
+2026-05-07 18:58:26 - Niño N0060 creado
+2026-05-07 18:58:26 - Niño N0060 inicia ejecución
+2026-05-07 18:58:27 - Niño N0061 creado
+2026-05-07 18:58:27 - Niño N0061 inicia ejecución
+2026-05-07 18:58:28 - Niño N0062 creado
+2026-05-07 18:58:28 - Niño N0062 inicia ejecución
+2026-05-07 18:58:29 - Niño N0063 creado
+2026-05-07 18:58:29 - Niño N0063 inicia ejecución
+2026-05-07 18:58:29 - Niño N0064 creado
+2026-05-07 18:58:29 - Niño N0064 inicia ejecución
+2026-05-07 18:58:31 - Niño N0065 creado
+2026-05-07 18:58:31 - Niño N0065 inicia ejecución
+2026-05-07 18:58:32 - Niño N0066 creado
+2026-05-07 18:58:32 - Niño N0066 inicia ejecución
+2026-05-07 18:58:33 - Niño N0067 creado
+2026-05-07 18:58:33 - Niño N0067 inicia ejecución
+2026-05-07 18:58:34 - Niño N0068 creado
+2026-05-07 18:58:34 - Niño N0068 inicia ejecución
+2026-05-07 18:58:35 - Niño N0069 creado
+2026-05-07 18:58:35 - Niño N0069 inicia ejecución
+2026-05-07 18:58:36 - Niño N0070 creado
+2026-05-07 18:58:36 - Niño N0070 inicia ejecución
+2026-05-07 18:58:37 - Niño N0071 creado
+2026-05-07 18:58:37 - Niño N0071 inicia ejecución
+2026-05-07 18:58:38 - Niño N0072 creado
+2026-05-07 18:58:38 - Niño N0072 inicia ejecución
+2026-05-07 18:58:40 - Niño N0073 creado
+2026-05-07 18:58:40 - Niño N0073 inicia ejecución
+2026-05-07 18:58:41 - Niño N0074 creado
+2026-05-07 18:58:41 - Niño N0074 inicia ejecución
+2026-05-07 18:58:42 - Niño N0075 creado
+2026-05-07 18:58:42 - Niño N0075 inicia ejecución
+2026-05-07 18:58:43 - Niño N0076 creado
+2026-05-07 18:58:43 - Niño N0076 inicia ejecución
+2026-05-07 18:58:45 - Niño N0077 creado
+2026-05-07 18:58:45 - Niño N0077 inicia ejecución
+2026-05-07 18:58:46 - Niño N0078 creado
+2026-05-07 18:58:46 - Niño N0078 inicia ejecución
+2026-05-07 18:58:47 - Niño N0079 creado
+2026-05-07 18:58:47 - Niño N0079 inicia ejecución
+2026-05-07 18:58:48 - Niño N0080 creado
+2026-05-07 18:58:48 - Niño N0080 inicia ejecución
+2026-05-07 18:58:49 - Niño N0081 creado
+2026-05-07 18:58:49 - Niño N0081 inicia ejecución
+2026-05-07 18:58:50 - Niño N0082 creado
+2026-05-07 18:58:50 - Niño N0082 inicia ejecución
+2026-05-07 18:58:51 - Niño N0083 creado
+2026-05-07 18:58:51 - Niño N0083 inicia ejecución
+2026-05-07 18:58:52 - Niño N0084 creado
+2026-05-07 18:58:52 - Niño N0084 inicia ejecución
+2026-05-07 18:58:54 - Niño N0085 creado
+2026-05-07 18:58:54 - Niño N0085 inicia ejecución
+2026-05-07 18:58:56 - Niño N0086 creado
+2026-05-07 18:58:56 - Niño N0086 inicia ejecución
+2026-05-07 18:58:57 - Niño N0087 creado
+2026-05-07 18:58:57 - Niño N0087 inicia ejecución
+2026-05-07 18:58:59 - Niño N0088 creado
+2026-05-07 18:58:59 - Niño N0088 inicia ejecución
+2026-05-07 18:59:00 - Niño N0089 creado
+2026-05-07 18:59:00 - Niño N0089 inicia ejecución
+2026-05-07 18:59:01 - Niño N0090 creado
+2026-05-07 18:59:01 - Niño N0090 inicia ejecución
+2026-05-07 18:59:03 - Niño N0091 creado
+2026-05-07 18:59:03 - Niño N0091 inicia ejecución
+2026-05-07 18:59:04 - Niño N0092 creado
+2026-05-07 18:59:04 - Niño N0092 inicia ejecución
+2026-05-07 18:59:05 - Niño N0093 creado
+2026-05-07 18:59:05 - Niño N0093 inicia ejecución
+2026-05-07 18:59:06 - Niño N0094 creado
+2026-05-07 18:59:06 - Niño N0094 inicia ejecución
+2026-05-07 18:59:08 - Niño N0095 creado
+2026-05-07 18:59:08 - Niño N0095 inicia ejecución
+2026-05-07 18:59:08 - Niño N0096 creado
+2026-05-07 18:59:08 - Niño N0096 inicia ejecución
+2026-05-07 18:59:10 - Niño N0097 creado
+2026-05-07 18:59:10 - Niño N0097 inicia ejecución
+2026-05-07 18:59:12 - Niño N0098 creado
+2026-05-07 18:59:12 - Niño N0098 inicia ejecución
+2026-05-07 18:59:13 - Niño N0099 creado
+2026-05-07 18:59:13 - Niño N0099 inicia ejecución
+2026-05-07 18:59:14 - Niño N0100 creado
+2026-05-07 18:59:14 - Niño N0100 inicia ejecución
+2026-05-07 18:59:15 - Niño N0101 creado
+2026-05-07 18:59:15 - Niño N0101 inicia ejecución
+2026-05-07 18:59:17 - Niño N0102 creado
+2026-05-07 18:59:17 - Niño N0102 inicia ejecución
+2026-05-07 18:59:19 - Niño N0103 creado
+2026-05-07 18:59:19 - Niño N0103 inicia ejecución
+2026-05-07 18:59:20 - Niño N0104 creado
+2026-05-07 18:59:20 - Niño N0104 inicia ejecución
+2026-05-07 18:59:22 - Niño N0105 creado
+2026-05-07 18:59:22 - Niño N0105 inicia ejecución
+2026-05-07 18:59:24 - Niño N0106 creado
+2026-05-07 18:59:24 - Niño N0106 inicia ejecución
+2026-05-07 18:59:24 - Niño N0107 creado
+2026-05-07 18:59:24 - Niño N0107 inicia ejecución
+2026-05-07 18:59:26 - Niño N0108 creado
+2026-05-07 18:59:26 - Niño N0108 inicia ejecución
+2026-05-07 18:59:28 - Niño N0109 creado
+2026-05-07 18:59:28 - Niño N0109 inicia ejecución
+2026-05-07 18:59:30 - Niño N0110 creado
+2026-05-07 18:59:30 - Niño N0110 inicia ejecución
+2026-05-07 18:59:32 - Niño N0111 creado
+2026-05-07 18:59:32 - Niño N0111 inicia ejecución
+2026-05-07 18:59:33 - Niño N0112 creado
+2026-05-07 18:59:33 - Niño N0112 inicia ejecución
+2026-05-07 18:59:35 - Niño N0113 creado
+2026-05-07 18:59:35 - Niño N0113 inicia ejecución
+2026-05-07 18:59:36 - Niño N0114 creado
+2026-05-07 18:59:36 - Niño N0114 inicia ejecución
+2026-05-07 18:59:38 - Niño N0115 creado
+2026-05-07 18:59:38 - Niño N0115 inicia ejecución
+2026-05-07 18:59:40 - Niño N0116 creado
+2026-05-07 18:59:40 - Niño N0116 inicia ejecución
+2026-05-07 18:59:42 - Niño N0117 creado
+2026-05-07 18:59:42 - Niño N0117 inicia ejecución
+2026-05-07 18:59:43 - Niño N0118 creado
+2026-05-07 18:59:43 - Niño N0118 inicia ejecución
+2026-05-07 18:59:45 - Niño N0119 creado
+2026-05-07 18:59:45 - Niño N0119 inicia ejecución
+2026-05-07 18:59:46 - Niño N0120 creado
+2026-05-07 18:59:46 - Niño N0120 inicia ejecución
+2026-05-07 18:59:47 - Niño N0121 creado
+2026-05-07 18:59:47 - Niño N0121 inicia ejecución
+2026-05-07 18:59:48 - Niño N0122 creado
+2026-05-07 18:59:48 - Niño N0122 inicia ejecución
+2026-05-07 18:59:50 - Niño N0123 creado
+2026-05-07 18:59:50 - Niño N0123 inicia ejecución
+2026-05-07 18:59:51 - Niño N0124 creado
+2026-05-07 18:59:51 - Niño N0124 inicia ejecución
+2026-05-07 18:59:52 - Niño N0125 creado
+2026-05-07 18:59:52 - Niño N0125 inicia ejecución
+2026-05-07 18:59:54 - Niño N0126 creado
+2026-05-07 18:59:54 - Niño N0126 inicia ejecución
+2026-05-07 18:59:55 - Niño N0127 creado
+2026-05-07 18:59:55 - Niño N0127 inicia ejecución
+2026-05-07 18:59:56 - Niño N0128 creado
+2026-05-07 18:59:56 - Niño N0128 inicia ejecución
+2026-05-07 18:59:57 - Niño N0129 creado
+2026-05-07 18:59:57 - Niño N0129 inicia ejecución
+2026-05-07 18:59:58 - Niño N0130 creado
+2026-05-07 18:59:58 - Niño N0130 inicia ejecución
+2026-05-07 18:59:58 - Niño N0131 creado
+2026-05-07 18:59:58 - Niño N0131 inicia ejecución
+2026-05-07 19:00:00 - Niño N0132 creado
+2026-05-07 19:00:00 - Niño N0132 inicia ejecución
+2026-05-07 19:00:02 - Niño N0133 creado
+2026-05-07 19:00:02 - Niño N0133 inicia ejecución
+2026-05-07 19:00:02 - Niño N0134 creado
+2026-05-07 19:00:02 - Niño N0134 inicia ejecución
+2026-05-07 19:00:04 - Niño N0135 creado
+2026-05-07 19:00:04 - Niño N0135 inicia ejecución
+2026-05-07 19:00:05 - Niño N0136 creado
+2026-05-07 19:00:05 - Niño N0136 inicia ejecución
+2026-05-07 19:00:07 - Niño N0137 creado
+2026-05-07 19:00:07 - Niño N0137 inicia ejecución
+2026-05-07 19:00:09 - Niño N0138 creado
+2026-05-07 19:00:09 - Niño N0138 inicia ejecución
+2026-05-07 19:00:10 - Niño N0139 creado
+2026-05-07 19:00:10 - Niño N0139 inicia ejecución
+2026-05-07 19:00:11 - Niño N0140 creado
+2026-05-07 19:00:11 - Niño N0140 inicia ejecución
+2026-05-07 19:00:12 - Niño N0141 creado
+2026-05-07 19:00:12 - Niño N0141 inicia ejecución
+2026-05-07 19:00:13 - Niño N0142 creado
+2026-05-07 19:00:13 - Niño N0142 inicia ejecución
+2026-05-07 19:00:14 - Niño N0143 creado
+2026-05-07 19:00:14 - Niño N0143 inicia ejecución
+2026-05-07 19:00:16 - Niño N0144 creado
+2026-05-07 19:00:16 - Niño N0144 inicia ejecución
+2026-05-07 19:00:17 - Niño N0145 creado
+2026-05-07 19:00:17 - Niño N0145 inicia ejecución
+2026-05-07 19:00:17 - Niño N0146 creado
+2026-05-07 19:00:17 - Niño N0146 inicia ejecución
+2026-05-07 19:00:18 - Niño N0147 creado
+2026-05-07 19:00:18 - Niño N0147 inicia ejecución
+2026-05-07 19:00:19 - Niño N0148 creado
+2026-05-07 19:00:19 - Niño N0148 inicia ejecución
+2026-05-07 19:00:20 - Niño N0149 creado
+2026-05-07 19:00:20 - Niño N0149 inicia ejecución
+2026-05-07 19:00:22 - Niño N0150 creado
+2026-05-07 19:00:22 - Niño N0150 inicia ejecución
+2026-05-07 19:00:22 - Niño N0151 creado
+2026-05-07 19:00:22 - Niño N0151 inicia ejecución
+2026-05-07 19:00:23 - Niño N0152 creado
+2026-05-07 19:00:23 - Niño N0152 inicia ejecución
+2026-05-07 19:00:24 - Niño N0153 creado
+2026-05-07 19:00:24 - Niño N0153 inicia ejecución
+2026-05-07 19:00:25 - Niño N0154 creado
+2026-05-07 19:00:25 - Niño N0154 inicia ejecución
+2026-05-07 19:00:25 - Niño N0155 creado
+2026-05-07 19:00:25 - Niño N0155 inicia ejecución
+2026-05-07 19:00:27 - Niño N0156 creado
+2026-05-07 19:00:27 - Niño N0156 inicia ejecución
+2026-05-07 19:00:29 - Niño N0157 creado
+2026-05-07 19:00:29 - Niño N0157 inicia ejecución
+2026-05-07 19:00:30 - Niño N0158 creado
+2026-05-07 19:00:30 - Niño N0158 inicia ejecución
+2026-05-07 19:00:32 - Niño N0159 creado
+2026-05-07 19:00:32 - Niño N0159 inicia ejecución
+2026-05-07 19:00:33 - Niño N0160 creado
+2026-05-07 19:00:33 - Niño N0160 inicia ejecución
+2026-05-07 19:00:35 - Niño N0161 creado
+2026-05-07 19:00:35 - Niño N0161 inicia ejecución
+2026-05-07 19:00:37 - Niño N0162 creado
+2026-05-07 19:00:37 - Niño N0162 inicia ejecución
+2026-05-07 19:00:38 - Niño N0163 creado
+2026-05-07 19:00:38 - Niño N0163 inicia ejecución
+2026-05-07 19:00:39 - Niño N0164 creado
+2026-05-07 19:00:39 - Niño N0164 inicia ejecución
+2026-05-07 19:00:39 - Niño N0165 creado
+2026-05-07 19:00:39 - Niño N0165 inicia ejecución
+2026-05-07 19:00:40 - Demogorgon D0000 creado
+2026-05-07 19:00:40 - Demogorgon D0000 inicia ejecución
+2026-05-07 19:00:40 - Niño N0000 creado
+2026-05-07 19:00:40 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 19:00:40 - Niño N0000 inicia ejecución
+2026-05-07 19:00:40 - Niño N0000 entra en Calle Principal
+2026-05-07 19:00:41 - Niño N0166 creado
+2026-05-07 19:00:41 - Niño N0166 inicia ejecución
+2026-05-07 19:00:41 - Niño N0001 creado
+2026-05-07 19:00:41 - Niño N0001 inicia ejecución
+2026-05-07 19:00:41 - Niño N0001 entra en Calle Principal
+2026-05-07 19:00:42 - Niño N0167 creado
+2026-05-07 19:00:42 - Niño N0167 inicia ejecución
+2026-05-07 19:00:43 - Niño N0168 creado
+2026-05-07 19:00:43 - Niño N0168 inicia ejecución
+2026-05-07 19:00:43 - Niño N0002 creado
+2026-05-07 19:00:43 - Niño N0002 inicia ejecución
+2026-05-07 19:00:43 - Niño N0002 entra en Calle Principal
+2026-05-07 19:00:44 - Niño N0169 creado
+2026-05-07 19:00:44 - Niño N0169 inicia ejecución
+2026-05-07 19:00:44 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 19:00:44 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-07 19:00:45 - Niño N0000 entra en el Sótano de los Byers
+2026-05-07 19:00:45 - Niño N0170 creado
+2026-05-07 19:00:45 - Niño N0170 inicia ejecución
+2026-05-07 19:00:45 - Niño N0003 creado
+2026-05-07 19:00:45 - Niño N0003 inicia ejecución
+2026-05-07 19:00:45 - Niño N0003 entra en Calle Principal
+2026-05-07 19:00:46 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 19:00:46 - Niño N0004 creado
+2026-05-07 19:00:46 - Niño N0004 inicia ejecución
+2026-05-07 19:00:46 - Niño N0004 entra en Calle Principal
+2026-05-07 19:00:46 - Niño N0000 espera para cruzar al portal de El Centro Comercial
+2026-05-07 19:00:46 - Niño N0002 entra en el Sótano de los Byers
+2026-05-07 19:00:47 - Niño N0171 creado
+2026-05-07 19:00:47 - Niño N0171 inicia ejecución
+2026-05-07 19:00:47 - Niño N0005 creado
+2026-05-07 19:00:47 - Niño N0005 inicia ejecución
+2026-05-07 19:00:47 - Niño N0005 entra en Calle Principal
+2026-05-07 19:00:47 - Niño N0001 espera para cruzar al portal de  El Bosque
+2026-05-07 19:00:48 - Niño N0172 creado
+2026-05-07 19:00:48 - Niño N0172 inicia ejecución
+2026-05-07 19:00:48 - Niño N0002 espera para cruzar al portal de  El Bosque
+2026-05-07 19:00:48 - El niño N0002 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:00:48 - El niño N0001 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:00:48 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-07 19:00:48 - Demogorgon D0000 entra en El Laboratorio
+2026-05-07 19:00:49 - Niño N0006 creado
+2026-05-07 19:00:49 - Niño N0006 inicia ejecución
+2026-05-07 19:00:49 - Niño N0006 entra en Calle Principal
+2026-05-07 19:00:49 - Niño N0173 creado
+2026-05-07 19:00:49 - Niño N0173 inicia ejecución
+2026-05-07 19:00:49 - Niño N0002 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:00:49 - Niño N0001 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:00:50 - Niño N0007 creado
+2026-05-07 19:00:50 - Niño N0007 inicia ejecución
+2026-05-07 19:00:50 - Niño N0007 entra en Calle Principal
+2026-05-07 19:00:50 - Niño N0174 creado
+2026-05-07 19:00:50 - Niño N0174 inicia ejecución
+2026-05-07 19:00:50 - Niño N0005 entra en el Sótano de los Byers
+2026-05-07 19:00:50 - Niño N0003 entra en el Sótano de los Byers
+2026-05-07 19:00:50 - Niño N0008 creado
+2026-05-07 19:00:50 - Niño N0008 inicia ejecución
+2026-05-07 19:00:50 - Niño N0008 entra en Calle Principal
+2026-05-07 19:00:51 - Niño N0004 entra en el Sótano de los Byers
+2026-05-07 19:00:51 - Niño N0009 creado
+2026-05-07 19:00:51 - Niño N0009 inicia ejecución
+2026-05-07 19:00:51 - Niño N0009 entra en Calle Principal
+2026-05-07 19:00:52 - Niño N0005 espera para cruzar al portal de  El Bosque
+2026-05-07 19:00:52 - Niño N0175 creado
+2026-05-07 19:00:52 - Niño N0175 inicia ejecución
+2026-05-07 19:00:52 - Niño N0003 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:00:52 - Niño N0004 espera para cruzar al portal de El Centro Comercial
+2026-05-07 19:00:52 - Niño N0010 creado
+2026-05-07 19:00:52 - Niño N0010 inicia ejecución
+2026-05-07 19:00:52 - Niño N0010 entra en Calle Principal
+2026-05-07 19:00:52 - Niño N0006 entra en el Sótano de los Byers
+2026-05-07 19:00:53 - Demogorgon D0000 abandona El Laboratorio
+2026-05-07 19:00:53 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 19:00:53 - Niño N0176 creado
+2026-05-07 19:00:53 - Niño N0176 inicia ejecución
+2026-05-07 19:00:53 - Niño N0002 intenta regresar desde  El Bosque
+2026-05-07 19:00:53 - El niño N0002 ha regresado a Hawkins desde BOSQUE
+2026-05-07 19:00:53 - Niño N0001 intenta regresar desde  El Bosque
+2026-05-07 19:00:53 - Niño N0011 creado
+2026-05-07 19:00:53 - Niño N0011 inicia ejecución
+2026-05-07 19:00:53 - Niño N0011 entra en Calle Principal
+2026-05-07 19:00:53 - Niño N0007 entra en el Sótano de los Byers
+2026-05-07 19:00:54 - Niño N0006 espera para cruzar al portal de El Alcantarillado
+2026-05-07 19:00:54 - El niño N0001 ha regresado a Hawkins desde BOSQUE
+2026-05-07 19:00:54 - Niño N0002 entrega sangre contaminada
+2026-05-07 19:00:54 - Niño N0002 entra en Radio WSQK
+2026-05-07 19:00:54 - Niño N0009 entra en el Sótano de los Byers
+2026-05-07 19:00:55 - Niño N0177 creado
+2026-05-07 19:00:55 - Niño N0177 inicia ejecución
+2026-05-07 19:00:55 - Niño N0008 entra en el Sótano de los Byers
+2026-05-07 19:00:55 - Niño N0012 creado
+2026-05-07 19:00:55 - Niño N0012 inicia ejecución
+2026-05-07 19:00:55 - Niño N0012 entra en Calle Principal
+2026-05-07 19:00:55 - Niño N0007 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:00:55 - Niño N0010 entra en el Sótano de los Byers
+2026-05-07 19:00:55 - Niño N0001 entrega sangre contaminada
+2026-05-07 19:00:55 - Niño N0001 entra en Radio WSQK
+2026-05-07 19:00:56 - Niño N0009 espera para cruzar al portal de  El Bosque
+2026-05-07 19:00:56 - El niño N0005 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:00:56 - El niño N0009 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:00:56 - Niño N0013 creado
+2026-05-07 19:00:56 - Niño N0013 inicia ejecución
+2026-05-07 19:00:56 - Niño N0013 entra en Calle Principal
+2026-05-07 19:00:56 - Niño N0008 espera para cruzar al portal de El Alcantarillado
+2026-05-07 19:00:56 - El niño N0008 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 19:00:56 - El niño N0006 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 19:00:56 - Niño N0178 creado
+2026-05-07 19:00:56 - Niño N0178 inicia ejecución
+2026-05-07 19:00:57 - Niño N0010 espera para cruzar al portal de El Centro Comercial
+2026-05-07 19:00:57 - Niño N0009 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:00:57 - Niño N0005 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:00:57 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 19:00:57 - Demogorgon D0000 entra en El Laboratorio
+2026-05-07 19:00:57 - Niño N0179 creado
+2026-05-07 19:00:57 - Niño N0179 inicia ejecución
+2026-05-07 19:00:57 - Niño N0008 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 19:00:57 - Niño N0006 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 19:00:57 - Niño N0014 creado
+2026-05-07 19:00:57 - Niño N0014 inicia ejecución
+2026-05-07 19:00:57 - Niño N0014 entra en Calle Principal
+2026-05-07 19:00:58 - Niño N0180 creado
+2026-05-07 19:00:58 - Niño N0180 inicia ejecución
+2026-05-07 19:00:58 - Niño N0002 entra en Calle Principal
+2026-05-07 19:00:58 - Niño N0011 entra en el Sótano de los Byers
+2026-05-07 19:00:58 - Niño N0015 creado
+2026-05-07 19:00:58 - Niño N0015 inicia ejecución
+2026-05-07 19:00:58 - Niño N0015 entra en Calle Principal
+2026-05-07 19:00:58 - Niño N0012 entra en el Sótano de los Byers
+2026-05-07 19:00:59 - Niño N0001 entra en Calle Principal
+2026-05-07 19:00:59 - Niño N0181 creado
+2026-05-07 19:00:59 - Niño N0181 inicia ejecución
+2026-05-07 19:00:59 - Niño N0013 entra en el Sótano de los Byers
+2026-05-07 19:00:59 - Niño N0011 espera para cruzar al portal de  El Bosque
+2026-05-07 19:01:00 - Niño N0182 creado
+2026-05-07 19:01:00 - Niño N0182 inicia ejecución
+2026-05-07 19:01:00 - Niño N0012 espera para cruzar al portal de  El Bosque
+2026-05-07 19:01:00 - El niño N0012 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:01:00 - El niño N0011 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:01:00 - Niño N0016 creado
+2026-05-07 19:01:00 - Niño N0016 inicia ejecución
+2026-05-07 19:01:00 - Niño N0016 entra en Calle Principal
+2026-05-07 19:01:00 - Niño N0006 intenta regresar desde El Alcantarillado
+2026-05-07 19:01:00 - El niño N0006 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-07 19:01:01 - Niño N0013 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:01:01 - El niño N0013 ha cruzado el portal hacia LABORATORIO
+2026-05-07 19:01:01 - El niño N0007 ha cruzado el portal hacia LABORATORIO
+2026-05-07 19:01:01 - El niño N0003 ha cruzado el portal hacia LABORATORIO
+2026-05-07 19:01:01 - Niño N0011 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:01:01 - Niño N0012 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:01:01 - Demogorgon D0000 abandona El Laboratorio
+2026-05-07 19:01:01 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 19:01:01 - Niño N0183 creado
+2026-05-07 19:01:01 - Niño N0183 inicia ejecución
+2026-05-07 19:01:01 - Niño N0006 entrega sangre contaminada
+2026-05-07 19:01:01 - Niño N0006 entra en Radio WSQK
+2026-05-07 19:01:01 - Niño N0002 entra en el Sótano de los Byers
+2026-05-07 19:01:02 - Niño N0008 intenta regresar desde El Alcantarillado
+2026-05-07 19:01:02 - El niño N0008 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-07 19:01:02 - Niño N0013 cruza al Upside Down hacia El Laboratorio
+2026-05-07 19:01:02 - Niño N0007 cruza al Upside Down hacia El Laboratorio
+2026-05-07 19:01:02 - Niño N0003 cruza al Upside Down hacia El Laboratorio
+2026-05-07 19:01:02 - Niño N0014 entra en el Sótano de los Byers
+2026-05-07 19:01:02 - Niño N0005 intenta regresar desde  El Bosque
+2026-05-07 19:01:02 - El niño N0005 ha regresado a Hawkins desde BOSQUE
+2026-05-07 19:01:02 - Niño N0009 intenta regresar desde  El Bosque
+2026-05-07 19:01:02 - Niño N0017 creado
+2026-05-07 19:01:02 - Niño N0017 inicia ejecución
+2026-05-07 19:01:02 - Niño N0017 entra en Calle Principal
+2026-05-07 19:01:02 - Niño N0015 entra en el Sótano de los Byers
+2026-05-07 19:01:02 - Demogorgon D0000 aumenta sus capturas a 1
+2026-05-07 19:01:02 - El demogorgon D0000 ataca al niño N0008
+2026-05-07 19:01:02 - El niño N0008 ha sido capturado
+2026-05-07 19:01:02 - Niño N0008 ha sido capturado
+2026-05-07 19:01:03 - Niño N0008 entrega sangre contaminada
+2026-05-07 19:01:03 - Niño N0008 entra en Radio WSQK
+2026-05-07 19:01:03 - Niño N0005 entrega sangre contaminada
+2026-05-07 19:01:03 - El niño N0009 ha regresado a Hawkins desde BOSQUE
+2026-05-07 19:01:03 - Niño N0005 entra en Radio WSQK
+2026-05-07 19:01:03 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 19:01:03 - Niño N0018 creado
+2026-05-07 19:01:03 - Niño N0018 inicia ejecución
+2026-05-07 19:01:03 - Niño N0018 entra en Calle Principal
+2026-05-07 19:01:03 - Niño N0002 espera para cruzar al portal de  El Bosque
+2026-05-07 19:01:03 - Niño N0184 creado
+2026-05-07 19:01:03 - Niño N0184 inicia ejecución
+2026-05-07 19:01:03 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 19:01:03 - Demogorgon D0000 entra en El Laboratorio
+2026-05-07 19:01:04 - Niño N0014 espera para cruzar al portal de  El Bosque
+2026-05-07 19:01:04 - Niño N0015 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:01:04 - Niño N0009 entrega sangre contaminada
+2026-05-07 19:01:04 - El niño N0014 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:01:04 - El niño N0002 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:01:04 - Niño N0009 entra en Radio WSQK
+2026-05-07 19:01:04 - Niño N0185 creado
+2026-05-07 19:01:04 - Niño N0185 inicia ejecución
+2026-05-07 19:01:04 - Niño N0006 entra en Calle Principal
+2026-05-07 19:01:04 - Niño N0001 espera para cruzar al portal de  El Bosque
+2026-05-07 19:01:05 - Niño N0003 ha sobrevivido al ataque
+2026-05-07 19:01:05 - Demogorgon D0000 abandona El Laboratorio
+2026-05-07 19:01:05 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-07 19:01:05 - Niño N0013 intenta regresar desde El Laboratorio
+2026-05-07 19:01:05 - El niño N0013 ha regresado a Hawkins desde LABORATORIO
+2026-05-07 19:01:05 - Niño N0014 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:01:05 - Niño N0002 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:01:05 - Niño N0019 creado
+2026-05-07 19:01:05 - Niño N0019 inicia ejecución
+2026-05-07 19:01:05 - Niño N0019 entra en Calle Principal
+2026-05-07 19:01:05 - Niño N0016 entra en el Sótano de los Byers
+2026-05-07 19:01:05 - Niño N0003 intenta regresar desde El Laboratorio
+2026-05-07 19:01:05 - Niño N0007 intenta regresar desde El Laboratorio
+2026-05-07 19:01:05 - Niño N0186 creado
+2026-05-07 19:01:05 - Niño N0186 inicia ejecución
+2026-05-07 19:01:06 - Niño N0013 entrega sangre contaminada
+2026-05-07 19:01:06 - El niño N0007 ha regresado a Hawkins desde LABORATORIO
+2026-05-07 19:01:06 - Niño N0013 entra en Radio WSQK
+2026-05-07 19:01:06 - Niño N0000 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 19:01:06 - Niño N0015 cruza al Upside Down hacia El Laboratorio
+2026-05-07 19:01:06 - Niño N0010 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 19:01:06 - Niño N0001 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:01:06 - Niño N0004 cruza al Upside Down hacia El Centro Comercial
+2026-05-07 19:01:06 - Niño N0020 creado
+2026-05-07 19:01:06 - Niño N0020 inicia ejecución
+2026-05-07 19:01:07 - Niño N0187 creado
+2026-05-07 19:01:07 - Niño N0187 inicia ejecución
+2026-05-07 19:01:07 - Niño N0021 creado
+2026-05-07 19:01:07 - Niño N0021 inicia ejecución
+2026-05-07 19:01:08 - Niño N0188 creado
+2026-05-07 19:01:08 - Niño N0188 inicia ejecución
+2026-05-07 19:01:09 - Niño N0022 creado
+2026-05-07 19:01:09 - Niño N0022 inicia ejecución
+2026-05-07 19:01:10 - Niño N0023 creado
+2026-05-07 19:01:10 - Niño N0023 inicia ejecución
+2026-05-07 19:01:10 - Niño N0189 creado
+2026-05-07 19:01:10 - Niño N0189 inicia ejecución
+2026-05-07 19:01:12 - Niño N0024 creado
+2026-05-07 19:01:12 - Niño N0024 inicia ejecución
+2026-05-07 19:01:12 - Niño N0190 creado
+2026-05-07 19:01:12 - Niño N0190 inicia ejecución
+2026-05-07 19:01:13 - Niño N0191 creado
+2026-05-07 19:01:13 - Niño N0191 inicia ejecución
+2026-05-07 19:01:13 - Niño N0025 creado
+2026-05-07 19:01:13 - Niño N0025 inicia ejecución
+2026-05-07 19:01:13 - Niño N0192 creado
+2026-05-07 19:01:13 - Niño N0192 inicia ejecución
+2026-05-07 19:01:15 - Niño N0026 creado
+2026-05-07 19:01:15 - Niño N0026 inicia ejecución
+2026-05-07 19:01:15 - Niño N0193 creado
+2026-05-07 19:01:15 - Niño N0193 inicia ejecución
+2026-05-07 19:01:17 - Niño N0027 creado
+2026-05-07 19:01:17 - Niño N0027 inicia ejecución
+2026-05-07 19:01:17 - Niño N0194 creado
+2026-05-07 19:01:17 - Niño N0194 inicia ejecución
+2026-05-07 19:01:18 - Niño N0195 creado
+2026-05-07 19:01:18 - Niño N0195 inicia ejecución
+2026-05-07 19:01:19 - Niño N0028 creado
+2026-05-07 19:01:19 - Niño N0028 inicia ejecución
+2026-05-07 19:01:20 - Niño N0196 creado
+2026-05-07 19:01:20 - Niño N0196 inicia ejecución
+2026-05-07 19:01:20 - Niño N0197 creado
+2026-05-07 19:01:20 - Niño N0197 inicia ejecución
+2026-05-07 19:01:20 - Niño N0029 creado
+2026-05-07 19:01:20 - Niño N0029 inicia ejecución
+2026-05-07 19:01:21 - Niño N0198 creado
+2026-05-07 19:01:21 - Niño N0198 inicia ejecución
+2026-05-07 19:01:22 - Niño N0199 creado
+2026-05-07 19:01:22 - Niño N0199 inicia ejecución
+2026-05-07 19:01:22 - Niño N0030 creado
+2026-05-07 19:01:22 - Niño N0030 inicia ejecución
+2026-05-07 19:01:24 - Niño N0200 creado
+2026-05-07 19:01:24 - Niño N0200 inicia ejecución
+2026-05-07 19:01:24 - Niño N0031 creado
+2026-05-07 19:01:24 - Niño N0031 inicia ejecución
+2026-05-07 19:01:25 - Niño N0032 creado
+2026-05-07 19:01:25 - Niño N0032 inicia ejecución
+2026-05-07 19:01:26 - Niño N0201 creado
+2026-05-07 19:01:26 - Niño N0201 inicia ejecución
+2026-05-07 19:01:26 - Niño N0202 creado
+2026-05-07 19:01:26 - Niño N0202 inicia ejecución
+2026-05-07 19:01:27 - Niño N0033 creado
+2026-05-07 19:01:27 - Niño N0033 inicia ejecución
+2026-05-07 19:01:28 - Niño N0203 creado
+2026-05-07 19:01:28 - Niño N0203 inicia ejecución
+2026-05-07 19:01:28 - Niño N0034 creado
+2026-05-07 19:01:28 - Niño N0034 inicia ejecución
+2026-05-07 19:01:29 - Niño N0204 creado
+2026-05-07 19:01:29 - Niño N0204 inicia ejecución
+2026-05-07 19:01:29 - EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN iniciada
+2026-05-07 19:01:30 - Niño N0035 creado
+2026-05-07 19:01:30 - Niño N0035 inicia ejecución
+2026-05-07 19:01:30 - Niño N0205 creado
+2026-05-07 19:01:30 - Niño N0205 inicia ejecución
+2026-05-07 19:01:31 - Niño N0206 creado
+2026-05-07 19:01:31 - Niño N0206 inicia ejecución
+2026-05-07 19:01:31 - Niño N0036 creado
+2026-05-07 19:01:31 - Niño N0036 inicia ejecución
+2026-05-07 19:01:32 - Niño N0037 creado
+2026-05-07 19:01:32 - Niño N0037 inicia ejecución
+2026-05-07 19:01:33 - Niño N0207 creado
+2026-05-07 19:01:33 - Niño N0207 inicia ejecución
+2026-05-07 19:01:33 - Niño N0038 creado
+2026-05-07 19:01:33 - Niño N0038 inicia ejecución
+2026-05-07 19:01:34 - Niño N0039 creado
+2026-05-07 19:01:34 - Niño N0039 inicia ejecución
+2026-05-07 19:01:34 - EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN finalizada
+2026-05-07 19:01:35 - Niño N0040 creado
+2026-05-07 19:01:35 - Niño N0040 inicia ejecución
+2026-05-07 19:01:35 - Niño N0208 creado
+2026-05-07 19:01:35 - Niño N0208 inicia ejecución
+2026-05-07 19:01:35 - Niño N0041 creado
+2026-05-07 19:01:35 - Niño N0041 inicia ejecución
+2026-05-07 19:01:35 - Niño N0209 creado
+2026-05-07 19:01:35 - Niño N0209 inicia ejecución
+2026-05-07 19:01:36 - Niño N0042 creado
+2026-05-07 19:01:36 - Niño N0042 inicia ejecución
+2026-05-07 19:01:37 - Niño N0210 creado
+2026-05-07 19:01:37 - Niño N0210 inicia ejecución
+2026-05-07 19:01:38 - Niño N0043 creado
+2026-05-07 19:01:38 - Niño N0043 inicia ejecución
+2026-05-07 19:01:38 - Niño N0211 creado
+2026-05-07 19:01:38 - Niño N0211 inicia ejecución
+2026-05-07 19:01:38 - Niño N0044 creado
+2026-05-07 19:01:38 - Niño N0044 inicia ejecución
+2026-05-07 19:01:39 - Niño N0212 creado
+2026-05-07 19:01:39 - Niño N0212 inicia ejecución
+2026-05-07 19:01:40 - Niño N0045 creado
+2026-05-07 19:01:40 - Niño N0045 inicia ejecución
+2026-05-07 19:01:40 - Niño N0213 creado
+2026-05-07 19:01:40 - Niño N0213 inicia ejecución
+2026-05-07 19:01:41 - Niño N0046 creado
+2026-05-07 19:01:41 - Niño N0046 inicia ejecución
+2026-05-07 19:01:42 - Niño N0214 creado
+2026-05-07 19:01:42 - Niño N0214 inicia ejecución
+2026-05-07 19:01:42 - Niño N0047 creado
+2026-05-07 19:01:42 - Niño N0047 inicia ejecución
+2026-05-07 19:01:43 - Niño N0048 creado
+2026-05-07 19:01:43 - Niño N0048 inicia ejecución
+2026-05-07 19:01:43 - Niño N0215 creado
+2026-05-07 19:01:43 - Niño N0215 inicia ejecución
+2026-05-07 19:01:44 - Niño N0216 creado
+2026-05-07 19:01:44 - Niño N0216 inicia ejecución
+2026-05-07 19:01:45 - Niño N0049 creado
+2026-05-07 19:01:45 - Niño N0049 inicia ejecución
+2026-05-07 19:01:45 - Niño N0217 creado
+2026-05-07 19:01:45 - Niño N0217 inicia ejecución
+2026-05-07 19:01:46 - Niño N0218 creado
+2026-05-07 19:01:46 - Niño N0218 inicia ejecución
+2026-05-07 19:01:46 - Niño N0050 creado
+2026-05-07 19:01:46 - Niño N0050 inicia ejecución
+2026-05-07 19:01:47 - Niño N0219 creado
+2026-05-07 19:01:47 - Niño N0219 inicia ejecución
+2026-05-07 19:01:48 - Niño N0220 creado
+2026-05-07 19:01:48 - Niño N0220 inicia ejecución
+2026-05-07 19:01:48 - Niño N0051 creado
+2026-05-07 19:01:48 - Niño N0051 inicia ejecución
+2026-05-07 19:01:49 - Niño N0221 creado
+2026-05-07 19:01:49 - Niño N0221 inicia ejecución
+2026-05-07 19:01:50 - Niño N0052 creado
+2026-05-07 19:01:50 - Niño N0052 inicia ejecución
+2026-05-07 19:01:50 - Niño N0222 creado
+2026-05-07 19:01:50 - Niño N0222 inicia ejecución
+2026-05-07 19:01:51 - Niño N0053 creado
+2026-05-07 19:01:51 - Niño N0053 inicia ejecución
+2026-05-07 19:01:52 - Niño N0054 creado
+2026-05-07 19:01:52 - Niño N0054 inicia ejecución
+2026-05-07 19:01:52 - Niño N0223 creado
+2026-05-07 19:01:52 - Niño N0223 inicia ejecución
+2026-05-07 19:01:53 - Niño N0224 creado
+2026-05-07 19:01:53 - Niño N0224 inicia ejecución
+2026-05-07 19:01:53 - Niño N0055 creado
+2026-05-07 19:01:53 - Niño N0055 inicia ejecución
+2026-05-07 19:01:54 - Niño N0225 creado
+2026-05-07 19:01:54 - Niño N0225 inicia ejecución
+2026-05-07 19:01:55 - Niño N0056 creado
+2026-05-07 19:01:55 - Niño N0056 inicia ejecución
+2026-05-07 19:01:56 - Niño N0226 creado
+2026-05-07 19:01:56 - Niño N0226 inicia ejecución
+2026-05-07 19:01:56 - Niño N0057 creado
+2026-05-07 19:01:56 - Niño N0057 inicia ejecución
+2026-05-07 19:01:57 - Niño N0227 creado
+2026-05-07 19:01:57 - Niño N0227 inicia ejecución
+2026-05-07 19:01:58 - Niño N0058 creado
+2026-05-07 19:01:58 - Niño N0058 inicia ejecución
+2026-05-07 19:01:59 - Niño N0228 creado
+2026-05-07 19:01:59 - Niño N0228 inicia ejecución
+2026-05-07 19:01:59 - Niño N0059 creado
+2026-05-07 19:01:59 - Niño N0059 inicia ejecución
+2026-05-07 19:02:00 - Niño N0229 creado
+2026-05-07 19:02:00 - Niño N0229 inicia ejecución
+2026-05-07 19:02:01 - Niño N0060 creado
+2026-05-07 19:02:01 - Niño N0060 inicia ejecución
+2026-05-07 19:02:01 - Niño N0230 creado
+2026-05-07 19:02:01 - Niño N0230 inicia ejecución
+2026-05-07 19:02:02 - Niño N0061 creado
+2026-05-07 19:02:02 - Niño N0061 inicia ejecución
+2026-05-07 19:02:02 - Niño N0231 creado
+2026-05-07 19:02:02 - Niño N0231 inicia ejecución
+2026-05-07 19:02:03 - Niño N0062 creado
+2026-05-07 19:02:03 - Niño N0062 inicia ejecución
+2026-05-07 19:02:04 - Niño N0232 creado
+2026-05-07 19:02:04 - Niño N0232 inicia ejecución
+2026-05-07 19:02:04 - Niño N0063 creado
+2026-05-07 19:02:04 - Niño N0063 inicia ejecución
+2026-05-07 19:02:06 - Niño N0233 creado
+2026-05-07 19:02:06 - Niño N0233 inicia ejecución
+2026-05-07 19:02:06 - Niño N0064 creado
+2026-05-07 19:02:06 - Niño N0064 inicia ejecución
+2026-05-07 19:02:08 - Niño N0234 creado
+2026-05-07 19:02:08 - Niño N0234 inicia ejecución
+2026-05-07 19:02:08 - Niño N0065 creado
+2026-05-07 19:02:08 - Niño N0065 inicia ejecución
+2026-05-07 19:02:09 - Niño N0235 creado
+2026-05-07 19:02:09 - Niño N0066 creado
+2026-05-07 19:02:09 - Niño N0235 inicia ejecución
+2026-05-07 19:02:09 - Niño N0066 inicia ejecución
+2026-05-07 19:02:10 - Niño N0236 creado
+2026-05-07 19:02:10 - Niño N0236 inicia ejecución
+2026-05-07 19:02:10 - Niño N0067 creado
+2026-05-07 19:02:10 - Niño N0067 inicia ejecución
+2026-05-07 19:02:11 - Niño N0237 creado
+2026-05-07 19:02:11 - Niño N0237 inicia ejecución
+2026-05-07 19:02:11 - Niño N0068 creado
+2026-05-07 19:02:11 - Niño N0068 inicia ejecución
+2026-05-07 19:02:13 - Niño N0238 creado
+2026-05-07 19:02:13 - Niño N0238 inicia ejecución
+2026-05-07 19:02:13 - Niño N0069 creado
+2026-05-07 19:02:13 - Niño N0069 inicia ejecución
+2026-05-07 19:02:13 - Niño N0239 creado
+2026-05-07 19:02:13 - Niño N0239 inicia ejecución
+2026-05-07 19:02:14 - Niño N0070 creado
+2026-05-07 19:02:14 - Niño N0070 inicia ejecución
+2026-05-07 19:02:15 - Niño N0240 creado
+2026-05-07 19:02:15 - Niño N0240 inicia ejecución
+2026-05-07 19:02:16 - Niño N0071 creado
+2026-05-07 19:02:16 - Niño N0071 inicia ejecución
+2026-05-07 19:02:17 - Niño N0241 creado
+2026-05-07 19:02:17 - Niño N0241 inicia ejecución
+2026-05-07 19:02:17 - Niño N0072 creado
+2026-05-07 19:02:17 - Niño N0072 inicia ejecución
+2026-05-07 19:02:19 - Niño N0242 creado
+2026-05-07 19:02:19 - Niño N0242 inicia ejecución
+2026-05-07 19:02:19 - Niño N0073 creado
+2026-05-07 19:02:19 - Niño N0073 inicia ejecución
+2026-05-07 19:02:20 - Niño N0243 creado
+2026-05-07 19:02:20 - Niño N0243 inicia ejecución
+2026-05-07 19:02:21 - Niño N0074 creado
+2026-05-07 19:02:21 - Niño N0074 inicia ejecución
+2026-05-07 19:02:21 - Niño N0244 creado
+2026-05-07 19:02:21 - Niño N0244 inicia ejecución
+2026-05-07 19:02:21 - Niño N0075 creado
+2026-05-07 19:02:21 - Niño N0075 inicia ejecución
+2026-05-07 19:02:23 - Niño N0245 creado
+2026-05-07 19:02:23 - Niño N0245 inicia ejecución
+2026-05-07 19:02:23 - Niño N0076 creado
+2026-05-07 19:02:23 - Niño N0076 inicia ejecución
+2026-05-07 19:02:25 - Niño N0246 creado
+2026-05-07 19:02:25 - Niño N0246 inicia ejecución
+2026-05-07 19:02:25 - Niño N0077 creado
+2026-05-07 19:02:25 - Niño N0077 inicia ejecución
+2026-05-07 19:02:26 - Niño N0247 creado
+2026-05-07 19:02:26 - Niño N0247 inicia ejecución
+2026-05-07 19:02:26 - Niño N0078 creado
+2026-05-07 19:02:26 - Niño N0078 inicia ejecución
+2026-05-07 19:02:27 - Niño N0079 creado
+2026-05-07 19:02:27 - Niño N0079 inicia ejecución
+2026-05-07 19:02:27 - Niño N0248 creado
+2026-05-07 19:02:27 - Niño N0248 inicia ejecución
+2026-05-07 19:02:28 - Niño N0080 creado
+2026-05-07 19:02:28 - Niño N0080 inicia ejecución
+2026-05-07 19:02:29 - Niño N0249 creado
+2026-05-07 19:02:29 - Niño N0249 inicia ejecución
+2026-05-07 19:02:29 - Niño N0081 creado
+2026-05-07 19:02:29 - Niño N0081 inicia ejecución
+2026-05-07 19:02:30 - Niño N0250 creado
+2026-05-07 19:02:30 - Niño N0250 inicia ejecución
+2026-05-07 19:02:30 - Niño N0082 creado
+2026-05-07 19:02:30 - Niño N0082 inicia ejecución
+2026-05-07 19:02:31 - EVENTO GLOBAL: APAGON DEL LABORATORIO iniciado
+2026-05-07 19:02:32 - Niño N0083 creado
+2026-05-07 19:02:32 - Niño N0083 inicia ejecución
+2026-05-07 19:02:32 - Niño N0251 creado
+2026-05-07 19:02:32 - Niño N0251 inicia ejecución
+2026-05-07 19:02:32 - Niño N0084 creado
+2026-05-07 19:02:32 - Niño N0084 inicia ejecución
+2026-05-07 19:02:33 - Niño N0252 creado
+2026-05-07 19:02:33 - Niño N0252 inicia ejecución
+2026-05-07 19:02:33 - Niño N0253 creado
+2026-05-07 19:02:33 - Niño N0253 inicia ejecución
+2026-05-07 19:02:34 - Niño N0085 creado
+2026-05-07 19:02:34 - Niño N0085 inicia ejecución
+2026-05-07 19:02:35 - Niño N0254 creado
+2026-05-07 19:02:35 - Niño N0254 inicia ejecución
+2026-05-07 19:02:35 - Niño N0086 creado
+2026-05-07 19:02:35 - Niño N0086 inicia ejecución
+2026-05-07 19:02:36 - Niño N0255 creado
+2026-05-07 19:02:36 - Niño N0255 inicia ejecución
+2026-05-07 19:02:36 - Niño N0087 creado
+2026-05-07 19:02:36 - Niño N0087 inicia ejecución
+2026-05-07 19:02:37 - Niño N0256 creado
+2026-05-07 19:02:37 - Niño N0256 inicia ejecución
+2026-05-07 19:02:37 - EVENTO GLOBAL: APAGON DEL LABORATORIO finalizado
+2026-05-07 19:02:38 - Niño N0088 creado
+2026-05-07 19:02:38 - Niño N0088 inicia ejecución
+2026-05-07 19:02:38 - Niño N0257 creado
+2026-05-07 19:02:38 - Niño N0257 inicia ejecución
+2026-05-07 19:02:39 - Niño N0089 creado
+2026-05-07 19:02:39 - Niño N0089 inicia ejecución
+2026-05-07 19:02:40 - Niño N0258 creado
+2026-05-07 19:02:40 - Niño N0258 inicia ejecución
+2026-05-07 19:02:41 - Niño N0259 creado
+2026-05-07 19:02:41 - Niño N0259 inicia ejecución
+2026-05-07 19:02:41 - Niño N0090 creado
+2026-05-07 19:02:41 - Niño N0090 inicia ejecución
+2026-05-07 19:02:42 - Niño N0091 creado
+2026-05-07 19:02:42 - Niño N0091 inicia ejecución
+2026-05-07 19:02:42 - Niño N0260 creado
+2026-05-07 19:02:42 - Niño N0260 inicia ejecución
+2026-05-07 19:02:43 - Niño N0092 creado
+2026-05-07 19:02:43 - Niño N0092 inicia ejecución
+2026-05-07 19:02:44 - Niño N0261 creado
+2026-05-07 19:02:44 - Niño N0261 inicia ejecución
+2026-05-07 19:02:45 - Niño N0093 creado
+2026-05-07 19:02:45 - Niño N0093 inicia ejecución
+2026-05-07 19:02:46 - Niño N0094 creado
+2026-05-07 19:02:46 - Niño N0094 inicia ejecución
+2026-05-07 19:02:46 - Niño N0262 creado
+2026-05-07 19:02:46 - Niño N0262 inicia ejecución
+2026-05-07 19:02:47 - Niño N0095 creado
+2026-05-07 19:02:47 - Niño N0095 inicia ejecución
+2026-05-07 19:02:48 - Niño N0263 creado
+2026-05-07 19:02:48 - Niño N0263 inicia ejecución
+2026-05-07 19:02:48 - Niño N0096 creado
+2026-05-07 19:02:48 - Niño N0096 inicia ejecución
+2026-05-07 19:02:49 - Niño N0264 creado
+2026-05-07 19:02:49 - Niño N0264 inicia ejecución
+2026-05-07 19:02:50 - Niño N0097 creado
+2026-05-07 19:02:50 - Niño N0097 inicia ejecución
+2026-05-07 19:02:50 - Niño N0265 creado
+2026-05-07 19:02:50 - Niño N0265 inicia ejecución
+2026-05-07 19:02:51 - Niño N0098 creado
+2026-05-07 19:02:51 - Niño N0098 inicia ejecución
+2026-05-07 19:02:51 - Niño N0266 creado
+2026-05-07 19:02:51 - Niño N0266 inicia ejecución
+2026-05-07 19:02:52 - Niño N0099 creado
+2026-05-07 19:02:52 - Niño N0099 inicia ejecución
+2026-05-07 19:02:52 - Niño N0267 creado
+2026-05-07 19:02:52 - Niño N0267 inicia ejecución
+2026-05-07 19:02:53 - Niño N0268 creado
+2026-05-07 19:02:53 - Niño N0268 inicia ejecución
+2026-05-07 19:02:53 - Niño N0100 creado
+2026-05-07 19:02:53 - Niño N0100 inicia ejecución
+2026-05-07 19:02:55 - Niño N0269 creado
+2026-05-07 19:02:55 - Niño N0269 inicia ejecución
+2026-05-07 19:02:55 - Niño N0101 creado
+2026-05-07 19:02:55 - Niño N0101 inicia ejecución
+2026-05-07 19:02:56 - Niño N0102 creado
+2026-05-07 19:02:56 - Niño N0102 inicia ejecución
+2026-05-07 19:02:57 - Niño N0270 creado
+2026-05-07 19:02:57 - Niño N0270 inicia ejecución
+2026-05-07 19:02:57 - Niño N0103 creado
+2026-05-07 19:02:57 - Niño N0103 inicia ejecución
+2026-05-07 19:02:58 - Niño N0271 creado
+2026-05-07 19:02:58 - Niño N0271 inicia ejecución
+2026-05-07 19:02:58 - Niño N0104 creado
+2026-05-07 19:02:58 - Niño N0104 inicia ejecución
+2026-05-07 19:02:58 - Niño N0105 creado
+2026-05-07 19:02:58 - Niño N0105 inicia ejecución
+2026-05-07 19:02:59 - Niño N0272 creado
+2026-05-07 19:02:59 - Niño N0272 inicia ejecución
+2026-05-07 19:03:00 - Niño N0273 creado
+2026-05-07 19:03:00 - Niño N0273 inicia ejecución
+2026-05-07 19:03:00 - Niño N0106 creado
+2026-05-07 19:03:00 - Niño N0106 inicia ejecución
+2026-05-07 19:03:01 - Niño N0107 creado
+2026-05-07 19:03:01 - Niño N0107 inicia ejecución
+2026-05-07 19:03:01 - Niño N0274 creado
+2026-05-07 19:03:01 - Niño N0274 inicia ejecución
+2026-05-07 19:03:03 - Niño N0275 creado
+2026-05-07 19:03:03 - Niño N0275 inicia ejecución
+2026-05-07 19:03:03 - Niño N0108 creado
+2026-05-07 19:03:03 - Niño N0108 inicia ejecución
+2026-05-07 19:03:04 - Niño N0276 creado
+2026-05-07 19:03:04 - Niño N0276 inicia ejecución
+2026-05-07 19:03:04 - Niño N0109 creado
+2026-05-07 19:03:04 - Niño N0109 inicia ejecución
+2026-05-07 19:03:06 - Niño N0110 creado
+2026-05-07 19:03:06 - Niño N0110 inicia ejecución
+2026-05-07 19:03:06 - Niño N0277 creado
+2026-05-07 19:03:06 - Niño N0277 inicia ejecución
+2026-05-07 19:03:07 - Niño N0278 creado
+2026-05-07 19:03:07 - Niño N0278 inicia ejecución
+2026-05-07 19:03:07 - Niño N0111 creado
+2026-05-07 19:03:07 - Niño N0111 inicia ejecución
+2026-05-07 19:03:09 - Niño N0112 creado
+2026-05-07 19:03:09 - Niño N0112 inicia ejecución
+2026-05-07 19:03:09 - Niño N0279 creado
+2026-05-07 19:03:09 - Niño N0279 inicia ejecución
+2026-05-07 19:03:10 - Niño N0113 creado
+2026-05-07 19:03:10 - Niño N0113 inicia ejecución
+2026-05-07 19:03:10 - Niño N0280 creado
+2026-05-07 19:03:10 - Niño N0280 inicia ejecución
+2026-05-07 19:03:11 - Niño N0281 creado
+2026-05-07 19:03:11 - Niño N0281 inicia ejecución
+2026-05-07 19:03:12 - Niño N0114 creado
+2026-05-07 19:03:12 - Niño N0114 inicia ejecución
+2026-05-07 19:03:12 - Niño N0282 creado
+2026-05-07 19:03:12 - Niño N0282 inicia ejecución
+2026-05-07 19:03:13 - Niño N0283 creado
+2026-05-07 19:03:13 - Niño N0283 inicia ejecución
+2026-05-07 19:03:14 - Niño N0284 creado
+2026-05-07 19:03:14 - Niño N0284 inicia ejecución
+2026-05-07 19:03:14 - Niño N0115 creado
+2026-05-07 19:03:14 - Niño N0115 inicia ejecución
+2026-05-07 19:03:14 - Niño N0285 creado
+2026-05-07 19:03:14 - Niño N0285 inicia ejecución
+2026-05-07 19:03:15 - Niño N0286 creado
+2026-05-07 19:03:15 - Niño N0286 inicia ejecución
+2026-05-07 19:03:15 - Niño N0116 creado
+2026-05-07 19:03:15 - Niño N0116 inicia ejecución
+2026-05-07 19:03:16 - Niño N0117 creado
+2026-05-07 19:03:16 - Niño N0117 inicia ejecución
+2026-05-07 19:03:16 - Niño N0287 creado
+2026-05-07 19:03:16 - Niño N0287 inicia ejecución
+2026-05-07 19:03:17 - Niño N0118 creado
+2026-05-07 19:03:17 - Niño N0118 inicia ejecución
+2026-05-07 19:03:17 - Niño N0288 creado
+2026-05-07 19:03:17 - Niño N0288 inicia ejecución
+2026-05-07 19:03:18 - Niño N0289 creado
+2026-05-07 19:03:18 - Niño N0289 inicia ejecución
+2026-05-07 19:03:18 - Niño N0119 creado
+2026-05-07 19:03:18 - Niño N0119 inicia ejecución
+2026-05-07 19:03:20 - Niño N0290 creado
+2026-05-07 19:03:20 - Niño N0290 inicia ejecución
+2026-05-07 19:03:20 - Niño N0120 creado
+2026-05-07 19:03:20 - Niño N0120 inicia ejecución
+2026-05-07 19:03:21 - Niño N0291 creado
+2026-05-07 19:03:21 - Niño N0291 inicia ejecución
+2026-05-07 19:03:21 - Niño N0121 creado
+2026-05-07 19:03:21 - Niño N0121 inicia ejecución
+2026-05-07 19:03:22 - Niño N0292 creado
+2026-05-07 19:03:22 - Niño N0292 inicia ejecución
+2026-05-07 19:03:23 - EVENTO GLOBAL: APAGON DEL LABORATORIO iniciado
+2026-05-07 19:03:23 - Niño N0293 creado
+2026-05-07 19:03:23 - Niño N0293 inicia ejecución
+2026-05-07 19:03:23 - Niño N0122 creado
+2026-05-07 19:03:23 - Niño N0122 inicia ejecución
+2026-05-07 19:03:24 - Niño N0294 creado
+2026-05-07 19:03:24 - Niño N0294 inicia ejecución
+2026-05-07 19:03:24 - Niño N0123 creado
+2026-05-07 19:03:24 - Niño N0123 inicia ejecución
+2026-05-07 19:03:25 - Niño N0124 creado
+2026-05-07 19:03:25 - Niño N0124 inicia ejecución
+2026-05-07 19:03:26 - Niño N0295 creado
+2026-05-07 19:03:26 - Niño N0295 inicia ejecución
+2026-05-07 19:03:26 - Niño N0125 creado
+2026-05-07 19:03:26 - Niño N0125 inicia ejecución
+2026-05-07 19:03:27 - Niño N0296 creado
+2026-05-07 19:03:27 - Niño N0296 inicia ejecución
+2026-05-07 19:03:27 - Niño N0126 creado
+2026-05-07 19:03:27 - Niño N0126 inicia ejecución
+2026-05-07 19:03:28 - Niño N0127 creado
+2026-05-07 19:03:28 - Niño N0127 inicia ejecución
+2026-05-07 19:03:28 - Niño N0297 creado
+2026-05-07 19:03:28 - Niño N0297 inicia ejecución
+2026-05-07 19:03:28 - EVENTO GLOBAL: APAGON DEL LABORATORIO finalizado
+2026-05-07 19:03:30 - Niño N0128 creado
+2026-05-07 19:03:30 - Niño N0128 inicia ejecución
+2026-05-07 19:03:30 - Niño N0298 creado
+2026-05-07 19:03:30 - Niño N0298 inicia ejecución
+2026-05-07 19:03:31 - Niño N0299 creado
+2026-05-07 19:03:31 - Niño N0299 inicia ejecución
+2026-05-07 19:03:32 - Niño N0129 creado
+2026-05-07 19:03:32 - Niño N0129 inicia ejecución
+2026-05-07 19:03:32 - Niño N0300 creado
+2026-05-07 19:03:32 - Niño N0300 inicia ejecución
+2026-05-07 19:03:33 - Niño N0130 creado
+2026-05-07 19:03:33 - Niño N0130 inicia ejecución
+2026-05-07 19:03:34 - Niño N0131 creado
+2026-05-07 19:03:34 - Niño N0131 inicia ejecución
+2026-05-07 19:03:34 - Niño N0301 creado
+2026-05-07 19:03:34 - Niño N0301 inicia ejecución
+2026-05-07 19:03:35 - Niño N0132 creado
+2026-05-07 19:03:35 - Niño N0132 inicia ejecución
+2026-05-07 19:03:35 - Niño N0302 creado
+2026-05-07 19:03:35 - Niño N0302 inicia ejecución
+2026-05-07 19:03:36 - Niño N0303 creado
+2026-05-07 19:03:36 - Niño N0303 inicia ejecución
+2026-05-07 19:03:36 - Niño N0133 creado
+2026-05-07 19:03:36 - Niño N0133 inicia ejecución
+2026-05-07 19:03:37 - Niño N0134 creado
+2026-05-07 19:03:37 - Niño N0134 inicia ejecución
+2026-05-07 19:03:38 - Niño N0304 creado
+2026-05-07 19:03:38 - Niño N0304 inicia ejecución
+2026-05-07 19:03:39 - Niño N0305 creado
+2026-05-07 19:03:39 - Niño N0305 inicia ejecución
+2026-05-07 19:03:39 - Niño N0135 creado
+2026-05-07 19:03:39 - Niño N0135 inicia ejecución
+2026-05-07 19:03:40 - Niño N0136 creado
+2026-05-07 19:03:40 - Niño N0136 inicia ejecución
+2026-05-07 19:03:41 - Niño N0306 creado
+2026-05-07 19:03:41 - Niño N0306 inicia ejecución
+2026-05-07 19:03:41 - Niño N0137 creado
+2026-05-07 19:03:41 - Niño N0137 inicia ejecución
+2026-05-07 19:03:43 - Niño N0307 creado
+2026-05-07 19:03:43 - Niño N0307 inicia ejecución
+2026-05-07 19:03:43 - Niño N0138 creado
+2026-05-07 19:03:43 - Niño N0138 inicia ejecución
+2026-05-07 19:03:43 - Niño N0139 creado
+2026-05-07 19:03:43 - Niño N0139 inicia ejecución
+2026-05-07 19:03:44 - Niño N0308 creado
+2026-05-07 19:03:44 - Niño N0308 inicia ejecución
+2026-05-07 19:03:45 - Niño N0140 creado
+2026-05-07 19:03:45 - Niño N0140 inicia ejecución
+2026-05-07 19:03:46 - Niño N0141 creado
+2026-05-07 19:03:46 - Niño N0141 inicia ejecución
+2026-05-07 19:03:46 - Niño N0309 creado
+2026-05-07 19:03:46 - Niño N0309 inicia ejecución
+2026-05-07 19:03:47 - Niño N0310 creado
+2026-05-07 19:03:47 - Niño N0310 inicia ejecución
+2026-05-07 19:03:47 - Niño N0142 creado
+2026-05-07 19:03:47 - Niño N0142 inicia ejecución
+2026-05-07 19:03:48 - Niño N0311 creado
+2026-05-07 19:03:48 - Niño N0311 inicia ejecución
+2026-05-07 19:03:48 - Niño N0143 creado
+2026-05-07 19:03:48 - Niño N0143 inicia ejecución
+2026-05-07 19:03:49 - Niño N0312 creado
+2026-05-07 19:03:49 - Niño N0312 inicia ejecución
+2026-05-07 19:03:50 - Niño N0144 creado
+2026-05-07 19:03:50 - Niño N0144 inicia ejecución
+2026-05-07 19:03:50 - Niño N0313 creado
+2026-05-07 19:03:50 - Niño N0313 inicia ejecución
+2026-05-07 19:03:51 - Niño N0145 creado
+2026-05-07 19:03:51 - Niño N0145 inicia ejecución
+2026-05-07 19:03:51 - Niño N0314 creado
+2026-05-07 19:03:51 - Niño N0314 inicia ejecución
+2026-05-07 19:03:53 - Niño N0146 creado
+2026-05-07 19:03:53 - Niño N0146 inicia ejecución
+2026-05-07 19:03:53 - Niño N0315 creado
+2026-05-07 19:03:53 - Niño N0315 inicia ejecución
+2026-05-07 19:03:53 - Niño N0147 creado
+2026-05-07 19:03:53 - Niño N0147 inicia ejecución
+2026-05-07 19:03:54 - Niño N0316 creado
+2026-05-07 19:03:54 - Niño N0316 inicia ejecución
+2026-05-07 19:03:55 - Niño N0148 creado
+2026-05-07 19:03:55 - Niño N0148 inicia ejecución
+2026-05-07 19:03:56 - Niño N0149 creado
+2026-05-07 19:03:56 - Niño N0149 inicia ejecución
+2026-05-07 19:03:56 - Niño N0317 creado
+2026-05-07 19:03:56 - Niño N0317 inicia ejecución
+2026-05-07 19:03:57 - Niño N0150 creado
+2026-05-07 19:03:57 - Niño N0150 inicia ejecución
+2026-05-07 19:03:58 - Niño N0318 creado
+2026-05-07 19:03:58 - Niño N0318 inicia ejecución
+2026-05-07 19:03:58 - Niño N0151 creado
+2026-05-07 19:03:58 - Niño N0151 inicia ejecución
+2026-05-07 19:03:59 - Niño N0319 creado
+2026-05-07 19:03:59 - Niño N0319 inicia ejecución
+2026-05-07 19:04:00 - Niño N0152 creado
+2026-05-07 19:04:00 - Niño N0152 inicia ejecución
+2026-05-07 19:04:00 - Niño N0153 creado
+2026-05-07 19:04:00 - Niño N0153 inicia ejecución
+2026-05-07 19:04:00 - Niño N0320 creado
+2026-05-07 19:04:00 - Niño N0320 inicia ejecución
+2026-05-07 19:04:01 - Niño N0321 creado
+2026-05-07 19:04:01 - Niño N0321 inicia ejecución
+2026-05-07 19:04:02 - Niño N0154 creado
+2026-05-07 19:04:02 - Niño N0154 inicia ejecución
+2026-05-07 19:04:02 - Niño N0322 creado
+2026-05-07 19:04:02 - Niño N0322 inicia ejecución
+2026-05-07 19:04:03 - Niño N0155 creado
+2026-05-07 19:04:03 - Niño N0155 inicia ejecución
+2026-05-07 19:04:03 - Niño N0323 creado
+2026-05-07 19:04:03 - Niño N0323 inicia ejecución
+2026-05-07 19:04:04 - Niño N0156 creado
+2026-05-07 19:04:04 - Niño N0156 inicia ejecución
+2026-05-07 19:04:05 - Niño N0324 creado
+2026-05-07 19:04:05 - Niño N0324 inicia ejecución
+2026-05-07 19:04:05 - Niño N0157 creado
+2026-05-07 19:04:05 - Niño N0157 inicia ejecución
+2026-05-07 19:04:06 - Niño N0158 creado
+2026-05-07 19:04:06 - Niño N0158 inicia ejecución
+2026-05-07 19:04:06 - Niño N0325 creado
+2026-05-07 19:04:06 - Niño N0325 inicia ejecución
+2026-05-07 19:04:07 - Niño N0159 creado
+2026-05-07 19:04:07 - Niño N0159 inicia ejecución
+2026-05-07 19:04:07 - Niño N0326 creado
+2026-05-07 19:04:07 - Niño N0326 inicia ejecución
+2026-05-07 19:04:08 - Niño N0160 creado
+2026-05-07 19:04:08 - Niño N0160 inicia ejecución
+2026-05-07 19:04:09 - Niño N0327 creado
+2026-05-07 19:04:09 - Niño N0327 inicia ejecución
+2026-05-07 19:04:09 - Niño N0328 creado
+2026-05-07 19:04:09 - Niño N0328 inicia ejecución
+2026-05-07 19:04:10 - Niño N0161 creado
+2026-05-07 19:04:10 - Niño N0161 inicia ejecución
+2026-05-07 19:04:11 - Niño N0162 creado
+2026-05-07 19:04:11 - Niño N0162 inicia ejecución
+2026-05-07 19:04:11 - Niño N0329 creado
+2026-05-07 19:04:11 - Niño N0329 inicia ejecución
+2026-05-07 19:04:11 - Niño N0163 creado
+2026-05-07 19:04:11 - Niño N0163 inicia ejecución
+2026-05-07 19:04:12 - Niño N0330 creado
+2026-05-07 19:04:12 - Niño N0330 inicia ejecución
+2026-05-07 19:04:13 - Niño N0164 creado
+2026-05-07 19:04:13 - Niño N0164 inicia ejecución
+2026-05-07 19:04:13 - Niño N0331 creado
+2026-05-07 19:04:13 - Niño N0331 inicia ejecución
+2026-05-07 19:04:13 - Niño N0332 creado
+2026-05-07 19:04:13 - Niño N0332 inicia ejecución
+2026-05-07 19:04:14 - Niño N0165 creado
+2026-05-07 19:04:14 - Niño N0165 inicia ejecución
+2026-05-07 19:04:15 - Niño N0333 creado
+2026-05-07 19:04:15 - Niño N0333 inicia ejecución
+2026-05-07 19:04:15 - Niño N0166 creado
+2026-05-07 19:04:15 - Niño N0166 inicia ejecución
+2026-05-07 19:04:16 - Niño N0334 creado
+2026-05-07 19:04:16 - Niño N0334 inicia ejecución
+2026-05-07 19:04:17 - Niño N0167 creado
+2026-05-07 19:04:17 - Niño N0167 inicia ejecución
+2026-05-07 19:04:17 - Niño N0335 creado
+2026-05-07 19:04:17 - Niño N0335 inicia ejecución
+2026-05-07 19:04:18 - Niño N0168 creado
+2026-05-07 19:04:18 - Niño N0168 inicia ejecución
+2026-05-07 19:04:19 - Niño N0336 creado
+2026-05-07 19:04:19 - Niño N0336 inicia ejecución
+2026-05-07 19:04:19 - EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN iniciada
+2026-05-07 19:04:19 - Niño N0169 creado
+2026-05-07 19:04:19 - Niño N0169 inicia ejecución
+2026-05-07 19:04:20 - Niño N0337 creado
+2026-05-07 19:04:20 - Niño N0337 inicia ejecución
+2026-05-07 19:04:20 - Niño N0170 creado
+2026-05-07 19:04:20 - Niño N0170 inicia ejecución
+2026-05-07 19:04:22 - Niño N0338 creado
+2026-05-07 19:04:22 - Niño N0338 inicia ejecución
+2026-05-07 19:04:22 - Niño N0171 creado
+2026-05-07 19:04:22 - Niño N0171 inicia ejecución
+2026-05-07 19:04:23 - Niño N0339 creado
+2026-05-07 19:04:23 - Niño N0339 inicia ejecución
+2026-05-07 19:04:24 - Niño N0172 creado
+2026-05-07 19:04:24 - Niño N0172 inicia ejecución
+2026-05-07 19:04:24 - Niño N0340 creado
+2026-05-07 19:04:24 - Niño N0340 inicia ejecución
+2026-05-07 19:04:25 - Niño N0341 creado
+2026-05-07 19:04:25 - Niño N0341 inicia ejecución
+2026-05-07 19:04:25 - Niño N0173 creado
+2026-05-07 19:04:25 - Niño N0173 inicia ejecución
+2026-05-07 19:04:26 - Niño N0342 creado
+2026-05-07 19:04:26 - Niño N0342 inicia ejecución
+2026-05-07 19:04:26 - EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN finalizada
+2026-05-07 19:04:26 - Niño N0174 creado
+2026-05-07 19:04:26 - Niño N0174 inicia ejecución
+2026-05-07 19:04:28 - Niño N0343 creado
+2026-05-07 19:04:28 - Niño N0343 inicia ejecución
+2026-05-07 19:04:28 - Niño N0175 creado
+2026-05-07 19:04:28 - Niño N0175 inicia ejecución
+2026-05-07 19:04:29 - Niño N0176 creado
+2026-05-07 19:04:29 - Niño N0176 inicia ejecución
+2026-05-07 19:04:30 - Niño N0344 creado
+2026-05-07 19:04:30 - Niño N0344 inicia ejecución
+2026-05-07 19:04:30 - Niño N0177 creado
+2026-05-07 19:04:30 - Niño N0177 inicia ejecución
+2026-05-07 19:04:31 - Niño N0345 creado
+2026-05-07 19:04:31 - Niño N0345 inicia ejecución
+2026-05-07 19:04:32 - Niño N0346 creado
+2026-05-07 19:04:32 - Niño N0346 inicia ejecución
+2026-05-07 19:04:32 - Niño N0178 creado
+2026-05-07 19:04:32 - Niño N0178 inicia ejecución
+2026-05-07 19:04:32 - Niño N0347 creado
+2026-05-07 19:04:32 - Niño N0347 inicia ejecución
+2026-05-07 19:04:33 - Niño N0348 creado
+2026-05-07 19:04:33 - Niño N0348 inicia ejecución
+2026-05-07 19:04:33 - Niño N0179 creado
+2026-05-07 19:04:33 - Niño N0179 inicia ejecución
+2026-05-07 19:04:34 - Niño N0180 creado
+2026-05-07 19:04:34 - Niño N0180 inicia ejecución
+2026-05-07 19:04:34 - Niño N0349 creado
+2026-05-07 19:04:34 - Niño N0349 inicia ejecución
+2026-05-07 19:04:35 - Niño N0181 creado
+2026-05-07 19:04:35 - Niño N0181 inicia ejecución
+2026-05-07 19:04:36 - Niño N0182 creado
+2026-05-07 19:04:36 - Niño N0182 inicia ejecución
+2026-05-07 19:04:36 - Niño N0350 creado
+2026-05-07 19:04:36 - Niño N0350 inicia ejecución
+2026-05-07 19:04:37 - Niño N0183 creado
+2026-05-07 19:04:37 - Niño N0183 inicia ejecución
+2026-05-07 19:04:37 - Niño N0351 creado
+2026-05-07 19:04:37 - Niño N0351 inicia ejecución
+2026-05-07 19:04:38 - Niño N0184 creado
+2026-05-07 19:04:38 - Niño N0184 inicia ejecución
+2026-05-07 19:04:38 - Niño N0352 creado
+2026-05-07 19:04:38 - Niño N0352 inicia ejecución
+2026-05-07 19:04:39 - Niño N0353 creado
+2026-05-07 19:04:39 - Niño N0353 inicia ejecución
+2026-05-07 19:04:39 - Niño N0185 creado
+2026-05-07 19:04:39 - Niño N0185 inicia ejecución
+2026-05-07 19:04:41 - Niño N0354 creado
+2026-05-07 19:04:41 - Niño N0354 inicia ejecución
+2026-05-07 19:04:41 - Niño N0186 creado
+2026-05-07 19:04:41 - Niño N0186 inicia ejecución
+2026-05-07 19:04:42 - Niño N0187 creado
+2026-05-07 19:04:42 - Niño N0187 inicia ejecución
+2026-05-07 19:04:42 - Niño N0355 creado
+2026-05-07 19:04:42 - Niño N0355 inicia ejecución
+2026-05-07 19:04:43 - Niño N0188 creado
+2026-05-07 19:04:43 - Niño N0188 inicia ejecución
+2026-05-07 19:04:44 - Niño N0356 creado
+2026-05-07 19:04:44 - Niño N0356 inicia ejecución
+2026-05-07 19:04:45 - Niño N0189 creado
+2026-05-07 19:04:45 - Niño N0189 inicia ejecución
+2026-05-07 19:04:45 - Niño N0357 creado
+2026-05-07 19:04:45 - Niño N0357 inicia ejecución
+2026-05-07 19:04:46 - Niño N0358 creado
+2026-05-07 19:04:46 - Niño N0358 inicia ejecución
+2026-05-07 19:04:47 - Niño N0190 creado
+2026-05-07 19:04:47 - Niño N0190 inicia ejecución
+2026-05-07 19:04:47 - Niño N0359 creado
+2026-05-07 19:04:47 - Niño N0359 inicia ejecución
+2026-05-07 19:04:48 - Niño N0191 creado
+2026-05-07 19:04:48 - Niño N0191 inicia ejecución
+2026-05-07 19:04:49 - Niño N0360 creado
+2026-05-07 19:04:49 - Niño N0360 inicia ejecución
+2026-05-07 19:04:49 - Niño N0192 creado
+2026-05-07 19:04:49 - Niño N0192 inicia ejecución
+2026-05-07 19:04:49 - Niño N0361 creado
+2026-05-07 19:04:49 - Niño N0361 inicia ejecución
+2026-05-07 19:04:50 - Niño N0193 creado
+2026-05-07 19:04:50 - Niño N0193 inicia ejecución
+2026-05-07 19:04:50 - Niño N0362 creado
+2026-05-07 19:04:50 - Niño N0362 inicia ejecución
+2026-05-07 19:04:51 - Niño N0194 creado
+2026-05-07 19:04:51 - Niño N0194 inicia ejecución
+2026-05-07 19:04:52 - Niño N0363 creado
+2026-05-07 19:04:52 - Niño N0363 inicia ejecución
+2026-05-07 19:04:52 - Niño N0195 creado
+2026-05-07 19:04:52 - Niño N0195 inicia ejecución
+2026-05-07 19:04:52 - Niño N0364 creado
+2026-05-07 19:04:52 - Niño N0364 inicia ejecución
+2026-05-07 19:04:53 - Niño N0365 creado
+2026-05-07 19:04:53 - Niño N0365 inicia ejecución
+2026-05-07 19:04:54 - Niño N0196 creado
+2026-05-07 19:04:54 - Niño N0196 inicia ejecución
+2026-05-07 19:04:54 - Niño N0197 creado
+2026-05-07 19:04:54 - Niño N0197 inicia ejecución
+2026-05-07 19:04:55 - Niño N0198 creado
+2026-05-07 19:04:55 - Niño N0198 inicia ejecución
+2026-05-07 19:04:55 - Niño N0366 creado
+2026-05-07 19:04:55 - Niño N0366 inicia ejecución
+2026-05-07 19:04:56 - Niño N0367 creado
+2026-05-07 19:04:56 - Niño N0367 inicia ejecución
+2026-05-07 19:04:56 - Niño N0199 creado
+2026-05-07 19:04:56 - Niño N0199 inicia ejecución
+2026-05-07 19:04:57 - Niño N0368 creado
+2026-05-07 19:04:57 - Niño N0368 inicia ejecución
+2026-05-07 19:04:57 - Niño N0369 creado
+2026-05-07 19:04:57 - Niño N0369 inicia ejecución
+2026-05-07 19:04:58 - Niño N0200 creado
+2026-05-07 19:04:58 - Niño N0200 inicia ejecución
+2026-05-07 19:04:59 - Niño N0201 creado
+2026-05-07 19:04:59 - Niño N0201 inicia ejecución
+2026-05-07 19:04:59 - Niño N0370 creado
+2026-05-07 19:04:59 - Niño N0370 inicia ejecución
+2026-05-07 19:05:00 - Niño N0371 creado
+2026-05-07 19:05:00 - Niño N0371 inicia ejecución
+2026-05-07 19:05:00 - Niño N0202 creado
+2026-05-07 19:05:00 - Niño N0202 inicia ejecución
+2026-05-07 19:05:01 - Niño N0372 creado
+2026-05-07 19:05:01 - Niño N0372 inicia ejecución
+2026-05-07 19:05:02 - Niño N0203 creado
+2026-05-07 19:05:02 - Niño N0203 inicia ejecución
+2026-05-07 19:05:03 - Niño N0204 creado
+2026-05-07 19:05:03 - Niño N0204 inicia ejecución
+2026-05-07 19:05:03 - Niño N0373 creado
+2026-05-07 19:05:03 - Niño N0373 inicia ejecución
+2026-05-07 19:05:05 - Niño N0205 creado
+2026-05-07 19:05:05 - Niño N0205 inicia ejecución
+2026-05-07 19:05:05 - Niño N0374 creado
+2026-05-07 19:05:05 - Niño N0374 inicia ejecución
+2026-05-07 19:05:05 - EVENTO GLOBAL: INTERVENCION DE ELEVEN iniciada
+2026-05-07 19:05:06 - Niño N0206 creado
+2026-05-07 19:05:06 - Niño N0206 inicia ejecución
+2026-05-07 19:05:07 - Niño N0375 creado
+2026-05-07 19:05:07 - Niño N0375 inicia ejecución
+2026-05-07 19:05:07 - Niño N0207 creado
+2026-05-07 19:05:07 - Niño N0207 inicia ejecución
+2026-05-07 19:05:08 - Niño N0208 creado
+2026-05-07 19:05:08 - Niño N0208 inicia ejecución
+2026-05-07 19:05:08 - Niño N0376 creado
+2026-05-07 19:05:08 - Niño N0376 inicia ejecución
+2026-05-07 19:05:10 - Niño N0209 creado
+2026-05-07 19:05:10 - Niño N0209 inicia ejecución
+2026-05-07 19:05:10 - Niño N0377 creado
+2026-05-07 19:05:10 - Niño N0377 inicia ejecución
+2026-05-07 19:05:10 - EVENTO GLOBAL: INTERVENCION DE ELEVEN finalizada
+2026-05-07 19:05:10 - Eleven comienza a liberar niños de la Colmena
+2026-05-07 19:05:11 - Niño N0378 creado
+2026-05-07 19:05:11 - Niño N0378 inicia ejecución
+2026-05-07 19:05:11 - Niño N0210 creado
+2026-05-07 19:05:11 - Niño N0210 inicia ejecución
+2026-05-07 19:05:12 - Niño N0211 creado
+2026-05-07 19:05:12 - Niño N0211 inicia ejecución
+2026-05-07 19:05:12 - Niño N0379 creado
+2026-05-07 19:05:12 - Niño N0379 inicia ejecución
+2026-05-07 19:05:12 - Niño N0212 creado
+2026-05-07 19:05:12 - Niño N0212 inicia ejecución
+2026-05-07 19:05:13 - Niño N0380 creado
+2026-05-07 19:05:13 - Niño N0380 inicia ejecución
+2026-05-07 19:05:13 - Niño N0213 creado
+2026-05-07 19:05:13 - Niño N0213 inicia ejecución
+2026-05-07 19:05:14 - Niño N0381 creado
+2026-05-07 19:05:14 - Niño N0381 inicia ejecución
+2026-05-07 19:05:15 - Niño N0382 creado
+2026-05-07 19:05:15 - Niño N0382 inicia ejecución
+2026-05-07 19:05:15 - Niño N0214 creado
+2026-05-07 19:05:15 - Niño N0214 inicia ejecución
+2026-05-07 19:05:16 - Niño N0383 creado
+2026-05-07 19:05:16 - Niño N0383 inicia ejecución
+2026-05-07 19:05:16 - Niño N0215 creado
+2026-05-07 19:05:16 - Niño N0215 inicia ejecución
+2026-05-07 19:05:17 - Niño N0384 creado
+2026-05-07 19:05:17 - Niño N0384 inicia ejecución
+2026-05-07 19:05:18 - Niño N0216 creado
+2026-05-07 19:05:18 - Niño N0216 inicia ejecución
+2026-05-07 19:05:18 - Niño N0385 creado
+2026-05-07 19:05:18 - Niño N0385 inicia ejecución
+2026-05-07 19:05:20 - Niño N0217 creado
+2026-05-07 19:05:20 - Niño N0217 inicia ejecución
+2026-05-07 19:05:20 - Niño N0386 creado
+2026-05-07 19:05:20 - Niño N0386 inicia ejecución
+2026-05-07 19:05:21 - Niño N0218 creado
+2026-05-07 19:05:21 - Niño N0218 inicia ejecución
+2026-05-07 19:05:22 - Niño N0387 creado
+2026-05-07 19:05:22 - Niño N0387 inicia ejecución
+2026-05-07 19:05:23 - Niño N0219 creado
+2026-05-07 19:05:23 - Niño N0219 inicia ejecución
+2026-05-07 19:05:23 - Niño N0388 creado
+2026-05-07 19:05:23 - Niño N0388 inicia ejecución
+2026-05-07 19:05:24 - Niño N0220 creado
+2026-05-07 19:05:24 - Niño N0220 inicia ejecución
+2026-05-07 19:05:24 - Niño N0221 creado
+2026-05-07 19:05:24 - Niño N0221 inicia ejecución
+2026-05-07 19:05:25 - Niño N0389 creado
+2026-05-07 19:05:25 - Niño N0389 inicia ejecución
+2026-05-07 19:05:26 - Niño N0390 creado
+2026-05-07 19:05:26 - Niño N0390 inicia ejecución
+2026-05-07 19:05:26 - Niño N0222 creado
+2026-05-07 19:05:26 - Niño N0222 inicia ejecución
+2026-05-07 19:05:27 - Niño N0391 creado
+2026-05-07 19:05:27 - Niño N0391 inicia ejecución
+2026-05-07 19:05:27 - Niño N0223 creado
+2026-05-07 19:05:27 - Niño N0223 inicia ejecución
+2026-05-07 19:05:28 - Niño N0392 creado
+2026-05-07 19:05:28 - Niño N0392 inicia ejecución
+2026-05-07 19:05:28 - Niño N0393 creado
+2026-05-07 19:05:28 - Niño N0393 inicia ejecución
+2026-05-07 19:05:29 - Niño N0224 creado
+2026-05-07 19:05:29 - Niño N0224 inicia ejecución
+2026-05-07 19:05:29 - Niño N0394 creado
+2026-05-07 19:05:29 - Niño N0394 inicia ejecución
+2026-05-07 19:05:30 - Niño N0225 creado
+2026-05-07 19:05:30 - Niño N0225 inicia ejecución
+2026-05-07 19:05:31 - Niño N0226 creado
+2026-05-07 19:05:31 - Niño N0226 inicia ejecución
+2026-05-07 19:05:31 - Niño N0395 creado
+2026-05-07 19:05:31 - Niño N0395 inicia ejecución
+2026-05-07 19:05:32 - Niño N0396 creado
+2026-05-07 19:05:32 - Niño N0396 inicia ejecución
+2026-05-07 19:05:32 - Niño N0227 creado
+2026-05-07 19:05:32 - Niño N0227 inicia ejecución
+2026-05-07 19:05:33 - Niño N0397 creado
+2026-05-07 19:05:33 - Niño N0397 inicia ejecución
+2026-05-07 19:05:34 - Niño N0228 creado
+2026-05-07 19:05:34 - Niño N0398 creado
+2026-05-07 19:05:34 - Niño N0228 inicia ejecución
+2026-05-07 19:05:34 - Niño N0398 inicia ejecución
+2026-05-07 19:05:35 - Niño N0399 creado
+2026-05-07 19:05:35 - Niño N0399 inicia ejecución
+2026-05-07 19:05:35 - Niño N0229 creado
+2026-05-07 19:05:35 - Niño N0229 inicia ejecución
+2026-05-07 19:05:36 - Niño N0230 creado
+2026-05-07 19:05:36 - Niño N0230 inicia ejecución
+2026-05-07 19:05:37 - Niño N0400 creado
+2026-05-07 19:05:37 - Niño N0400 inicia ejecución
+2026-05-07 19:05:38 - Niño N0401 creado
+2026-05-07 19:05:38 - Niño N0401 inicia ejecución
+2026-05-07 19:05:38 - Niño N0231 creado
+2026-05-07 19:05:38 - Niño N0231 inicia ejecución
+2026-05-07 19:05:39 - Niño N0232 creado
+2026-05-07 19:05:39 - Niño N0232 inicia ejecución
+2026-05-07 19:05:39 - Niño N0402 creado
+2026-05-07 19:05:39 - Niño N0402 inicia ejecución
+2026-05-07 19:05:40 - Niño N0233 creado
+2026-05-07 19:05:40 - Niño N0233 inicia ejecución
+2026-05-07 19:05:40 - Niño N0403 creado
+2026-05-07 19:05:40 - Niño N0403 inicia ejecución
+2026-05-07 19:05:42 - Niño N0234 creado
+2026-05-07 19:05:42 - Niño N0234 inicia ejecución
+2026-05-07 19:05:42 - Niño N0404 creado
+2026-05-07 19:05:42 - Niño N0404 inicia ejecución
+2026-05-07 19:05:43 - Niño N0235 creado
+2026-05-07 19:05:43 - Niño N0235 inicia ejecución
+2026-05-07 19:05:43 - Niño N0405 creado
+2026-05-07 19:05:43 - Niño N0405 inicia ejecución
+2026-05-07 19:05:45 - Niño N0406 creado
+2026-05-07 19:05:45 - Niño N0406 inicia ejecución
+2026-05-07 19:05:45 - Niño N0236 creado
+2026-05-07 19:05:45 - Niño N0236 inicia ejecución
+2026-05-07 19:05:46 - Niño N0237 creado
+2026-05-07 19:05:46 - Niño N0237 inicia ejecución
+2026-05-07 19:05:46 - Niño N0407 creado
+2026-05-07 19:05:46 - Niño N0407 inicia ejecución
+2026-05-07 19:05:47 - Niño N0408 creado
+2026-05-07 19:05:47 - Niño N0408 inicia ejecución
+2026-05-07 19:05:47 - Niño N0238 creado
+2026-05-07 19:05:47 - Niño N0238 inicia ejecución
+2026-05-07 19:05:47 - Niño N0409 creado
+2026-05-07 19:05:47 - Niño N0409 inicia ejecución
+2026-05-07 19:05:48 - Niño N0239 creado
+2026-05-07 19:05:48 - Niño N0239 inicia ejecución
+2026-05-07 19:05:48 - Niño N0240 creado
+2026-05-07 19:05:48 - Niño N0240 inicia ejecución
+2026-05-07 19:05:49 - Niño N0410 creado
+2026-05-07 19:05:49 - Niño N0410 inicia ejecución
+2026-05-07 19:05:50 - Niño N0411 creado
+2026-05-07 19:05:50 - Niño N0411 inicia ejecución
+2026-05-07 19:05:50 - Niño N0241 creado
+2026-05-07 19:05:50 - Niño N0241 inicia ejecución
+2026-05-07 19:05:51 - Niño N0242 creado
+2026-05-07 19:05:51 - Niño N0242 inicia ejecución
+2026-05-07 19:05:51 - Niño N0412 creado
+2026-05-07 19:05:51 - Niño N0412 inicia ejecución
+2026-05-07 19:05:52 - Niño N0413 creado
+2026-05-07 19:05:52 - Niño N0413 inicia ejecución
+2026-05-07 19:05:53 - Niño N0243 creado
+2026-05-07 19:05:53 - Niño N0243 inicia ejecución
+2026-05-07 19:05:54 - Niño N0414 creado
+2026-05-07 19:05:54 - Niño N0414 inicia ejecución
+2026-05-07 19:05:54 - Niño N0244 creado
+2026-05-07 19:05:54 - Niño N0244 inicia ejecución
+2026-05-07 19:05:55 - Niño N0415 creado
+2026-05-07 19:05:55 - Niño N0415 inicia ejecución
+2026-05-07 19:05:55 - Niño N0245 creado
+2026-05-07 19:05:55 - Niño N0245 inicia ejecución
+2026-05-07 19:05:56 - Niño N0416 creado
+2026-05-07 19:05:56 - Niño N0416 inicia ejecución
+2026-05-07 19:05:57 - Niño N0246 creado
+2026-05-07 19:05:57 - Niño N0246 inicia ejecución
+2026-05-07 19:05:57 - Niño N0417 creado
+2026-05-07 19:05:57 - Niño N0417 inicia ejecución
+2026-05-07 19:05:58 - Niño N0247 creado
+2026-05-07 19:05:58 - Niño N0247 inicia ejecución
+2026-05-07 19:05:59 - Niño N0418 creado
+2026-05-07 19:05:59 - Niño N0418 inicia ejecución
+2026-05-07 19:05:59 - Niño N0248 creado
+2026-05-07 19:05:59 - Niño N0248 inicia ejecución
+2026-05-07 19:06:00 - Niño N0419 creado
+2026-05-07 19:06:00 - Niño N0419 inicia ejecución
+2026-05-07 19:06:01 - Niño N0249 creado
+2026-05-07 19:06:01 - Niño N0249 inicia ejecución
+2026-05-07 19:06:01 - Niño N0420 creado
+2026-05-07 19:06:01 - Niño N0420 inicia ejecución
+2026-05-07 19:06:02 - Niño N0250 creado
+2026-05-07 19:06:02 - Niño N0250 inicia ejecución
+2026-05-07 19:06:02 - Niño N0421 creado
+2026-05-07 19:06:02 - Niño N0421 inicia ejecución
+2026-05-07 19:06:03 - Niño N0251 creado
+2026-05-07 19:06:03 - Niño N0251 inicia ejecución
+2026-05-07 19:06:03 - Niño N0422 creado
+2026-05-07 19:06:03 - Niño N0422 inicia ejecución
+2026-05-07 19:06:03 - Niño N0252 creado
+2026-05-07 19:06:03 - Niño N0252 inicia ejecución
+2026-05-07 19:06:04 - Niño N0423 creado
+2026-05-07 19:06:04 - Niño N0423 inicia ejecución
+2026-05-07 19:06:04 - Niño N0253 creado
+2026-05-07 19:06:04 - Niño N0253 inicia ejecución
+2026-05-07 19:06:05 - Niño N0424 creado
+2026-05-07 19:06:05 - Niño N0424 inicia ejecución
+2026-05-07 19:06:05 - Niño N0254 creado
+2026-05-07 19:06:05 - Niño N0254 inicia ejecución
+2026-05-07 19:06:06 - Niño N0255 creado
+2026-05-07 19:06:06 - Niño N0255 inicia ejecución
+2026-05-07 19:06:06 - Niño N0256 creado
+2026-05-07 19:06:06 - Niño N0256 inicia ejecución
+2026-05-07 19:06:07 - Niño N0425 creado
+2026-05-07 19:06:07 - Niño N0425 inicia ejecución
+2026-05-07 19:06:07 - Niño N0257 creado
+2026-05-07 19:06:07 - Niño N0257 inicia ejecución
+2026-05-07 19:06:07 - Niño N0426 creado
+2026-05-07 19:06:07 - Niño N0426 inicia ejecución
+2026-05-07 19:06:08 - Niño N0427 creado
+2026-05-07 19:06:08 - Niño N0427 inicia ejecución
+2026-05-07 19:06:09 - Niño N0258 creado
+2026-05-07 19:06:09 - Niño N0258 inicia ejecución
+2026-05-07 19:06:10 - Niño N0428 creado
+2026-05-07 19:06:10 - Niño N0428 inicia ejecución
+2026-05-07 19:06:11 - Niño N0259 creado
+2026-05-07 19:06:11 - Niño N0259 inicia ejecución
+2026-05-07 19:06:11 - Niño N0260 creado
+2026-05-07 19:06:11 - Niño N0260 inicia ejecución
+2026-05-07 19:06:12 - Niño N0429 creado
+2026-05-07 19:06:12 - Niño N0429 inicia ejecución
+2026-05-07 19:06:12 - Niño N0261 creado
+2026-05-07 19:06:12 - Niño N0261 inicia ejecución
+2026-05-07 19:06:13 - Niño N0262 creado
+2026-05-07 19:06:13 - Niño N0262 inicia ejecución
+2026-05-07 19:06:14 - Niño N0430 creado
+2026-05-07 19:06:14 - Niño N0430 inicia ejecución
+2026-05-07 19:06:14 - Niño N0263 creado
+2026-05-07 19:06:14 - Niño N0263 inicia ejecución
+2026-05-07 19:06:14 - Niño N0431 creado
+2026-05-07 19:06:14 - Niño N0431 inicia ejecución
+2026-05-07 19:06:15 - Niño N0264 creado
+2026-05-07 19:06:15 - Niño N0264 inicia ejecución
+2026-05-07 19:06:16 - Niño N0265 creado
+2026-05-07 19:06:16 - Niño N0265 inicia ejecución
+2026-05-07 19:06:16 - Niño N0432 creado
+2026-05-07 19:06:16 - Niño N0432 inicia ejecución
+2026-05-07 19:06:16 - Niño N0266 creado
+2026-05-07 19:06:16 - Niño N0266 inicia ejecución
+2026-05-07 19:06:17 - Niño N0267 creado
+2026-05-07 19:06:17 - Niño N0267 inicia ejecución
+2026-05-07 19:06:18 - Niño N0433 creado
+2026-05-07 19:06:18 - Niño N0433 inicia ejecución
+2026-05-07 19:06:18 - Niño N0268 creado
+2026-05-07 19:06:18 - Niño N0268 inicia ejecución
+2026-05-07 19:06:19 - Niño N0434 creado
+2026-05-07 19:06:19 - Niño N0434 inicia ejecución
+2026-05-07 19:06:20 - Niño N0435 creado
+2026-05-07 19:06:20 - Niño N0435 inicia ejecución
+2026-05-07 19:06:20 - Niño N0269 creado
+2026-05-07 19:06:20 - Niño N0269 inicia ejecución
+2026-05-07 19:06:21 - Niño N0270 creado
+2026-05-07 19:06:21 - Niño N0270 inicia ejecución
+2026-05-07 19:06:22 - Niño N0436 creado
+2026-05-07 19:06:22 - Niño N0436 inicia ejecución
+2026-05-07 19:06:22 - Niño N0271 creado
+2026-05-07 19:06:22 - Niño N0271 inicia ejecución
+2026-05-07 19:06:23 - Niño N0437 creado
+2026-05-07 19:06:23 - Niño N0437 inicia ejecución
+2026-05-07 19:06:24 - Niño N0272 creado
+2026-05-07 19:06:24 - Niño N0272 inicia ejecución
+2026-05-07 19:06:25 - Niño N0438 creado
+2026-05-07 19:06:25 - Niño N0438 inicia ejecución
+2026-05-07 19:06:25 - Niño N0273 creado
+2026-05-07 19:06:25 - Niño N0273 inicia ejecución
+2026-05-07 19:06:26 - Niño N0439 creado
+2026-05-07 19:06:26 - Niño N0439 inicia ejecución
+2026-05-07 19:06:26 - Niño N0274 creado
+2026-05-07 19:06:26 - Niño N0274 inicia ejecución
+2026-05-07 19:06:26 - Niño N0440 creado
+2026-05-07 19:06:26 - Niño N0440 inicia ejecución
+2026-05-07 19:06:27 - Niño N0275 creado
+2026-05-07 19:06:27 - Niño N0275 inicia ejecución
+2026-05-07 19:06:28 - Niño N0441 creado
+2026-05-07 19:06:28 - Niño N0441 inicia ejecución
+2026-05-07 19:06:28 - Niño N0276 creado
+2026-05-07 19:06:28 - Niño N0276 inicia ejecución
+2026-05-07 19:06:28 - Demogorgon D0000 creado
+2026-05-07 19:06:28 - Demogorgon D0000 inicia ejecución
+2026-05-07 19:06:28 - Niño N0000 creado
+2026-05-07 19:06:28 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-07 19:06:28 - Niño N0000 inicia ejecución
+2026-05-07 19:06:28 - Niño N0000 entra en Calle Principal
+2026-05-07 19:06:29 - Niño N0001 creado
+2026-05-07 19:06:29 - Niño N0001 inicia ejecución
+2026-05-07 19:06:29 - Niño N0001 entra en Calle Principal
+2026-05-07 19:06:29 - Niño N0277 creado
+2026-05-07 19:06:29 - Niño N0277 inicia ejecución
+2026-05-07 19:06:30 - Niño N0442 creado
+2026-05-07 19:06:30 - Niño N0442 inicia ejecución
+2026-05-07 19:06:30 - Niño N0002 creado
+2026-05-07 19:06:30 - Niño N0002 inicia ejecución
+2026-05-07 19:06:30 - Niño N0002 entra en Calle Principal
+2026-05-07 19:06:30 - Niño N0278 creado
+2026-05-07 19:06:30 - Niño N0278 inicia ejecución
+2026-05-07 19:06:31 - Niño N0279 creado
+2026-05-07 19:06:31 - Niño N0279 inicia ejecución
+2026-05-07 19:06:31 - Niño N0443 creado
+2026-05-07 19:06:31 - Niño N0443 inicia ejecución
+2026-05-07 19:06:31 - Niño N0003 creado
+2026-05-07 19:06:31 - Niño N0003 inicia ejecución
+2026-05-07 19:06:31 - Niño N0003 entra en Calle Principal
+2026-05-07 19:06:31 - Niño N0280 creado
+2026-05-07 19:06:31 - Niño N0280 inicia ejecución
+2026-05-07 19:06:32 - Niño N0000 entra en el Sótano de los Byers
+2026-05-07 19:06:32 - Niño N0281 creado
+2026-05-07 19:06:32 - Niño N0281 inicia ejecución
+2026-05-07 19:06:32 - Niño N0004 creado
+2026-05-07 19:06:32 - Niño N0004 inicia ejecución
+2026-05-07 19:06:32 - Niño N0004 entra en Calle Principal
+2026-05-07 19:06:33 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-07 19:06:33 - Demogorgon D0000 entra en El Bosque
+2026-05-07 19:06:33 - Niño N0444 creado
+2026-05-07 19:06:33 - Niño N0444 inicia ejecución
+2026-05-07 19:06:33 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 19:06:33 - Niño N0005 creado
+2026-05-07 19:06:33 - Niño N0005 inicia ejecución
+2026-05-07 19:06:33 - Niño N0005 entra en Calle Principal
+2026-05-07 19:06:34 - Niño N0282 creado
+2026-05-07 19:06:34 - Niño N0282 inicia ejecución
+2026-05-07 19:06:34 - Niño N0445 creado
+2026-05-07 19:06:34 - Niño N0445 inicia ejecución
+2026-05-07 19:06:34 - Niño N0000 espera para cruzar al portal de  El Bosque
+2026-05-07 19:06:34 - Niño N0003 entra en el Sótano de los Byers
+2026-05-07 19:06:34 - Niño N0001 espera para cruzar al portal de  El Bosque
+2026-05-07 19:06:34 - El niño N0001 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:06:34 - El niño N0000 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:06:34 - Niño N0002 entra en el Sótano de los Byers
+2026-05-07 19:06:35 - Niño N0006 creado
+2026-05-07 19:06:35 - Niño N0006 inicia ejecución
+2026-05-07 19:06:35 - Niño N0006 entra en Calle Principal
+2026-05-07 19:06:35 - Niño N0446 creado
+2026-05-07 19:06:35 - Niño N0446 inicia ejecución
+2026-05-07 19:06:35 - Niño N0001 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:06:35 - Niño N0000 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:06:35 - Niño N0283 creado
+2026-05-07 19:06:35 - Niño N0283 inicia ejecución
+2026-05-07 19:06:36 - Niño N0003 espera para cruzar al portal de  El Bosque
+2026-05-07 19:06:36 - Niño N0447 creado
+2026-05-07 19:06:36 - Niño N0447 inicia ejecución
+2026-05-07 19:06:36 - Niño N0004 entra en el Sótano de los Byers
+2026-05-07 19:06:36 - Niño N0002 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:06:36 - Niño N0007 creado
+2026-05-07 19:06:36 - Niño N0007 inicia ejecución
+2026-05-07 19:06:36 - Niño N0007 entra en Calle Principal
+2026-05-07 19:06:36 - Niño N0448 creado
+2026-05-07 19:06:36 - Niño N0448 inicia ejecución
+2026-05-07 19:06:37 - Demogorgon D0000 abandona El Bosque
+2026-05-07 19:06:37 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-07 19:06:37 - Niño N0284 creado
+2026-05-07 19:06:37 - Niño N0284 inicia ejecución
+2026-05-07 19:06:37 - Niño N0005 entra en el Sótano de los Byers
+2026-05-07 19:06:37 - Niño N0449 creado
+2026-05-07 19:06:37 - Niño N0449 inicia ejecución
+2026-05-07 19:06:38 - Niño N0004 espera para cruzar al portal de  El Bosque
+2026-05-07 19:06:38 - El niño N0004 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:06:38 - El niño N0003 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:06:38 - Niño N0008 creado
+2026-05-07 19:06:38 - Niño N0008 inicia ejecución
+2026-05-07 19:06:38 - Niño N0008 entra en Calle Principal
+2026-05-07 19:06:38 - Niño N0285 creado
+2026-05-07 19:06:38 - Niño N0285 inicia ejecución
+2026-05-07 19:06:38 - Niño N0005 espera para cruzar al portal de  El Bosque
+2026-05-07 19:06:39 - Niño N0009 creado
+2026-05-07 19:06:39 - Niño N0009 inicia ejecución
+2026-05-07 19:06:39 - Niño N0009 entra en Calle Principal
+2026-05-07 19:06:39 - Niño N0004 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:06:39 - Niño N0003 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:06:39 - Niño N0006 entra en el Sótano de los Byers
+2026-05-07 19:06:39 - Niño N0450 creado
+2026-05-07 19:06:39 - Niño N0450 inicia ejecución
+2026-05-07 19:06:39 - Niño N0001 intenta regresar desde  El Bosque
+2026-05-07 19:06:39 - El niño N0001 ha regresado a Hawkins desde BOSQUE
+2026-05-07 19:06:40 - Niño N0010 creado
+2026-05-07 19:06:40 - Niño N0010 inicia ejecución
+2026-05-07 19:06:40 - Niño N0010 entra en Calle Principal
+2026-05-07 19:06:40 - Niño N0286 creado
+2026-05-07 19:06:40 - Niño N0286 inicia ejecución
+2026-05-07 19:06:40 - Niño N0000 intenta regresar desde  El Bosque
+2026-05-07 19:06:40 - Niño N0006 espera para cruzar al portal de El Alcantarillado
+2026-05-07 19:06:40 - El niño N0000 ha regresado a Hawkins desde BOSQUE
+2026-05-07 19:06:40 - Niño N0001 entrega sangre contaminada
+2026-05-07 19:06:40 - Niño N0001 entra en Radio WSQK
+2026-05-07 19:06:40 - Niño N0287 creado
+2026-05-07 19:06:40 - Niño N0287 inicia ejecución
+2026-05-07 19:06:41 - Niño N0007 entra en el Sótano de los Byers
+2026-05-07 19:06:41 - Niño N0451 creado
+2026-05-07 19:06:41 - Niño N0451 inicia ejecución
+2026-05-07 19:06:41 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-07 19:06:41 - Demogorgon D0000 entra en El Bosque
+2026-05-07 19:06:41 - Niño N0000 entrega sangre contaminada
+2026-05-07 19:06:41 - Niño N0000 entra en Radio WSQK
+2026-05-07 19:06:42 - Niño N0011 creado
+2026-05-07 19:06:42 - Niño N0011 inicia ejecución
+2026-05-07 19:06:42 - Niño N0011 entra en Calle Principal
+2026-05-07 19:06:42 - Niño N0003 intenta regresar desde  El Bosque
+2026-05-07 19:06:42 - El niño N0003 ha regresado a Hawkins desde BOSQUE
+2026-05-07 19:06:42 - Niño N0288 creado
+2026-05-07 19:06:42 - Niño N0008 entra en el Sótano de los Byers
+2026-05-07 19:06:42 - Niño N0288 inicia ejecución
+2026-05-07 19:06:42 - Demogorgon D0000 aumenta sus capturas a 1
+2026-05-07 19:06:42 - El demogorgon D0000 ataca al niño N0003
+2026-05-07 19:06:42 - El niño N0003 ha sido capturado
+2026-05-07 19:06:42 - Niño N0003 ha sido capturado
+2026-05-07 19:06:42 - Niño N0007 espera para cruzar al portal de El Alcantarillado
+2026-05-07 19:06:42 - El niño N0007 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 19:06:42 - El niño N0006 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 19:06:42 - Niño N0012 creado
+2026-05-07 19:06:42 - Niño N0012 inicia ejecución
+2026-05-07 19:06:42 - Niño N0012 entra en Calle Principal
+2026-05-07 19:06:43 - Niño N0003 entrega sangre contaminada
+2026-05-07 19:06:43 - Niño N0003 entra en Radio WSQK
+2026-05-07 19:06:43 - Niño N0009 entra en el Sótano de los Byers
+2026-05-07 19:06:43 - Niño N0452 creado
+2026-05-07 19:06:43 - Niño N0452 inicia ejecución
+2026-05-07 19:06:43 - Demogorgon D0000 abandona El Bosque
+2026-05-07 19:06:43 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-07 19:06:43 - Niño N0004 intenta regresar desde  El Bosque
+2026-05-07 19:06:43 - El niño N0004 ha regresado a Hawkins desde BOSQUE
+2026-05-07 19:06:43 - Niño N0007 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 19:06:43 - Niño N0006 cruza al Upside Down hacia El Alcantarillado
+2026-05-07 19:06:43 - Niño N0289 creado
+2026-05-07 19:06:43 - Niño N0289 inicia ejecución
+2026-05-07 19:06:44 - Niño N0008 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:06:44 - Niño N0001 entra en Calle Principal
+2026-05-07 19:06:44 - Niño N0004 entrega sangre contaminada
+2026-05-07 19:06:44 - Niño N0004 entra en Radio WSQK
+2026-05-07 19:06:44 - Niño N0013 creado
+2026-05-07 19:06:44 - Niño N0013 inicia ejecución
+2026-05-07 19:06:44 - Niño N0013 entra en Calle Principal
+2026-05-07 19:06:44 - Niño N0000 entra en Calle Principal
+2026-05-07 19:06:44 - Niño N0009 espera para cruzar al portal de El Centro Comercial
+2026-05-07 19:06:45 - Niño N0453 creado
+2026-05-07 19:06:45 - Niño N0453 inicia ejecución
+2026-05-07 19:06:45 - Niño N0010 entra en el Sótano de los Byers
+2026-05-07 19:06:45 - Niño N0011 entra en el Sótano de los Byers
+2026-05-07 19:06:45 - Niño N0290 creado
+2026-05-07 19:06:45 - Niño N0290 inicia ejecución
+2026-05-07 19:06:46 - Niño N0454 creado
+2026-05-07 19:06:46 - Niño N0454 inicia ejecución
+2026-05-07 19:06:46 - Niño N0014 creado
+2026-05-07 19:06:46 - Niño N0014 inicia ejecución
+2026-05-07 19:06:46 - Niño N0014 entra en Calle Principal
+2026-05-07 19:06:46 - Niño N0012 entra en el Sótano de los Byers
+2026-05-07 19:06:47 - Niño N0291 creado
+2026-05-07 19:06:47 - Niño N0291 inicia ejecución
+2026-05-07 19:06:47 - Niño N0015 creado
+2026-05-07 19:06:47 - Niño N0015 inicia ejecución
+2026-05-07 19:06:47 - Niño N0455 creado
+2026-05-07 19:06:47 - Niño N0455 inicia ejecución
+2026-05-07 19:06:48 - Niño N0016 creado
+2026-05-07 19:06:48 - Niño N0016 inicia ejecución
+2026-05-07 19:06:49 - Niño N0456 creado
+2026-05-07 19:06:49 - Niño N0456 inicia ejecución
+2026-05-07 19:06:49 - Niño N0292 creado
+2026-05-07 19:06:49 - Niño N0292 inicia ejecución
+2026-05-07 19:06:49 - Niño N0016 entra en Calle Principal
+2026-05-07 19:06:49 - Niño N0011 espera para cruzar al portal de El Alcantarillado
+2026-05-07 19:06:49 - Niño N0010 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:06:49 - El niño N0010 ha cruzado el portal hacia LABORATORIO
+2026-05-07 19:06:49 - Niño N0004 entra en Calle Principal
+2026-05-07 19:06:49 - Niño N0006 intenta regresar desde El Alcantarillado
+2026-05-07 19:06:49 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-07 19:06:49 - Niño N0001 entra en el Sótano de los Byers
+2026-05-07 19:06:49 - Niño N0000 entra en el Sótano de los Byers
+2026-05-07 19:06:49 - Niño N0007 intenta regresar desde El Alcantarillado
+2026-05-07 19:06:49 - Niño N0013 entra en el Sótano de los Byers
+2026-05-07 19:06:49 - Niño N0012 espera para cruzar al portal de El Alcantarillado
+2026-05-07 19:06:49 - Demogorgon D0000 entra en El Laboratorio
+2026-05-07 19:06:49 - El niño N0006 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-07 19:06:49 - El niño N0008 ha cruzado el portal hacia LABORATORIO
+2026-05-07 19:06:49 - El niño N0002 ha cruzado el portal hacia LABORATORIO
+2026-05-07 19:06:49 - Niño N0015 entra en Calle Principal
+2026-05-07 19:06:49 - Niño N0017 creado
+2026-05-07 19:06:49 - Niño N0017 inicia ejecución
+2026-05-07 19:06:49 - Niño N0017 entra en Calle Principal
+2026-05-07 19:06:49 - Niño N0014 entra en el Sótano de los Byers
+2026-05-07 19:06:50 - Niño N0293 creado
+2026-05-07 19:06:50 - Niño N0293 inicia ejecución
+2026-05-07 19:06:50 - Niño N0294 creado
+2026-05-07 19:06:50 - Niño N0294 inicia ejecución
+2026-05-07 19:06:50 - Niño N0010 cruza al Upside Down hacia El Laboratorio
+2026-05-07 19:06:50 - Niño N0457 creado
+2026-05-07 19:06:50 - Niño N0457 inicia ejecución
+2026-05-07 19:06:50 - Niño N0006 entrega sangre contaminada
+2026-05-07 19:06:50 - Niño N0006 entra en Radio WSQK
+2026-05-07 19:06:50 - El niño N0007 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-07 19:06:50 - Niño N0002 cruza al Upside Down hacia El Laboratorio
+2026-05-07 19:06:50 - Niño N0008 cruza al Upside Down hacia El Laboratorio
+2026-05-07 19:06:50 - Niño N0013 espera para cruzar al portal de  El Bosque
+2026-05-07 19:06:50 - El niño N0013 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:06:50 - El niño N0005 ha cruzado el portal hacia BOSQUE
+2026-05-07 19:06:51 - Niño N0018 creado
+2026-05-07 19:06:51 - Niño N0018 inicia ejecución
+2026-05-07 19:06:51 - Niño N0018 entra en Calle Principal
+2026-05-07 19:06:51 - Niño N0014 espera para cruzar al portal de  El Bosque
+2026-05-07 19:06:51 - Niño N0001 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:06:51 - Niño N0000 espera para cruzar al portal de El Laboratorio
+2026-05-07 19:06:51 - Niño N0007 entrega sangre contaminada
+2026-05-07 19:06:51 - Niño N0007 entra en Radio WSQK
+2026-05-07 19:06:51 - El niño N0011 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 19:06:51 - El niño N0012 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-07 19:06:51 - Niño N0005 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:06:51 - Niño N0013 cruza al Upside Down hacia  El Bosque
+2026-05-07 19:06:52 - Niño N0458 creado
+2026-05-07 19:06:52 - Niño N0458 inicia ejecución
+2026-05-07 19:06:52 - Niño N0019 creado
+2026-05-07 19:06:52 - Niño N0019 inicia ejecución
+2026-05-07 19:06:52 - Niño N0019 entra en Calle Principal
+2026-05-07 19:06:52 - Niño N0295 creado
+2026-05-07 19:06:52 - Niño N0295 inicia ejecución
+2026-05-07 19:06:52 - Niño N0459 creado
+2026-05-07 19:06:52 - Niño N0459 inicia ejecución
+2026-05-07 19:06:53 - Niño N0460 creado
+2026-05-07 19:06:53 - Niño N0460 inicia ejecución
+2026-05-07 19:06:53 - Niño N0296 creado
+2026-05-07 19:06:53 - Niño N0296 inicia ejecución
+2026-05-07 19:06:54 - Niño N0461 creado
+2026-05-07 19:06:54 - Niño N0461 inicia ejecución
+2026-05-07 19:06:54 - Niño N0297 creado
+2026-05-07 19:06:54 - Niño N0297 inicia ejecución
+2026-05-07 19:06:55 - Niño N0462 creado
+2026-05-07 19:06:55 - Niño N0462 inicia ejecución
+2026-05-07 19:06:55 - Niño N0298 creado
+2026-05-07 19:06:55 - Niño N0298 inicia ejecución
+2026-05-07 19:06:56 - Niño N0463 creado
+2026-05-07 19:06:56 - Niño N0463 inicia ejecución
+2026-05-07 19:06:57 - Niño N0464 creado
+2026-05-07 19:06:57 - Niño N0464 inicia ejecución
+2026-05-07 19:06:57 - Niño N0299 creado
+2026-05-07 19:06:57 - Niño N0299 inicia ejecución
+2026-05-07 19:06:58 - Niño N0465 creado
+2026-05-07 19:06:58 - Niño N0465 inicia ejecución
+2026-05-07 19:06:59 - Niño N0300 creado
+2026-05-07 19:06:59 - Niño N0300 inicia ejecución
+2026-05-07 19:06:59 - Niño N0301 creado
+2026-05-07 19:06:59 - Niño N0301 inicia ejecución
+2026-05-07 19:07:00 - Niño N0466 creado
+2026-05-07 19:07:00 - Niño N0466 inicia ejecución
+2026-05-07 19:07:01 - Niño N0467 creado
+2026-05-07 19:07:01 - Niño N0467 inicia ejecución
+2026-05-07 19:07:01 - Niño N0302 creado
+2026-05-07 19:07:01 - Niño N0302 inicia ejecución
+2026-05-07 19:07:02 - Niño N0303 creado
+2026-05-07 19:07:02 - Niño N0303 inicia ejecución
+2026-05-07 19:07:03 - Niño N0468 creado
+2026-05-07 19:07:03 - Niño N0468 inicia ejecución
+2026-05-07 19:07:04 - Niño N0304 creado
+2026-05-07 19:07:04 - Niño N0304 inicia ejecución
+2026-05-07 19:07:05 - Niño N0469 creado
+2026-05-07 19:07:05 - Niño N0469 inicia ejecución
+2026-05-07 19:07:06 - Niño N0305 creado
+2026-05-07 19:07:06 - Niño N0305 inicia ejecución
+2026-05-07 19:07:06 - Niño N0470 creado
+2026-05-07 19:07:06 - Niño N0470 inicia ejecución
+2026-05-07 19:07:06 - Niño N0306 creado
+2026-05-07 19:07:06 - Niño N0306 inicia ejecución
+2026-05-07 19:07:08 - Niño N0471 creado
+2026-05-07 19:07:08 - Niño N0471 inicia ejecución
+2026-05-07 19:07:08 - Niño N0307 creado
+2026-05-07 19:07:08 - Niño N0307 inicia ejecución
+2026-05-07 19:07:08 - Niño N0472 creado
+2026-05-07 19:07:08 - Niño N0472 inicia ejecución
+2026-05-07 19:07:09 - Niño N0473 creado
+2026-05-07 19:07:09 - Niño N0473 inicia ejecución
+2026-05-07 19:07:10 - Niño N0308 creado
+2026-05-07 19:07:10 - Niño N0308 inicia ejecución
+2026-05-07 19:07:11 - Niño N0474 creado
+2026-05-07 19:07:11 - Niño N0474 inicia ejecución
+2026-05-07 19:07:11 - Niño N0309 creado
+2026-05-07 19:07:11 - Niño N0309 inicia ejecución
+2026-05-07 19:07:11 - Niño N0310 creado
+2026-05-07 19:07:11 - Niño N0310 inicia ejecución
+2026-05-07 19:07:12 - Niño N0475 creado
+2026-05-07 19:07:12 - Niño N0475 inicia ejecución
