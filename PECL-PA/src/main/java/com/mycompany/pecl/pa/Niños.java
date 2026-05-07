@@ -19,6 +19,7 @@ public class Niños extends Thread {
         this.mundo = mundo;
         this.eventos = eventos;
         this.id = String.format("N%04d", numid);
+        LogHawkins.escribir("Niño " + id + " creado");
     }
 
     public synchronized void setCapturado(boolean estado) {
@@ -51,21 +52,29 @@ public class Niños extends Thread {
     
     public synchronized boolean intentarSerAtacado() {
         if (capturado || siendoAtacado) {
+            LogHawkins.escribir("Niño " + id + " está siendo atacado");
             return false;
         }
         siendoAtacado = true;
         return true;
+        
     }
 
     public synchronized void finalizarAtaque(boolean capturado) {
         this.capturado = capturado;
         this.siendoAtacado = false;
+        if(capturado){
+            LogHawkins.escribir("Niño " + id + " ha sido capturado");
+        }else{
+            LogHawkins.escribir("Niño " + id + " ha sobrevivido al ataque");
+        }
     }
     
     public synchronized void liberarPorEleven() {
         capturado = false;
         siendoAtacado = false;
         liberadoPorEleven = true;
+        LogHawkins.escribir("Niño " + id + " ha sido liberado por Eleven");
     }
     
     public synchronized boolean fueLiberadoPorEleven() {
@@ -84,11 +93,14 @@ public class Niños extends Thread {
     }
     
     public void run() {
+        LogHawkins.escribir("Niño " + id + " inicia ejecución");
             while (true) {
+                mundo.comprobarPausa();
                 try {
                     mundo.eliminarNiñoDeTodasLasListas(this);
                     mundo.entrarNiño(5, this);
                     System.out.println("Nino " + id + " en la Calle Principal.");
+                    LogHawkins.escribir("Niño " + id + " entra en Calle Principal");
                     Thread.sleep((int) (Math.random() * 2000) + 3000);
 
 
@@ -96,14 +108,17 @@ public class Niños extends Thread {
                     mundo.salirNiño(5, this);
                     mundo.entrarNiño(6, this);
                     System.out.println("Nino " + id + " entra al Sotano.");
+                    LogHawkins.escribir("Niño " + id + " entra en el Sótano de los Byers");
                     Thread.sleep((int) (Math.random() * 1000) + 1000);
 
                     int zonaElegida = (int) (Math.random() * 4) + 1;
                     mundo.salirNiño(6, this);
-
+                    
+                    LogHawkins.escribir("Niño " + id + " espera para cruzar al portal de " + zonaString(zonaElegida));
                     mundo.esperarEnPortal(zonaElegida, this);
                     System.out.println("Nino " + id + " ha cruzado al Upside Down.");
-
+                    LogHawkins.escribir("Niño " + id + " cruza al Upside Down hacia " + zonaString(zonaElegida));
+                    
                     while(esCapturado()){
                         try { sleep(200); } catch(Exception e){}
                     }
@@ -130,15 +145,18 @@ public class Niños extends Thread {
                         resetLiberadoPorEleven();
                         continue;
                     }
-
+                    
+                    LogHawkins.escribir("Niño " + id + " intenta regresar desde " + zonaString(zonaElegida));
                     mundo.salirNiño(zonaElegida, this);
                     mundo.volverDePortal(zonaElegida, this);
 
                     mundo.incrementarSangre();
+                    LogHawkins.escribir("Niño " + id + " entrega sangre contaminada");
                     mundo.entrarNiño(7, this);
                     System.out.println("Nino " + id + " en Radio WSQK.");
+                    LogHawkins.escribir("Niño " + id + " entra en Radio WSQK");
                     Thread.sleep((int) (Math.random() * 2000) + 2000);
-
+                    
                     while(esCapturado()){
                         try { sleep(200); } catch(Exception e){}
                     }

@@ -40,7 +40,10 @@ public class Mundo {
     
     private Lock atacar = new ReentrantLock();
     private Eventos eventos;
+    
+    private boolean pausado = false;
    
+    private LogHawkins log = new LogHawkins();
 
     public void setEventos(Eventos eventos) {
     this.eventos = eventos;
@@ -60,7 +63,7 @@ public class Mundo {
         boolean grupoFormado = false;
     }
     
-        private Portal bosque = new Portal();
+    private Portal bosque = new Portal();
     private Portal laboratorio = new Portal();
     private Portal centro = new Portal();
     private Portal alcantarillado = new Portal();
@@ -102,7 +105,7 @@ public class Mundo {
         synchronized (p) {
             p.listaEsperaIda.add(n);
             System.out.println("Niño " + n.getIdNiño() + " espera portal hacia " + destino);
-
+            
             while (!p.grupoIdaActual.contains(n)) {
 
                 if (!hayApagon()
@@ -133,7 +136,8 @@ public class Mundo {
         }
 
         System.out.println("Niño " + n.getIdNiño() + " cruza hacia " + destino);
-
+        LogHawkins.escribir("El niño " + n.getIdNiño() + " ha cruzado el portal hacia " + destino);
+        
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -161,6 +165,7 @@ public class Mundo {
             p.listaEsperaVuelta.add(n);
             System.out.println("Niño " + n.getIdNiño() + " espera para volver desde " + origen);
             p.notifyAll();
+            
         }
 
         synchronized (p) {
@@ -178,6 +183,7 @@ public class Mundo {
         }
 
         System.out.println("Niño " + n.getIdNiño() + " REGRESA desde " + origen);
+        LogHawkins.escribir("El niño " + n.getIdNiño() + " ha regresado a Hawkins desde " + origen);
 
         try {
             Thread.sleep(1000);
@@ -322,6 +328,10 @@ public class Mundo {
         return eventos.hayTormenta();
     }
     
+    public int getSangreAcumulada() {
+    return contadorSangre;
+}
+    
     
     public synchronized int getContadorSangreDuranteEleven(){
         return contadorSangreDuranteEleven;
@@ -341,6 +351,7 @@ public class Mundo {
 
             System.out.println("Eleven libera a " + niñoRevivido.getIdNiño()
                     + " y vuelve a la Calle Principal.");
+            LogHawkins.escribir("EVENTO GLOBAL: Eleven ha liberado al niño " + niñoRevivido.getIdNiño() + " de la Colmena");
         }
 
         contadorSangreDuranteEleven = 0;
@@ -430,10 +441,15 @@ public class Mundo {
                 niñosEnColmena++;
                 System.out.println("Ninos en Colmena " + niñosEnColmena);
                 d.incrementar_capturas();
-
+                
+                LogHawkins.escribir("El demogorgon " + d.toString() + " ataca al niño " + objetivo.getIdNiño());
+                LogHawkins.escribir("El niño " + objetivo.getIdNiño() + " ha sido capturado");
+                
                 if (niñosEnColmena % 8 == 0) {
                     new Demogorgons(this,eventos, contadorDemogorgons++).start();
-                }
+                    LogHawkins.escribir("La Red Mental se expande: Un nuevo Demogorgon ha nacido.");
+                
+            }
 
                 objetivo.finalizarAtaque(true);
             } else {
@@ -564,6 +580,29 @@ public class Mundo {
             return "SIN EVENTO";
         }
         return eventos.getEventoActual();
+    }
+    
+    public synchronized void comprobarPausa() {
+        while (pausado) {
+            try {
+                wait(); // El hilo se queda durmiendo aquí hasta que llamen a notifyAll()
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+    }
+
+    public synchronized void pausar() {
+        pausado = true;
+    }
+
+    public synchronized void reanudar() {
+        pausado = false;
+        notifyAll(); // Despierta a todos los hilos que estaban en el wait()
+    }
+    
+    public LogHawkins getLog() {
+        return log;
     }
     
     

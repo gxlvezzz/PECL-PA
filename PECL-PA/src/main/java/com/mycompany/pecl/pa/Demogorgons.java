@@ -24,6 +24,7 @@ public class Demogorgons extends Thread {
         this.mundo = mundo;
         this.evento = eventos;
         this.id = String.format("D%04d", numid);
+        LogHawkins.escribir("Demogorgon " + id + " creado");
     }
     
     private void moverse(){
@@ -38,6 +39,8 @@ public class Demogorgons extends Thread {
         zona_anterior = zona;
         if(evento.hayRedMental()){
             zona = mundo.zonaConMasNiños();
+            LogHawkins.escribir("Demogorgon " + id + " se dirige por RED MENTAL hacia " + zonaString(zona));
+            
         } else {
             zona = (int)(Math.random()*4)+1;
             while(zona_anterior == zona){
@@ -46,6 +49,8 @@ public class Demogorgons extends Thread {
         }
         mundo.entrarDemogorgon(zona, this);
         System.out.println("Demogorgon " + this.id + " ha entrado en " + zonaString(zona));
+        
+        LogHawkins.escribir("Demogorgon " + id +" entra en " + zonaString(zona));
     }
     
     private String zonaString(int zona){
@@ -68,6 +73,7 @@ public class Demogorgons extends Thread {
 
     public void incrementar_capturas(){
         capturas++;
+         LogHawkins.escribir("Demogorgon " + id + " aumenta sus capturas a " + capturas);
     }
     
     public String toString() {
@@ -76,8 +82,10 @@ public class Demogorgons extends Thread {
     
     public void run(){
         System.out.println(this.id);
+         LogHawkins.escribir("Demogorgon " + id + " inicia ejecución");
 
         while(true){
+            mundo.comprobarPausa();
             while(evento.hayEleven()){
                 try { Thread.sleep(500); } catch(Exception e) {}
             }
@@ -85,6 +93,8 @@ public class Demogorgons extends Thread {
             if (!evento.hayApagon()) {
                 if (zona != 0) {
                     mundo.eliminarListaDemogorgon(zona, this);
+                    
+                    LogHawkins.escribir("Demogorgon " + id +" abandona " + zonaString(zona));
                 }
 
                 moverse();

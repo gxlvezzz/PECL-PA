@@ -41,18 +41,25 @@ public class Eventos extends Thread {
             case 0:
                 apagon = true;
                 System.out.println("EVENTO: APAGON");
+                LogHawkins.escribir("EVENTO GLOBAL: APAGON DEL LABORATORIO iniciado");
                 break;
+
             case 1:
                 tormenta = true;
                 System.out.println("EVENTO: TORMENTA");
+                LogHawkins.escribir("EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN iniciada");
                 break;
+
             case 2:
                 eleven = true;
                 System.out.println("EVENTO: ELEVEN");
+                LogHawkins.escribir("EVENTO GLOBAL: INTERVENCION DE ELEVEN iniciada");
                 break;
+
             case 3:
                 redMental = true;
                 System.out.println("EVENTO: RED MENTAL");
+                LogHawkins.escribir("EVENTO GLOBAL: LA RED MENTAL iniciada");
                 break;
         }
     }
@@ -62,15 +69,22 @@ public class Eventos extends Thread {
             case 0:
                 apagon = false;
                 mundo.despertarPortales();
+                LogHawkins.escribir("EVENTO GLOBAL: APAGON DEL LABORATORIO finalizado");
                 break;
+
             case 1:
                 tormenta = false;
+                LogHawkins.escribir("EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN finalizada");
                 break;
+
             case 2:
                 eleven = false;
+                LogHawkins.escribir("EVENTO GLOBAL: INTERVENCION DE ELEVEN finalizada");
                 break;
+
             case 3:
                 redMental = false;
+                LogHawkins.escribir("EVENTO GLOBAL: LA RED MENTAL finalizada");
                 break;
         }
 
@@ -88,7 +102,9 @@ public class Eventos extends Thread {
         }
 
         desactivarEvento(num);
+
         if(num==2){
+            LogHawkins.escribir("Eleven comienza a liberar niños de la Colmena");
             mundo.revivirNiños();
         }
     }
