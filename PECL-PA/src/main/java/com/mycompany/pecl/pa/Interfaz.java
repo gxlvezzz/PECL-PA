@@ -48,10 +48,12 @@ public class Interfaz extends javax.swing.JFrame {
         String alcanD = generarTexto(mundo.getDemosAlcantarillado());
 
         // 3. Obtención de datos de Hawkins
-        String calleP = generarTexto(mundo.getNiñosCallePrincipal());
-        String colmena = generarTexto(mundo.getNiñosColmena());
-        String sotano = generarTexto(mundo.getNiñosSotanoByers());
-        String radio = generarTexto(mundo.getNiñosRadioWSQK());
+        String calleP = generarTexto(mundo.getNiñosCallePrincipalPrueba());
+        String colmena = generarTexto(mundo.getNiñosColmenaPrueba());
+        String sotano = generarTexto(mundo.getNiñosSotanoByersPrueba());
+        String radio = generarTexto(mundo.getNiñosRadioWSQKPrueba());
+        
+        String eventoActual = mundo.getEventoActual();
 
         // 4. Actualización efectiva en el EDT
         SwingUtilities.invokeLater(() -> {
@@ -84,6 +86,8 @@ public class Interfaz extends javax.swing.JFrame {
             txtColmenaLista.setText(colmena);
             txtSotano.setText(sotano);
             txtRadio.setText(radio);
+            
+            txtEventoActual.setText(eventoActual);
         });
 
     } catch (Exception e) {
@@ -175,32 +179,49 @@ public class Interfaz extends javax.swing.JFrame {
         txtCentroComercialDemo = new javax.swing.JTextArea();
         jScrollPane16 = new javax.swing.JScrollPane();
         txtAlcantarilladoDemo = new javax.swing.JTextArea();
+        txtEventoActual = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
 
         jTextField1.setText("jTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("STRANGER THINGS");
+        setBackground(new java.awt.Color(255, 0, 0));
+        setPreferredSize(new java.awt.Dimension(1150, 600));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("HAWKINS");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 77, -1));
 
         jLabel2.setText("Calle Principal");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 44, -1, -1));
 
         jLabel3.setText("Sótano Byers");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 204, 75, -1));
 
         jLabel4.setText("Radio WSQK");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 353, -1, -1));
 
         jLabel5.setText("Niños En Colmena");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 40, -1, -1));
 
         jLabel6.setText("PORTALES");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 38, -1, -1));
 
         jLabel7.setText("Bosque");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, -1, -1));
 
         jLabel8.setText("UpsideDown");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, -1, -1));
 
         jLabel9.setText("Laboratorio");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, -1, -1));
 
         jLabel10.setText("Centro Comercial");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, -1, -1));
 
         jLabel11.setText("Alcantarillado");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, -1));
 
         txtColmenaLista.setEditable(false);
         txtColmenaLista.setBackground(new java.awt.Color(5, 15, 5));
@@ -212,6 +233,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtColmenaLista.setWrapStyleWord(true);
         jScrollPane2.setViewportView(txtColmenaLista);
 
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 80, 97, 100));
+
         txtCallePrincipal.setEditable(false);
         txtCallePrincipal.setBackground(new java.awt.Color(5, 15, 5));
         txtCallePrincipal.setColumns(20);
@@ -221,6 +244,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtCallePrincipal.setRows(5);
         txtCallePrincipal.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txtCallePrincipal);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 72, 100, 100));
 
         txtSotano.setEditable(false);
         txtSotano.setBackground(new java.awt.Color(5, 15, 5));
@@ -232,6 +257,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtSotano.setWrapStyleWord(true);
         jScrollPane3.setViewportView(txtSotano);
 
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 232, 100, 100));
+
         txtRadio.setEditable(false);
         txtRadio.setBackground(new java.awt.Color(5, 15, 5));
         txtRadio.setColumns(20);
@@ -241,6 +268,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtRadio.setRows(5);
         txtRadio.setWrapStyleWord(true);
         jScrollPane4.setViewportView(txtRadio);
+
+        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 381, 100, 100));
 
         txtPortal1.setEditable(false);
         txtPortal1.setBackground(new java.awt.Color(5, 15, 5));
@@ -252,6 +281,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtPortal1.setWrapStyleWord(true);
         jScrollPane5.setViewportView(txtPortal1);
 
+        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 85, 54));
+
         txtBosque.setEditable(false);
         txtBosque.setBackground(new java.awt.Color(5, 15, 5));
         txtBosque.setColumns(20);
@@ -261,6 +292,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtBosque.setRows(5);
         txtBosque.setWrapStyleWord(true);
         jScrollPane6.setViewportView(txtBosque);
+
+        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 170, 90, 54));
 
         txtLaboratorio.setEditable(false);
         txtLaboratorio.setBackground(new java.awt.Color(5, 15, 5));
@@ -272,6 +305,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtLaboratorio.setWrapStyleWord(true);
         jScrollPane7.setViewportView(txtLaboratorio);
 
+        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, 89, 52));
+
         txtCentroComercial.setEditable(false);
         txtCentroComercial.setBackground(new java.awt.Color(5, 15, 5));
         txtCentroComercial.setColumns(20);
@@ -281,6 +316,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtCentroComercial.setRows(5);
         txtCentroComercial.setWrapStyleWord(true);
         jScrollPane8.setViewportView(txtCentroComercial);
+
+        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, 88, 49));
 
         txtPortal2.setEditable(false);
         txtPortal2.setBackground(new java.awt.Color(5, 15, 5));
@@ -292,6 +329,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtPortal2.setWrapStyleWord(true);
         jScrollPane9.setViewportView(txtPortal2);
 
+        getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 80, 60));
+
         txtPortal3.setEditable(false);
         txtPortal3.setBackground(new java.awt.Color(5, 15, 5));
         txtPortal3.setColumns(20);
@@ -301,6 +340,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtPortal3.setRows(5);
         txtPortal3.setWrapStyleWord(true);
         jScrollPane10.setViewportView(txtPortal3);
+
+        getContentPane().add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 265, 80, 60));
 
         txtAlcantarillado.setEditable(false);
         txtAlcantarillado.setBackground(new java.awt.Color(5, 15, 5));
@@ -312,6 +353,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtAlcantarillado.setWrapStyleWord(true);
         jScrollPane11.setViewportView(txtAlcantarillado);
 
+        getContentPane().add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 280, 86, 51));
+
         txtPortal4.setEditable(false);
         txtPortal4.setBackground(new java.awt.Color(5, 15, 5));
         txtPortal4.setColumns(20);
@@ -321,6 +364,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtPortal4.setRows(5);
         txtPortal4.setWrapStyleWord(true);
         jScrollPane12.setViewportView(txtPortal4);
+
+        getContentPane().add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, 80, 60));
 
         txtVuelta1.setEditable(false);
         txtVuelta1.setBackground(new java.awt.Color(5, 15, 5));
@@ -332,6 +377,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtVuelta1.setWrapStyleWord(true);
         jScrollPane21.setViewportView(txtVuelta1);
 
+        getContentPane().add(jScrollPane21, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 76, 54));
+
         txtVuelta2.setEditable(false);
         txtVuelta2.setBackground(new java.awt.Color(5, 15, 5));
         txtVuelta2.setColumns(20);
@@ -341,6 +388,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtVuelta2.setRows(5);
         txtVuelta2.setWrapStyleWord(true);
         jScrollPane22.setViewportView(txtVuelta2);
+
+        getContentPane().add(jScrollPane22, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, 76, 60));
 
         txtVuelta3.setEditable(false);
         txtVuelta3.setBackground(new java.awt.Color(5, 15, 5));
@@ -352,6 +401,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtVuelta3.setWrapStyleWord(true);
         jScrollPane23.setViewportView(txtVuelta3);
 
+        getContentPane().add(jScrollPane23, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 80, 60));
+
         txtVuelta4.setEditable(false);
         txtVuelta4.setBackground(new java.awt.Color(5, 15, 5));
         txtVuelta4.setColumns(20);
@@ -361,6 +412,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtVuelta4.setRows(5);
         txtVuelta4.setWrapStyleWord(true);
         jScrollPane24.setViewportView(txtVuelta4);
+
+        getContentPane().add(jScrollPane24, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 370, 80, 60));
 
         txtBosqueDemo.setEditable(false);
         txtBosqueDemo.setBackground(new java.awt.Color(5, 15, 5));
@@ -372,6 +425,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtBosqueDemo.setWrapStyleWord(true);
         jScrollPane13.setViewportView(txtBosqueDemo);
 
+        getContentPane().add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, 90, 54));
+
         txtLaboratorioDemo.setEditable(false);
         txtLaboratorioDemo.setBackground(new java.awt.Color(5, 15, 5));
         txtLaboratorioDemo.setColumns(20);
@@ -381,6 +436,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtLaboratorioDemo.setRows(5);
         txtLaboratorioDemo.setWrapStyleWord(true);
         jScrollPane14.setViewportView(txtLaboratorioDemo);
+
+        getContentPane().add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 380, 89, 52));
 
         txtCentroComercialDemo.setEditable(false);
         txtCentroComercialDemo.setBackground(new java.awt.Color(5, 15, 5));
@@ -392,6 +449,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtCentroComercialDemo.setWrapStyleWord(true);
         jScrollPane15.setViewportView(txtCentroComercialDemo);
 
+        getContentPane().add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 80, 88, 49));
+
         txtAlcantarilladoDemo.setEditable(false);
         txtAlcantarilladoDemo.setBackground(new java.awt.Color(5, 15, 5));
         txtAlcantarilladoDemo.setColumns(20);
@@ -402,161 +461,16 @@ public class Interfaz extends javax.swing.JFrame {
         txtAlcantarilladoDemo.setWrapStyleWord(true);
         jScrollPane16.setViewportView(txtAlcantarilladoDemo);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel4))
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(123, 123, 123)
-                                        .addComponent(jLabel6))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(63, 63, 63)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
-                                                .addComponent(jScrollPane9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
-                                                .addComponent(jScrollPane12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jScrollPane22, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
-                                            .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                            .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                            .addComponent(jScrollPane24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
-                                .addGap(103, 103, 103)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                            .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addGroup(layout.createSequentialGroup()
-                                                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addGap(18, 18, 18)
-                                                            .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                .addGap(104, 104, 104))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel9)
-                                                .addGap(170, 170, 170)))
-                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel7)
-                                            .addComponent(jLabel8))
-                                        .addGap(184, 184, 184)
-                                        .addComponent(jLabel5))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(408, 408, 408)
-                                .addComponent(jLabel11))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(394, 394, 394)
-                                .addComponent(jLabel10))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(246, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(28, 28, 28)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(39, 39, 39)
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(305, 305, 305))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(126, 126, 126)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(61, 61, 61)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
-                                    .addComponent(jScrollPane24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(271, 284, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jScrollPane14, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
+        getContentPane().add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 280, 86, 51));
+
+        txtEventoActual.setEditable(false);
+        txtEventoActual.setBackground(new java.awt.Color(5, 15, 5));
+        txtEventoActual.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        txtEventoActual.setForeground(new java.awt.Color(50, 255, 100));
+        getContentPane().add(txtEventoActual, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 330, 340, 66));
+
+        jLabel12.setText("Evento");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 300, 40, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -569,6 +483,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -606,6 +521,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JTextArea txtCentroComercial;
     private javax.swing.JTextArea txtCentroComercialDemo;
     private javax.swing.JTextArea txtColmenaLista;
+    private javax.swing.JTextField txtEventoActual;
     private javax.swing.JTextArea txtLaboratorio;
     private javax.swing.JTextArea txtLaboratorioDemo;
     private javax.swing.JTextArea txtPortal1;

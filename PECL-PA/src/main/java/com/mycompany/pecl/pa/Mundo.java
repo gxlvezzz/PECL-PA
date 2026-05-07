@@ -50,12 +50,13 @@ public class Mundo {
     
     private class Portal {
         int capacidad;
-        // Listas para mostrar nombres en la interfaz
+
         List<Niños> listaEsperaIda = Collections.synchronizedList(new ArrayList<>());
         List<Niños> listaEsperaVuelta = Collections.synchronizedList(new ArrayList<>());
-        
+
+        List<Niños> grupoIdaActual = new ArrayList<>();
+
         int cruzando = 0;
-        int enGrupo = 0; 
         boolean grupoFormado = false;
     }
     
@@ -95,69 +96,100 @@ public class Mundo {
     }
     
     public void esperarEnPortal(int zona, Niños n) {
-    Portal p = getPortal(zona);
-    
-    synchronized (p) {
-        p.listaEsperaIda.add(n); // Añadimos el objeto niño a la lista
-        
-        if (p.listaEsperaIda.size() >= p.capacidad && !p.grupoFormado) {
-            p.notifyAll(); 
+        Portal p = getPortal(zona);
+        String destino = nombreZona(zona);
+
+        synchronized (p) {
+            p.listaEsperaIda.add(n);
+            System.out.println("Niño " + n.getIdNiño() + " espera portal hacia " + destino);
+
+            while (!p.grupoIdaActual.contains(n)) {
+
+                if (!hayApagon()
+                        && !p.grupoFormado
+                        && p.cruzando == 0
+                        && p.listaEsperaVuelta.isEmpty()
+                        && p.listaEsperaIda.size() >= p.capacidad) {
+
+                    p.grupoFormado = true;
+                    p.grupoIdaActual.clear();
+
+                    for (int i = 0; i < p.capacidad; i++) {
+                        Niños niñoGrupo = p.listaEsperaIda.remove(0);
+                        p.grupoIdaActual.add(niñoGrupo);
+                    }
+
+                    p.cruzando = p.capacidad;
+                    p.notifyAll();
+                } else {
+                    try {
+                        p.wait();
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                        return;
+                    }
+                }
+            }
         }
 
-        while (hayApagon() || p.grupoFormado || p.listaEsperaIda.size() < p.capacidad) {
-            try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+        System.out.println("Niño " + n.getIdNiño() + " cruza hacia " + destino);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
 
-        if (!p.grupoFormado) {
-            p.grupoFormado = true;
-            p.enGrupo = p.capacidad;
+        synchronized (p) {
+            p.cruzando--;
+            p.grupoIdaActual.remove(n);
+
+            if (p.cruzando == 0) {
+                p.grupoFormado = false;
+                p.grupoIdaActual.clear();
+            }
+
+            p.notifyAll();
         }
     }
 
-    synchronized (p) {
-        while (p.cruzando > 0 || !p.listaEsperaVuelta.isEmpty() || hayApagon()) {
-            try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+    public void volverDePortal(int zona, Niños n) {
+        Portal p = getPortal(zona);
+        String origen = nombreZona(zona);
+
+        synchronized (p) {
+            p.listaEsperaVuelta.add(n);
+            System.out.println("Niño " + n.getIdNiño() + " espera para volver desde " + origen);
+            p.notifyAll();
         }
-        
-        p.cruzando++;
-        p.listaEsperaIda.remove(n); // <--- Lo quitamos de la lista de espera al empezar a cruzar
-        p.notifyAll(); 
-    }
 
-    try { Thread.sleep(1000); } catch (Exception e) {}
+        synchronized (p) {
+            while (hayApagon() || p.cruzando > 0) {
+                try {
+                    p.wait();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    return;
+                }
+            }
 
-    synchronized (p) {
-        p.cruzando--;
-        p.enGrupo--;
-        if (p.enGrupo == 0) p.grupoFormado = false;
-        p.notifyAll();
-    }
-}
-
-public void volverDePortal(int zona, Niños n) {
-    Portal p = getPortal(zona);
-
-    synchronized (p) {
-        p.listaEsperaVuelta.add(n); // Añadimos a la lista de vuelta
-        p.notifyAll(); 
-    }
-
-    synchronized (p) {
-        while (p.cruzando > 0 || hayApagon()) {
-            try { p.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+            p.listaEsperaVuelta.remove(n);
+            p.cruzando = 1;
         }
-        p.cruzando++;
-        p.listaEsperaVuelta.remove(n); // <--- Lo quitamos al empezar a cruzar
-        p.notifyAll();
-    }
 
-    try { Thread.sleep(1000); } catch (Exception e) {}
+        System.out.println("Niño " + n.getIdNiño() + " REGRESA desde " + origen);
 
-    synchronized (p) {
-        p.cruzando--;
-        p.notifyAll();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
+        synchronized (p) {
+            p.cruzando = 0;
+            p.notifyAll();
+        }
     }
-}
     
     public boolean hayApagon() {
     return eventos != null && eventos.hayApagon();
@@ -465,19 +497,35 @@ public void volverDePortal(int zona, Niños n) {
             return niñosRadioWSQK;
     }
     
-    public List<Niños> getEntidadesBosque() {
+    public synchronized List<Niños> getNiñosColmenaPrueba() {
+        return new ArrayList<>(niñosColmena);
+    }
+
+    public synchronized List<Niños> getNiñosCallePrincipalPrueba() {
+        return new ArrayList<>(niñosCallePrincipal);
+    }
+
+    public synchronized List<Niños> getNiñosSotanoByersPrueba(){
+        return new ArrayList<>(niñosSotanoByers);
+    }
+
+    public synchronized List<Niños> getNiñosRadioWSQKPrueba(){
+        return new ArrayList<>(niñosRadioWSQK);
+    }
+    
+    public synchronized List<Niños> getEntidadesBosque() {
         return new ArrayList<>(niñosBosque); 
     }
 
-    public List<Niños> getEntidadesLab() {
+    public synchronized List<Niños> getEntidadesLab() {
         return new ArrayList<>(niñosLaboratorio);
     }
 
-    public List<Niños> getEntidadesCentroComercial() {
+    public synchronized List<Niños> getEntidadesCentroComercial() {
         return new ArrayList<>(niñosCentroComercial);
     }
 
-    public List<Niños> getEntidadesAlcantarillado() {
+    public synchronized List<Niños> getEntidadesAlcantarillado() {
         return new ArrayList<>(niñosAlcantarillado);
     }
     
@@ -490,11 +538,17 @@ public void volverDePortal(int zona, Niños n) {
     }
     
     public List<Niños> getColaEntradaPortal(int zona) {
-    return new ArrayList<>(getPortal(zona).listaEsperaIda);
+        Portal p = getPortal(zona);
+        synchronized (p) {
+            return new ArrayList<>(p.listaEsperaIda);
+        }
     }
 
     public List<Niños> getColaVolverPortal(int zona) {
-        return new ArrayList<>(getPortal(zona).listaEsperaVuelta);
+        Portal p = getPortal(zona);
+        synchronized (p) {
+            return new ArrayList<>(p.listaEsperaVuelta);
+        }
     }
     
     public List<Demogorgons> getDemosCentroComercial() {
@@ -503,6 +557,13 @@ public void volverDePortal(int zona, Niños n) {
 
     public List<Demogorgons> getDemosAlcantarillado() {
         return new ArrayList<>(demogorgonsAlcantarillado);
+    }
+    
+    public String getEventoActual() {
+        if (eventos == null) {
+            return "SIN EVENTO";
+        }
+        return eventos.getEventoActual();
     }
     
     

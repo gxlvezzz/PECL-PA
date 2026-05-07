@@ -33,12 +33,7 @@ public class Demogorgons extends Thread {
             } catch (Exception e) {
             }
         }
-        while(evento.hayApagon()){
-            try {
-                sleep(200);
-            } catch (Exception e) {
-            }
-        }
+
         
         zona_anterior = zona;
         if(evento.hayRedMental()){
@@ -81,17 +76,21 @@ public class Demogorgons extends Thread {
     
     public void run(){
         System.out.println(this.id);
+
         while(true){
-            if (zona != 0) {
-                mundo.eliminarListaDemogorgon(zona, this);
+            while(evento.hayEleven()){
+                try { Thread.sleep(500); } catch(Exception e) {}
             }
-        moverse();  
-       if(evento.hayRedMental()){
-           try { sleep(500); 
-           } 
-           catch (Exception e) {}
-        }
-        mundo.demogorgonAtacar(zona, this);        
+
+            if (!evento.hayApagon()) {
+                if (zona != 0) {
+                    mundo.eliminarListaDemogorgon(zona, this);
+                }
+
+                moverse();
+            }
+
+            mundo.demogorgonAtacar(zona, this);        
         }
     }
 }

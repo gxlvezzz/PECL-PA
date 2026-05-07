@@ -92,6 +92,22 @@ public class Eventos extends Thread {
             mundo.revivirNiños();
         }
     }
+    
+    public synchronized String getEventoActual() {
+        if (apagon) {
+            return "APAGÓN DEL LABORATORIO";
+        }
+        if (tormenta) {
+            return "TORMENTA DEL UPSIDE DOWN";
+        }
+        if (eleven) {
+            return "INTERVENCIÓN DE ELEVEN";
+        }
+        if (redMental) {
+            return "LA RED MENTAL";
+        }
+        return "SIN EVENTO";
+    }
 
     public void run(){
         while(true){
