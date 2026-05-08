@@ -15,6 +15,7 @@ public class Eventos extends Thread {
     private boolean tormenta = false;
     private boolean eleven = false;
     private boolean redMental = false;
+    private long finEventoMillis = 0;
     
     public Eventos(Mundo mundo){
         this.mundo = mundo;
@@ -94,16 +95,26 @@ public class Eventos extends Thread {
     public void elegirEvento() {
         num = (int)(Math.random()*4);
 
+        int duracion = (int)(Math.random()*5000) + 5000;
+
+        synchronized (this) {
+            finEventoMillis = System.currentTimeMillis() + duracion;
+        }
+
         activarEvento(num);
 
         try {
-            Thread.sleep((int)(Math.random()*5000)+5000);
+            Thread.sleep(duracion);
         } catch(Exception e) {
         }
 
         desactivarEvento(num);
 
-        if(num==2){
+        synchronized (this) {
+            finEventoMillis = 0;
+        }
+
+        if(num == 2){
             LogHawkins.escribir("Eleven comienza a liberar niños de la Colmena");
             mundo.revivirNiños();
         }
@@ -123,6 +134,20 @@ public class Eventos extends Thread {
             return "LA RED MENTAL";
         }
         return "SIN EVENTO";
+    }
+    
+    public synchronized int getTiempoRestanteEvento() {
+        if (finEventoMillis == 0) {
+            return 0;
+        }
+
+        long restante = finEventoMillis - System.currentTimeMillis();
+
+        if (restante <= 0) {
+            return 0;
+        }
+
+        return (int)(restante / 1000);
     }
 
     public void run(){

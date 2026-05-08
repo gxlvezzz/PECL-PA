@@ -71,7 +71,7 @@ public class Demogorgons extends Thread {
         }
     }
 
-    public void incrementar_capturas(){
+    public synchronized void incrementar_capturas(){
         capturas++;
          LogHawkins.escribir("Demogorgon " + id + " aumenta sus capturas a " + capturas);
     }
@@ -80,8 +80,14 @@ public class Demogorgons extends Thread {
         return id;
     }
     
+    public synchronized int getCapturas() {
+        return capturas;
+    }
+
+    
     public void run(){
         mundo.registrarHilo(this);
+        mundo.registrarDemogorgon(this);
         System.out.println(this.id);
          LogHawkins.escribir("Demogorgon " + id + " inicia ejecución");
 

@@ -5,6 +5,8 @@
 package com.mycompany.pecl.pa;
 
 import static java.lang.Thread.sleep;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.*;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
@@ -17,7 +19,7 @@ import java.util.List;
  *
  * @author julia_ntxs1ki
  */
-public class Mundo {
+public class Mundo extends UnicastRemoteObject implements InterfazMundo{
     private List <Niños> niñosBosque = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosLaboratorio = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosCentroComercial = Collections.synchronizedList(new ArrayList<>());
@@ -31,7 +33,7 @@ public class Mundo {
     private List <Niños> niñosSotanoByers = Collections.synchronizedList(new ArrayList<>());
     private List <Niños> niñosRadioWSQK = Collections.synchronizedList(new ArrayList<>());
     private List<Thread> hilosActivos = Collections.synchronizedList(new ArrayList<>());
-
+    private List<Demogorgons> todosDemogorgons = Collections.synchronizedList(new ArrayList<>());
 
     private int niñosEnColmena=0;
     private int contadorDemogorgons=1;
@@ -45,7 +47,6 @@ public class Mundo {
     private final Object lockPausa = new Object(); // Objeto dedicado solo a la pausa
     private volatile boolean pausado = false;
     
-    private LogHawkins log = new LogHawkins();
 
     public void setEventos(Eventos eventos) {
     this.eventos = eventos;
@@ -71,7 +72,7 @@ public class Mundo {
     private Portal alcantarillado = new Portal();
 
 
-    public Mundo() {
+    public Mundo() throws RemoteException{
         bosque.capacidad = 2;
         laboratorio.capacidad = 3;
         centro.capacidad = 4;
@@ -316,15 +317,15 @@ public class Mundo {
     }
     
     public synchronized void eliminarNiñoDeTodasLasListas(Niños n) {
-    niñosBosque.remove(n);
-    niñosLaboratorio.remove(n);
-    niñosCentroComercial.remove(n);
-    niñosAlcantarillado.remove(n);
-    niñosCallePrincipal.remove(n);
-    niñosSotanoByers.remove(n);
-    niñosRadioWSQK.remove(n);
-    niñosColmena.remove(n);
-}
+        niñosBosque.remove(n);
+        niñosLaboratorio.remove(n);
+        niñosCentroComercial.remove(n);
+        niñosAlcantarillado.remove(n);
+        niñosCallePrincipal.remove(n);
+        niñosSotanoByers.remove(n);
+        niñosRadioWSQK.remove(n);
+        niñosColmena.remove(n);
+    }
     
     
     public boolean hayTormenta() {
@@ -442,7 +443,6 @@ public class Mundo {
                 eliminarNiñoDeTodasLasListas(objetivo);
                 niñosColmena.add(objetivo);    
                 niñosEnColmena++;
-                System.out.println("Ninos en Colmena " + niñosEnColmena);
                 d.incrementar_capturas();
                 
                 LogHawkins.escribir("El demogorgon " + d.toString() + " ataca al niño " + objetivo.getIdNiño());
@@ -614,9 +614,143 @@ public class Mundo {
         hilosActivos.add(t);
     }
     
-    public LogHawkins getLog() {
-        return log;
+    
+    public synchronized int contadorNiñosHawkins(){
+        return niñosCallePrincipal.size()+niñosSotanoByers.size()+niñosRadioWSQK.size();
+    }
+    public synchronized int contadorNiñosdUPD(int zona){
+        int contador = 0;
+        switch (zona) {
+            case 1: contador = niñosBosque.size(); break;
+            case 2: contador = niñosLaboratorio.size(); break;
+            case 3: contador = niñosCentroComercial.size(); break;
+            case 4: contador = niñosAlcantarillado.size(); break;    
+        }
+        return contador;
+    }
+    public synchronized int contadorDemogorgons(int zona){
+        int contador = 0;
+        switch (zona) {
+            case 1: contador = demogorgonsBosque.size(); break;
+            case 2: contador = demogorgonsLaboratorio.size(); break;
+            case 3: contador = demogorgonsCentroComercial.size(); break;
+            case 4: contador = demogorgonsAlcantarillado.size(); break;    
+        }
+        return contador;
     }
     
+    @Override
+    public synchronized String getEventoActualRemoto() throws RemoteException{
+        return getEventoActual();
+    }
     
+    @Override
+    public synchronized int getHawkinsRemoto() throws RemoteException{
+        return contadorNiñosHawkins();      
+    }
+  
+    @Override
+    public synchronized int getPortal1Remoto() throws RemoteException{
+        return bosque.listaEsperaIda.size()+bosque.listaEsperaVuelta.size();
+    }
+    @Override
+    public synchronized int getPortal2Remoto() throws RemoteException{
+        return laboratorio.listaEsperaIda.size()+laboratorio.listaEsperaVuelta.size();
+    }
+    @Override
+    public synchronized int getPortal3Remoto() throws RemoteException{
+        return centro.listaEsperaIda.size()+centro.listaEsperaVuelta.size();
+    }
+    @Override
+    public synchronized int getPortal4Remoto() throws RemoteException{
+        return alcantarillado.listaEsperaIda.size()+alcantarillado.listaEsperaVuelta.size();
+    }
+    
+    @Override
+    public synchronized int getNiñosBosqueRemoto() throws RemoteException{
+        return contadorNiñosdUPD(1);
+    }
+    @Override
+    public synchronized int getNiñosLaboratorioRemoto() throws RemoteException{
+        return contadorNiñosdUPD(2);
+    }
+    @Override
+    public synchronized int getNiñosCentroComercialRemoto() throws RemoteException{
+        return contadorNiñosdUPD(3);
+    }
+    @Override
+    public synchronized int getNiñosAlcantarilladoRemoto() throws RemoteException{
+        return contadorNiñosdUPD(4);
+    }
+    @Override
+    public synchronized int getNiñosColmenaRemoto()throws RemoteException{
+        return niñosEnColmena;
+    }
+    @Override
+    public synchronized int getDemogorgonsBosqueRemoto() throws RemoteException{
+        return contadorDemogorgons(1);
+    }
+    @Override
+    public synchronized int getDemogorgonsLaboratorioRemoto() throws RemoteException{
+        return contadorDemogorgons(2);
+    }
+    @Override
+    public synchronized int getDemogorgonsCentroComercialRemoto() throws RemoteException{
+        return contadorDemogorgons(3);
+    }
+    @Override
+    public synchronized int getDemogorgonsAlcantarilladoRemoto() throws RemoteException{
+        return contadorDemogorgons(4);
+    }
+    @Override
+    public synchronized int getTiempoEventoRemoto() throws RemoteException {
+        if (eventos == null) {
+            return 0;
+        }
+
+        return eventos.getTiempoRestanteEvento();
+    }
+    
+    public synchronized void registrarDemogorgon(Demogorgons d) {
+        if (!todosDemogorgons.contains(d)) {
+            todosDemogorgons.add(d);
+        }
+    }
+    
+    @Override
+    public synchronized String getRankingDemogorgonsRemoto() throws RemoteException {
+        List<Demogorgons> copia = new ArrayList<>(todosDemogorgons);
+
+        copia.sort((d1, d2) -> Integer.compare(d2.getCapturas(), d1.getCapturas()));
+
+        StringBuilder sb = new StringBuilder();
+
+        int limite = Math.min(3, copia.size());
+
+        for (int i = 0; i < limite; i++) {
+            Demogorgons d = copia.get(i);
+            sb.append(i + 1)
+              .append(". ")
+              .append(d.toString())
+              .append(" (")
+              .append(d.getCapturas())
+              .append(")")
+              .append("\n");
+        }
+
+        if (sb.length() == 0) {
+            return "Sin demogorgons";
+        }
+
+        return sb.toString();
+    }
+    
+    @Override
+    public void pausarRemoto() throws RemoteException{
+        pausar();
+    }
+    @Override
+    public void reanudarRemoto() throws RemoteException{
+        reanudar();
+    }
 }

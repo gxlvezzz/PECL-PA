@@ -3,7 +3,9 @@ com\mycompany\pecl\pa\Interfaz.class
 com\mycompany\pecl\pa\Interfaz$2.class
 com\mycompany\pecl\pa\Demogorgons.class
 com\mycompany\pecl\pa\Mundo$Portal.class
+com\mycompany\pecl\pa\InterfazRemota.class
 com\mycompany\pecl\pa\Interfaz$1.class
+com\mycompany\pecl\pa\InterfazMundo.class
 com\mycompany\pecl\pa\LogHawkins.class
 com\mycompany\pecl\pa\Mundo.class
 com\mycompany\pecl\pa\PECLPA.class
