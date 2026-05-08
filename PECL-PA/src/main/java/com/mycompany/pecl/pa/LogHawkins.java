@@ -14,21 +14,28 @@ import java.time.format.DateTimeFormatter;
  * @author adrii
  */
 public class LogHawkins {
+
     private static final String ARCHIVO = "hawkins.txt";
 
-    private static final DateTimeFormatter formato =
+    private static final DateTimeFormatter FORMATO =
             DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-    public synchronized static void escribir(String mensaje) {
+    private LogHawkins() {
+        // Clase de utilidad: no se instancia.
+    }
 
-        String tiempo = LocalDateTime.now().format(formato);
+    /**
+     * Recurso compartido protegido.
+     * Todos los hilos escriben en el mismo fichero, por eso el método es synchronized.
+     */
+    public static synchronized void escribir(String mensaje) {
+        String tiempo = LocalDateTime.now().format(FORMATO);
 
         try (PrintWriter pw = new PrintWriter(new FileWriter(ARCHIVO, true))) {
-
             pw.println(tiempo + " - " + mensaje);
 
         } catch (IOException e) {
-            System.out.println("Error escribiendo log");
+            System.err.println("Error escribiendo log: " + e.getMessage());
         }
     }
 }

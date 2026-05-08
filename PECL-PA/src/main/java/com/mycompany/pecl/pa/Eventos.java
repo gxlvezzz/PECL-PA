@@ -9,15 +9,19 @@ package com.mycompany.pecl.pa;
  * @author julia_ntxs1ki
  */
 public class Eventos extends Thread {
-    private Mundo mundo;
+
+    private final Mundo mundo;
+
     private int num = 0;
+
     private boolean apagon = false;
     private boolean tormenta = false;
     private boolean eleven = false;
     private boolean redMental = false;
+
     private long finEventoMillis = 0;
-    
-    public Eventos(Mundo mundo){
+
+    public Eventos(Mundo mundo) {
         this.mundo = mundo;
     }
 
@@ -37,65 +41,32 @@ public class Eventos extends Thread {
         return redMental;
     }
 
-    public synchronized void activarEvento(int num) {
-        switch(num){
-            case 0:
-                apagon = true;
-                System.out.println("EVENTO: APAGON");
-                LogHawkins.escribir("EVENTO GLOBAL: APAGON DEL LABORATORIO iniciado");
-                break;
+    @Override
+    public void run() {
+        while (true) {
+            try {
+                // Tiempo aleatorio entre eventos: 30-60 segundos.
+                Thread.sleep((int) (Math.random() * 30000) + 30000);
+                elegirEvento();
 
-            case 1:
-                tormenta = true;
-                System.out.println("EVENTO: TORMENTA");
-                LogHawkins.escribir("EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN iniciada");
-                break;
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                return;
 
-            case 2:
-                eleven = true;
-                System.out.println("EVENTO: ELEVEN");
-                LogHawkins.escribir("EVENTO GLOBAL: INTERVENCION DE ELEVEN iniciada");
-                break;
-
-            case 3:
-                redMental = true;
-                System.out.println("EVENTO: RED MENTAL");
-                LogHawkins.escribir("EVENTO GLOBAL: LA RED MENTAL iniciada");
-                break;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    public synchronized void desactivarEvento(int num) {
-        switch(num){
-            case 0:
-                apagon = false;
-                mundo.despertarPortales();
-                LogHawkins.escribir("EVENTO GLOBAL: APAGON DEL LABORATORIO finalizado");
-                break;
-
-            case 1:
-                tormenta = false;
-                LogHawkins.escribir("EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN finalizada");
-                break;
-
-            case 2:
-                eleven = false;
-                LogHawkins.escribir("EVENTO GLOBAL: INTERVENCION DE ELEVEN finalizada");
-                break;
-
-            case 3:
-                redMental = false;
-                LogHawkins.escribir("EVENTO GLOBAL: LA RED MENTAL finalizada");
-                break;
-        }
-
-        System.out.println("EVENTO FINALIZADO");
-    }
-
+    /**
+     * Selecciona un evento aleatorio, lo mantiene activo durante 5-10 segundos
+     * y después lo desactiva.
+     */
     public void elegirEvento() {
-        num = (int)(Math.random()*4);
+        num = (int) (Math.random() * 4);
 
-        int duracion = (int)(Math.random()*5000) + 5000;
+        int duracion = (int) (Math.random() * 5000) + 5000;
 
         synchronized (this) {
             finEventoMillis = System.currentTimeMillis() + duracion;
@@ -105,7 +76,9 @@ public class Eventos extends Thread {
 
         try {
             Thread.sleep(duracion);
-        } catch(Exception e) {
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            return;
         }
 
         desactivarEvento(num);
@@ -114,28 +87,79 @@ public class Eventos extends Thread {
             finEventoMillis = 0;
         }
 
-        if(num == 2){
+        if (num == 2) {
             LogHawkins.escribir("Eleven comienza a liberar niños de la Colmena");
             mundo.revivirNiños();
         }
     }
-    
+
+    /**
+     * Activa el evento global correspondiente.
+     */
+    public synchronized void activarEvento(int num) {
+        switch (num) {
+            case 0 -> {
+                apagon = true;
+                System.out.println("EVENTO: APAGÓN");
+                LogHawkins.escribir("EVENTO GLOBAL: APAGÓN DEL LABORATORIO iniciado");
+            }
+            case 1 -> {
+                tormenta = true;
+                System.out.println("EVENTO: TORMENTA");
+                LogHawkins.escribir("EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN iniciada");
+            }
+            case 2 -> {
+                eleven = true;
+                System.out.println("EVENTO: ELEVEN");
+                LogHawkins.escribir("EVENTO GLOBAL: INTERVENCIÓN DE ELEVEN iniciada");
+            }
+            case 3 -> {
+                redMental = true;
+                System.out.println("EVENTO: RED MENTAL");
+                LogHawkins.escribir("EVENTO GLOBAL: LA RED MENTAL iniciada");
+            }
+        }
+    }
+
+    /**
+     * Desactiva el evento global activo.
+     */
+    public synchronized void desactivarEvento(int num) {
+        switch (num) {
+            case 0 -> {
+                apagon = false;
+                mundo.despertarPortales();
+                LogHawkins.escribir("EVENTO GLOBAL: APAGÓN DEL LABORATORIO finalizado");
+            }
+            case 1 -> {
+                tormenta = false;
+                LogHawkins.escribir("EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN finalizada");
+            }
+            case 2 -> {
+                eleven = false;
+                LogHawkins.escribir("EVENTO GLOBAL: INTERVENCIÓN DE ELEVEN finalizada");
+            }
+            case 3 -> {
+                redMental = false;
+                LogHawkins.escribir("EVENTO GLOBAL: LA RED MENTAL finalizada");
+            }
+        }
+
+        System.out.println("EVENTO FINALIZADO");
+    }
+
     public synchronized String getEventoActual() {
-        if (apagon) {
-            return "APAGÓN DEL LABORATORIO";
-        }
-        if (tormenta) {
-            return "TORMENTA DEL UPSIDE DOWN";
-        }
-        if (eleven) {
-            return "INTERVENCIÓN DE ELEVEN";
-        }
-        if (redMental) {
-            return "LA RED MENTAL";
-        }
+        if (apagon) return "APAGÓN DEL LABORATORIO";
+        if (tormenta) return "TORMENTA DEL UPSIDE DOWN";
+        if (eleven) return "INTERVENCIÓN DE ELEVEN";
+        if (redMental) return "LA RED MENTAL";
+
         return "SIN EVENTO";
     }
-    
+
+    /**
+     * Devuelve el tiempo restante aproximado del evento activo en segundos.
+     */
     public synchronized int getTiempoRestanteEvento() {
         if (finEventoMillis == 0) {
             return 0;
@@ -147,17 +171,6 @@ public class Eventos extends Thread {
             return 0;
         }
 
-        return (int)(restante / 1000);
-    }
-
-    public void run(){
-        while(true){
-            try{
-                Thread.sleep((int)(Math.random()*30000)+30000);
-            }catch(Exception e){
-            }
-
-            elegirEvento();
-        }
+        return (int) (restante / 1000);
     }
 }
