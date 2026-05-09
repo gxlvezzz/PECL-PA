@@ -20,7 +20,7 @@ public class InterfazRemota extends javax.swing.JFrame {
     /**
      * Creates new form InterfazRemota
      */
-    public InterfazRemota(Mundo mundo) {
+    public InterfazRemota() {
         initComponents();
         this.getContentPane().setBackground(new java.awt.Color(45, 55, 45));
         
@@ -160,7 +160,6 @@ public class InterfazRemota extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         btnReanudar1 = new javax.swing.JButton();
         btnPausa1 = new javax.swing.JButton();
-        demogorgonsBosquetxt1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(930, 430));
@@ -313,7 +312,7 @@ public class InterfazRemota extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 153, 51));
-        jLabel3.setText("Portal 1");
+        jLabel3.setText("Portal 4");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
@@ -358,12 +357,12 @@ public class InterfazRemota extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 153, 51));
-        jLabel12.setText("Portal 1");
+        jLabel12.setText("Portal 2");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 153, 51));
-        jLabel14.setText("Portal 1");
+        jLabel14.setText("Portal 3");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
@@ -435,13 +434,6 @@ public class InterfazRemota extends javax.swing.JFrame {
         btnPausa1.addActionListener(this::btnPausa1ActionPerformed);
         getContentPane().add(btnPausa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, 130, 60));
 
-        demogorgonsBosquetxt1.setEditable(false);
-        demogorgonsBosquetxt1.setBackground(new java.awt.Color(5, 15, 5));
-        demogorgonsBosquetxt1.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
-        demogorgonsBosquetxt1.setForeground(new java.awt.Color(50, 255, 100));
-        demogorgonsBosquetxt1.setBorder(null);
-        getContentPane().add(demogorgonsBosquetxt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 70, 30));
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
@@ -496,10 +488,9 @@ public class InterfazRemota extends javax.swing.JFrame {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        Mundo mundo = null;
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new InterfazRemota(mundo).setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new InterfazRemota().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -507,7 +498,6 @@ public class InterfazRemota extends javax.swing.JFrame {
     private javax.swing.JButton btnReanudar1;
     private javax.swing.JTextField demogorgonsAlcantarilladotxt;
     private javax.swing.JTextField demogorgonsBosquetxt;
-    private javax.swing.JTextField demogorgonsBosquetxt1;
     private javax.swing.JTextField demogorgonsCentroComercialtxt;
     private javax.swing.JTextField demogorgonsLaboratoriotxt;
     private javax.swing.JTextField eventotxt;

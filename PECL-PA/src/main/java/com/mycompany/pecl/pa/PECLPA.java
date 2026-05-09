@@ -27,8 +27,6 @@ public class PECLPA {
                 try {
                     
                     
-                    InterfazRemota interfazRemota = new InterfazRemota(mundo);
-                    interfazRemota.setVisible(true);
                     Interfaz interfaz = new Interfaz(mundo);
                     interfaz.setVisible(true);
 
@@ -38,7 +36,6 @@ public class PECLPA {
                                 
                                 javax.swing.SwingUtilities.invokeLater(() -> {
                                     interfaz.actualizar(); 
-                                    interfazRemota.actualizarRemoto();
                                 });
 
                                 Thread.sleep(250); // 4 veces por segundo es suficiente para que se vea fluido

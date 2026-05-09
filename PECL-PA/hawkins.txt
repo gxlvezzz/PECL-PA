@@ -60915,3 +60915,450 @@
 2026-05-09 19:24:59 - Niño N0005 entra en Calle Principal
 2026-05-09 19:25:00 - Niño N0003 entra en Radio WSQK
 2026-05-09 19:25:00 - El niño N0007 ha regresado a Hawkins desde CENTRO COMERCIAL
+2026-05-09 20:23:40 - Demogorgon D0000 creado
+2026-05-09 20:23:40 - Niño N0000 creado
+2026-05-09 20:23:40 - Demogorgon D0000 inicia ejecución
+2026-05-09 20:23:40 - Niño N0000 inicia ejecución
+2026-05-09 20:23:40 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-09 20:23:40 - Niño N0000 entra en Calle Principal
+2026-05-09 20:23:40 - Niño N0001 creado
+2026-05-09 20:23:40 - Niño N0001 inicia ejecución
+2026-05-09 20:23:40 - Niño N0001 entra en Calle Principal
+2026-05-09 20:23:42 - Niño N0002 creado
+2026-05-09 20:23:42 - Niño N0002 inicia ejecución
+2026-05-09 20:23:42 - Niño N0002 entra en Calle Principal
+2026-05-09 20:23:43 - Niño N0003 creado
+2026-05-09 20:23:43 - Niño N0003 inicia ejecución
+2026-05-09 20:23:43 - Niño N0003 entra en Calle Principal
+2026-05-09 20:23:43 - Niño N0004 creado
+2026-05-09 20:23:43 - Niño N0004 inicia ejecución
+2026-05-09 20:23:43 - Niño N0004 entra en Calle Principal
+2026-05-09 20:23:44 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-09 20:23:44 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-09 20:23:44 - Niño N0000 entra en el Sótano de los Byers
+2026-05-09 20:23:45 - Niño N0005 creado
+2026-05-09 20:23:45 - Niño N0005 inicia ejecución
+2026-05-09 20:23:45 - Niño N0005 entra en Calle Principal
+2026-05-09 20:23:45 - Niño N0001 entra en el Sótano de los Byers
+2026-05-09 20:23:45 - Niño N0006 creado
+2026-05-09 20:23:45 - Niño N0006 inicia ejecución
+2026-05-09 20:23:45 - Niño N0006 entra en Calle Principal
+2026-05-09 20:23:46 - Niño N0002 entra en el Sótano de los Byers
+2026-05-09 20:23:47 - Niño N0003 entra en el Sótano de los Byers
+2026-05-09 20:23:47 - Niño N0007 creado
+2026-05-09 20:23:47 - Niño N0007 inicia ejecución
+2026-05-09 20:23:47 - Niño N0007 entra en Calle Principal
+2026-05-09 20:23:49 - Niño N0008 creado
+2026-05-09 20:23:49 - Niño N0008 inicia ejecución
+2026-05-09 20:23:49 - Niño N0004 entra en el Sótano de los Byers
+2026-05-09 20:23:49 - Niño N0008 entra en Calle Principal
+2026-05-09 20:23:50 - Niño N0005 entra en el Sótano de los Byers
+2026-05-09 20:23:51 - Niño N0009 creado
+2026-05-09 20:23:51 - Niño N0009 inicia ejecución
+2026-05-09 20:23:51 - Niño N0009 entra en Calle Principal
+2026-05-09 20:23:51 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-09 20:23:51 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-09 20:23:51 - El niño N0000 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:23:52 - El niño N0004 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:23:52 - Niño N0000 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:23:52 - Niño N0010 creado
+2026-05-09 20:23:52 - Niño N0010 inicia ejecución
+2026-05-09 20:23:52 - Niño N0010 entra en Calle Principal
+2026-05-09 20:23:53 - Niño N0006 entra en el Sótano de los Byers
+2026-05-09 20:23:53 - Niño N0004 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:23:53 - Niño N0008 entra en el Sótano de los Byers
+2026-05-09 20:23:53 - Niño N0007 entra en el Sótano de los Byers
+2026-05-09 20:23:53 - Niño N0011 creado
+2026-05-09 20:23:53 - Niño N0011 inicia ejecución
+2026-05-09 20:23:53 - Niño N0011 entra en Calle Principal
+2026-05-09 20:23:54 - El niño N0003 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:23:54 - El niño N0001 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:23:55 - Niño N0012 creado
+2026-05-09 20:23:55 - Niño N0012 inicia ejecución
+2026-05-09 20:23:55 - Niño N0012 entra en Calle Principal
+2026-05-09 20:23:55 - El niño N0005 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:23:55 - Niño N0009 entra en el Sótano de los Byers
+2026-05-09 20:23:55 - Niño N0003 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:23:55 - El niño N0006 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:23:55 - Niño N0001 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:23:55 - El niño N0002 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:23:55 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-09 20:23:55 - Demogorgon D0000 entra en El Laboratorio
+2026-05-09 20:23:56 - Niño N0013 creado
+2026-05-09 20:23:56 - Niño N0013 inicia ejecución
+2026-05-09 20:23:56 - Niño N0013 entra en Calle Principal
+2026-05-09 20:23:56 - Niño N0005 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:23:56 - El niño N0007 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:23:56 - Niño N0001 ha sobrevivido al ataque
+2026-05-09 20:23:56 - Demogorgon D0000 abandona El Laboratorio
+2026-05-09 20:23:56 - Demogorgon D0000 entra en El Bosque
+2026-05-09 20:23:56 - Niño N0006 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:23:56 - Niño N0002 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:23:56 - El niño N0008 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:23:56 - El niño N0000 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:23:57 - Niño N0007 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:23:57 - Niño N0010 entra en el Sótano de los Byers
+2026-05-09 20:23:57 - Niño N0014 creado
+2026-05-09 20:23:57 - Niño N0014 inicia ejecución
+2026-05-09 20:23:57 - Niño N0014 entra en Calle Principal
+2026-05-09 20:23:57 - Niño N0003 ha sobrevivido al ataque
+2026-05-09 20:23:57 - Demogorgon D0000 abandona El Bosque
+2026-05-09 20:23:57 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-09 20:23:57 - Niño N0008 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:23:57 - El niño N0004 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:23:57 - Niño N0000 entra en Radio WSQK
+2026-05-09 20:23:58 - Niño N0011 entra en el Sótano de los Byers
+2026-05-09 20:23:58 - Niño N0004 entra en Radio WSQK
+2026-05-09 20:23:58 - Niño N0015 creado
+2026-05-09 20:23:58 - Niño N0015 inicia ejecución
+2026-05-09 20:23:58 - Niño N0015 entra en Calle Principal
+2026-05-09 20:23:58 - Niño N0012 entra en el Sótano de los Byers
+2026-05-09 20:23:59 - El niño N0005 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-09 20:23:59 - Niño N0013 entra en el Sótano de los Byers
+2026-05-09 20:24:00 - Niño N0016 creado
+2026-05-09 20:24:00 - Niño N0016 inicia ejecución
+2026-05-09 20:24:01 - Niño N0017 creado
+2026-05-09 20:24:01 - Niño N0017 inicia ejecución
+2026-05-09 20:24:01 - Niño N0018 creado
+2026-05-09 20:24:01 - Niño N0018 inicia ejecución
+2026-05-09 20:24:02 - Niño N0016 entra en Calle Principal
+2026-05-09 20:24:02 - Niño N0018 entra en Calle Principal
+2026-05-09 20:24:02 - Niño N0017 entra en Calle Principal
+2026-05-09 20:24:02 - Niño N0000 entra en Calle Principal
+2026-05-09 20:24:02 - El niño N0001 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:03 - Niño N0019 creado
+2026-05-09 20:24:03 - Niño N0019 inicia ejecución
+2026-05-09 20:24:03 - Niño N0019 entra en Calle Principal
+2026-05-09 20:24:03 - El niño N0003 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:24:03 - Niño N0005 entra en Radio WSQK
+2026-05-09 20:24:03 - El niño N0007 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-09 20:24:03 - Niño N0001 entra en Radio WSQK
+2026-05-09 20:24:03 - El niño N0008 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:04 - Niño N0020 creado
+2026-05-09 20:24:04 - Niño N0020 inicia ejecución
+2026-05-09 20:24:04 - Niño N0020 entra en Calle Principal
+2026-05-09 20:24:04 - Niño N0003 entra en Radio WSQK
+2026-05-09 20:24:04 - Niño N0004 entra en Calle Principal
+2026-05-09 20:24:04 - El niño N0006 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:24:04 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-09 20:24:04 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-09 20:24:04 - Niño N0021 creado
+2026-05-09 20:24:04 - Niño N0021 inicia ejecución
+2026-05-09 20:24:04 - Niño N0021 entra en Calle Principal
+2026-05-09 20:24:04 - Niño N0007 entra en Radio WSQK
+2026-05-09 20:24:04 - El niño N0010 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:24:04 - Niño N0008 entra en Radio WSQK
+2026-05-09 20:24:04 - El niño N0002 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:04 - Niño N0014 entra en el Sótano de los Byers
+2026-05-09 20:24:05 - Niño N0005 entra en Calle Principal
+2026-05-09 20:24:05 - Niño N0006 entra en Radio WSQK
+2026-05-09 20:24:05 - Niño N0022 creado
+2026-05-09 20:24:05 - Niño N0022 inicia ejecución
+2026-05-09 20:24:05 - Niño N0022 entra en Calle Principal
+2026-05-09 20:24:05 - Niño N0015 entra en el Sótano de los Byers
+2026-05-09 20:24:05 - Niño N0010 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:24:05 - El niño N0013 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:24:05 - Niño N0002 entra en Radio WSQK
+2026-05-09 20:24:05 - Niño N0000 entra en el Sótano de los Byers
+2026-05-09 20:24:06 - Niño N0018 entra en el Sótano de los Byers
+2026-05-09 20:24:06 - Niño N0019 entra en el Sótano de los Byers
+2026-05-09 20:24:06 - Niño N0013 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:24:06 - Niño N0016 entra en el Sótano de los Byers
+2026-05-09 20:24:07 - Niño N0023 creado
+2026-05-09 20:24:07 - Niño N0023 inicia ejecución
+2026-05-09 20:24:07 - Niño N0023 entra en Calle Principal
+2026-05-09 20:24:07 - Niño N0017 entra en el Sótano de los Byers
+2026-05-09 20:24:07 - Niño N0004 entra en el Sótano de los Byers
+2026-05-09 20:24:07 - Niño N0003 entra en Calle Principal
+2026-05-09 20:24:07 - El niño N0012 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:07 - Niño N0001 entra en Calle Principal
+2026-05-09 20:24:08 - Niño N0008 entra en Calle Principal
+2026-05-09 20:24:08 - Niño N0006 entra en Calle Principal
+2026-05-09 20:24:08 - Niño N0002 entra en Calle Principal
+2026-05-09 20:24:08 - Niño N0024 creado
+2026-05-09 20:24:08 - Niño N0024 inicia ejecución
+2026-05-09 20:24:08 - Niño N0024 entra en Calle Principal
+2026-05-09 20:24:08 - Niño N0007 entra en Calle Principal
+2026-05-09 20:24:08 - Niño N0021 entra en el Sótano de los Byers
+2026-05-09 20:24:08 - Niño N0012 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:08 - El niño N0015 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:08 - Niño N0020 entra en el Sótano de los Byers
+2026-05-09 20:24:08 - El niño N0009 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:08 - El niño N0010 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-09 20:24:09 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-09 20:24:09 - Demogorgon D0000 entra en El Laboratorio
+2026-05-09 20:24:09 - Niño N0022 entra en el Sótano de los Byers
+2026-05-09 20:24:09 - Niño N0005 entra en el Sótano de los Byers
+2026-05-09 20:24:09 - Niño N0015 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:09 - El niño N0000 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:09 - Niño N0009 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:09 - El niño N0004 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:09 - Niño N0010 entra en Radio WSQK
+2026-05-09 20:24:10 - Niño N0025 creado
+2026-05-09 20:24:10 - Niño N0025 inicia ejecución
+2026-05-09 20:24:10 - Niño N0025 entra en Calle Principal
+2026-05-09 20:24:10 - Niño N0023 entra en el Sótano de los Byers
+2026-05-09 20:24:10 - Niño N0012 ha sobrevivido al ataque
+2026-05-09 20:24:10 - Demogorgon D0000 abandona El Laboratorio
+2026-05-09 20:24:10 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-09 20:24:10 - Niño N0000 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:10 - El niño N0018 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:10 - El niño N0011 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-09 20:24:10 - Niño N0004 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:11 - El niño N0021 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:11 - Niño N0026 creado
+2026-05-09 20:24:11 - Niño N0026 inicia ejecución
+2026-05-09 20:24:11 - Niño N0026 entra en Calle Principal
+2026-05-09 20:24:11 - El niño N0013 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-09 20:24:11 - Niño N0003 entra en el Sótano de los Byers
+2026-05-09 20:24:11 - Niño N0002 entra en el Sótano de los Byers
+2026-05-09 20:24:11 - Niño N0018 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:11 - El niño N0016 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:11 - Niño N0011 cruza al Upside Down hacia El Centro Comercial
+2026-05-09 20:24:11 - El niño N0019 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-09 20:24:11 - Niño N0006 entra en el Sótano de los Byers
+2026-05-09 20:24:11 - Niño N0024 entra en el Sótano de los Byers
+2026-05-09 20:24:12 - Niño N0021 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:12 - El niño N0022 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:12 - Niño N0013 entra en Radio WSQK
+2026-05-09 20:24:12 - Niño N0001 entra en el Sótano de los Byers
+2026-05-09 20:24:12 - Niño N0008 entra en el Sótano de los Byers
+2026-05-09 20:24:12 - Niño N0016 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:12 - El niño N0012 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:12 - Niño N0019 cruza al Upside Down hacia El Centro Comercial
+2026-05-09 20:24:12 - El niño N0017 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-09 20:24:12 - Niño N0010 entra en Calle Principal
+2026-05-09 20:24:12 - Niño N0027 creado
+2026-05-09 20:24:12 - Niño N0027 inicia ejecución
+2026-05-09 20:24:12 - Niño N0027 entra en Calle Principal
+2026-05-09 20:24:13 - Niño N0022 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:13 - El niño N0023 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:13 - Niño N0007 entra en el Sótano de los Byers
+2026-05-09 20:24:13 - Niño N0028 creado
+2026-05-09 20:24:13 - Niño N0028 inicia ejecución
+2026-05-09 20:24:13 - Niño N0028 entra en Calle Principal
+2026-05-09 20:24:13 - Niño N0012 entra en Radio WSQK
+2026-05-09 20:24:13 - El niño N0020 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:13 - Niño N0017 cruza al Upside Down hacia El Centro Comercial
+2026-05-09 20:24:13 - El niño N0005 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-09 20:24:14 - Niño N0023 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:14 - El niño N0006 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:14 - Niño N0026 entra en el Sótano de los Byers
+2026-05-09 20:24:14 - El niño N0014 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:24:14 - Niño N0020 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:14 - El niño N0000 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:14 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-09 20:24:14 - Demogorgon D0000 entra en El Laboratorio
+2026-05-09 20:24:14 - Niño N0005 cruza al Upside Down hacia El Centro Comercial
+2026-05-09 20:24:14 - Niño N0025 entra en el Sótano de los Byers
+2026-05-09 20:24:15 - Niño N0006 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:15 - El niño N0009 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:24:15 - Niño N0029 creado
+2026-05-09 20:24:15 - Niño N0029 inicia ejecución
+2026-05-09 20:24:15 - Niño N0029 entra en Calle Principal
+2026-05-09 20:24:15 - Niño N0013 entra en Calle Principal
+2026-05-09 20:24:15 - Niño N0016 ha sobrevivido al ataque
+2026-05-09 20:24:15 - Demogorgon D0000 abandona El Laboratorio
+2026-05-09 20:24:15 - Demogorgon D0000 entra en El Alcantarillado
+2026-05-09 20:24:15 - Niño N0014 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:24:15 - El niño N0008 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:24:15 - Niño N0000 entra en Radio WSQK
+2026-05-09 20:24:15 - El niño N0018 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:16 - Niño N0009 entra en Radio WSQK
+2026-05-09 20:24:16 - El niño N0004 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:24:16 - Niño N0010 entra en el Sótano de los Byers
+2026-05-09 20:24:16 - El niño N0011 ha regresado a Hawkins desde CENTRO COMERCIAL
+2026-05-09 20:24:16 - Niño N0008 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:24:16 - Niño N0018 entra en Radio WSQK
+2026-05-09 20:24:16 - El niño N0016 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:16 - Niño N0012 entra en Calle Principal
+2026-05-09 20:24:17 - Niño N0004 entra en Radio WSQK
+2026-05-09 20:24:17 - El niño N0021 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:24:17 - Niño N0030 creado
+2026-05-09 20:24:17 - Niño N0030 inicia ejecución
+2026-05-09 20:24:17 - Niño N0030 entra en Calle Principal
+2026-05-09 20:24:17 - Niño N0011 entra en Radio WSQK
+2026-05-09 20:24:17 - El niño N0019 ha regresado a Hawkins desde CENTRO COMERCIAL
+2026-05-09 20:24:17 - Niño N0016 entra en Radio WSQK
+2026-05-09 20:24:17 - El niño N0015 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:18 - Niño N0027 entra en el Sótano de los Byers
+2026-05-09 20:24:18 - Niño N0021 entra en Radio WSQK
+2026-05-09 20:24:18 - El niño N0022 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:24:18 - Niño N0000 entra en Calle Principal
+2026-05-09 20:24:18 - Niño N0031 creado
+2026-05-09 20:24:18 - Niño N0031 inicia ejecución
+2026-05-09 20:24:18 - Niño N0031 entra en Calle Principal
+2026-05-09 20:24:18 - Niño N0028 entra en el Sótano de los Byers
+2026-05-09 20:24:18 - Niño N0009 entra en Calle Principal
+2026-05-09 20:24:18 - Niño N0019 entra en Radio WSQK
+2026-05-09 20:24:18 - Niño N0015 entra en Radio WSQK
+2026-05-09 20:24:18 - El niño N0020 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 20:24:18 - El niño N0017 ha regresado a Hawkins desde CENTRO COMERCIAL
+2026-05-09 20:24:19 - Niño N0032 creado
+2026-05-09 20:24:19 - Niño N0032 inicia ejecución
+2026-05-09 20:24:19 - Niño N0032 entra en Calle Principal
+2026-05-09 20:24:19 - Niño N0018 entra en Calle Principal
+2026-05-09 20:24:19 - Niño N0022 entra en Radio WSQK
+2026-05-09 20:24:19 - El niño N0023 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:24:19 - EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN iniciada
+2026-05-09 20:24:19 - El niño N0014 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-09 20:24:19 - Niño N0033 creado
+2026-05-09 20:24:19 - Niño N0033 inicia ejecución
+2026-05-09 20:24:19 - Niño N0033 entra en Calle Principal
+2026-05-09 20:24:19 - Niño N0020 entra en Radio WSQK
+2026-05-09 20:24:19 - Niño N0017 entra en Radio WSQK
+2026-05-09 20:24:19 - El niño N0005 ha regresado a Hawkins desde CENTRO COMERCIAL
+2026-05-09 20:24:19 - Niño N0013 entra en el Sótano de los Byers
+2026-05-09 20:24:19 - Niño N0029 entra en el Sótano de los Byers
+2026-05-09 20:24:20 - Niño N0023 entra en Radio WSQK
+2026-05-09 20:24:20 - El niño N0006 ha regresado a Hawkins desde BOSQUE
+2026-05-09 20:24:20 - Niño N0014 entra en Radio WSQK
+2026-05-09 20:24:20 - El niño N0008 ha regresado a Hawkins desde ALCANTARILLADO
+2026-05-09 20:24:20 - Niño N0016 entra en Calle Principal
+2026-05-09 20:24:20 - Demogorgon D0000 abandona El Alcantarillado
+2026-05-09 20:24:20 - Demogorgon D0000 entra en El Bosque
+2026-05-09 20:24:20 - Niño N0004 entra en Calle Principal
+2026-05-09 20:24:20 - Niño N0030 entra en el Sótano de los Byers
+2026-05-09 20:24:20 - Niño N0005 entra en Radio WSQK
+2026-05-09 20:24:21 - Niño N0006 entra en Radio WSQK
+2026-05-09 20:24:21 - El niño N0001 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:21 - Niño N0011 entra en Calle Principal
+2026-05-09 20:24:21 - Niño N0019 entra en Calle Principal
+2026-05-09 20:24:21 - Niño N0012 entra en el Sótano de los Byers
+2026-05-09 20:24:21 - Niño N0021 entra en Calle Principal
+2026-05-09 20:24:21 - Niño N0015 entra en Calle Principal
+2026-05-09 20:24:21 - Niño N0034 creado
+2026-05-09 20:24:21 - Niño N0034 inicia ejecución
+2026-05-09 20:24:21 - Niño N0034 entra en Calle Principal
+2026-05-09 20:24:21 - Niño N0008 entra en Radio WSQK
+2026-05-09 20:24:21 - El niño N0007 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:24:21 - Niño N0009 entra en el Sótano de los Byers
+2026-05-09 20:24:22 - Niño N0001 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:22 - El niño N0026 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:22 - Niño N0032 entra en el Sótano de los Byers
+2026-05-09 20:24:22 - Niño N0020 entra en Calle Principal
+2026-05-09 20:24:22 - Niño N0000 entra en el Sótano de los Byers
+2026-05-09 20:24:22 - Niño N0022 entra en Calle Principal
+2026-05-09 20:24:22 - Niño N0035 creado
+2026-05-09 20:24:22 - Niño N0035 inicia ejecución
+2026-05-09 20:24:22 - Niño N0035 entra en Calle Principal
+2026-05-09 20:24:22 - Niño N0007 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:24:22 - El niño N0027 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:24:22 - Demogorgon D0000 abandona El Bosque
+2026-05-09 20:24:22 - Demogorgon D0000 entra en El Laboratorio
+2026-05-09 20:24:23 - Niño N0026 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:23 - El niño N0025 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:23 - Niño N0031 entra en el Sótano de los Byers
+2026-05-09 20:24:23 - Niño N0023 entra en Calle Principal
+2026-05-09 20:24:23 - Niño N0027 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:24:23 - El niño N0003 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:23 - Niño N0036 creado
+2026-05-09 20:24:23 - Niño N0036 inicia ejecución
+2026-05-09 20:24:23 - Niño N0036 entra en Calle Principal
+2026-05-09 20:24:23 - Niño N0018 entra en el Sótano de los Byers
+2026-05-09 20:24:23 - Niño N0017 entra en Calle Principal
+2026-05-09 20:24:23 - Niño N0005 entra en Calle Principal
+2026-05-09 20:24:23 - Niño N0014 entra en Calle Principal
+2026-05-09 20:24:24 - Niño N0025 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:24 - El niño N0010 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:24 - Niño N0006 entra en Calle Principal
+2026-05-09 20:24:24 - Niño N0011 entra en el Sótano de los Byers
+2026-05-09 20:24:24 - Niño N0033 entra en el Sótano de los Byers
+2026-05-09 20:24:24 - Niño N0003 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:24 - El niño N0013 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:24 - Niño N0037 creado
+2026-05-09 20:24:24 - Niño N0037 inicia ejecución
+2026-05-09 20:24:24 - Niño N0037 entra en Calle Principal
+2026-05-09 20:24:25 - Demogorgon D0000 abandona El Laboratorio
+2026-05-09 20:24:25 - Demogorgon D0000 entra en El Bosque
+2026-05-09 20:24:25 - Niño N0021 entra en el Sótano de los Byers
+2026-05-09 20:24:25 - Niño N0010 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:25 - El niño N0028 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:25 - Niño N0015 entra en el Sótano de los Byers
+2026-05-09 20:24:25 - Niño N0008 entra en Calle Principal
+2026-05-09 20:24:25 - Niño N0034 entra en el Sótano de los Byers
+2026-05-09 20:24:25 - Niño N0016 entra en el Sótano de los Byers
+2026-05-09 20:24:25 - Niño N0019 entra en el Sótano de los Byers
+2026-05-09 20:24:25 - Niño N0025 ha sobrevivido al ataque
+2026-05-09 20:24:25 - Demogorgon D0000 abandona El Bosque
+2026-05-09 20:24:25 - Demogorgon D0000 entra en El Laboratorio
+2026-05-09 20:24:25 - Niño N0013 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:25 - El niño N0032 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:25 - Niño N0003 ha sobrevivido al ataque
+2026-05-09 20:24:25 - Demogorgon D0000 abandona El Laboratorio
+2026-05-09 20:24:25 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-09 20:24:25 - Niño N0004 entra en el Sótano de los Byers
+2026-05-09 20:24:26 - El niño N0002 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-09 20:24:26 - EVENTO GLOBAL: TORMENTA DEL UPSIDE DOWN finalizada
+2026-05-09 20:24:26 - Niño N0028 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:26 - El niño N0030 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:26 - Niño N0022 entra en el Sótano de los Byers
+2026-05-09 20:24:26 - Niño N0038 creado
+2026-05-09 20:24:26 - Niño N0038 inicia ejecución
+2026-05-09 20:24:26 - Niño N0038 entra en Calle Principal
+2026-05-09 20:24:26 - Niño N0020 entra en el Sótano de los Byers
+2026-05-09 20:24:26 - Niño N0035 entra en el Sótano de los Byers
+2026-05-09 20:24:26 - Niño N0023 entra en el Sótano de los Byers
+2026-05-09 20:24:26 - Niño N0032 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:26 - El niño N0009 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:27 - Niño N0002 cruza al Upside Down hacia El Centro Comercial
+2026-05-09 20:24:27 - El niño N0024 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-09 20:24:27 - Niño N0030 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:27 - El niño N0012 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:27 - Niño N0039 creado
+2026-05-09 20:24:27 - Niño N0039 inicia ejecución
+2026-05-09 20:24:28 - Niño N0040 creado
+2026-05-09 20:24:28 - Niño N0040 inicia ejecución
+2026-05-09 20:24:29 - Niño N0041 creado
+2026-05-09 20:24:29 - Niño N0041 inicia ejecución
+2026-05-09 20:24:30 - Niño N0042 creado
+2026-05-09 20:24:30 - Niño N0042 inicia ejecución
+2026-05-09 20:24:32 - Niño N0043 creado
+2026-05-09 20:24:32 - Niño N0043 inicia ejecución
+2026-05-09 20:24:32 - Niño N0039 entra en Calle Principal
+2026-05-09 20:24:32 - Niño N0040 entra en Calle Principal
+2026-05-09 20:24:32 - Niño N0041 entra en Calle Principal
+2026-05-09 20:24:32 - Niño N0042 entra en Calle Principal
+2026-05-09 20:24:32 - Niño N0043 entra en Calle Principal
+2026-05-09 20:24:32 - Niño N0009 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:32 - Niño N0014 entra en el Sótano de los Byers
+2026-05-09 20:24:32 - Niño N0005 entra en el Sótano de los Byers
+2026-05-09 20:24:32 - El niño N0018 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:33 - Niño N0017 entra en el Sótano de los Byers
+2026-05-09 20:24:33 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-09 20:24:33 - Demogorgon D0000 entra en El Bosque
+2026-05-09 20:24:33 - Niño N0024 cruza al Upside Down hacia El Centro Comercial
+2026-05-09 20:24:33 - El niño N0029 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-09 20:24:33 - Niño N0012 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:33 - El niño N0000 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:33 - Niño N0044 creado
+2026-05-09 20:24:33 - Niño N0044 inicia ejecución
+2026-05-09 20:24:33 - Niño N0044 entra en Calle Principal
+2026-05-09 20:24:33 - Niño N0006 entra en el Sótano de los Byers
+2026-05-09 20:24:33 - El niño N0033 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:24:33 - Niño N0036 entra en el Sótano de los Byers
+2026-05-09 20:24:33 - Niño N0037 entra en el Sótano de los Byers
+2026-05-09 20:24:33 - Niño N0018 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:33 - El niño N0031 ha cruzado el portal hacia LABORATORIO
+2026-05-09 20:24:34 - Niño N0045 creado
+2026-05-09 20:24:34 - Niño N0045 inicia ejecución
+2026-05-09 20:24:34 - Niño N0045 entra en Calle Principal
+2026-05-09 20:24:34 - Niño N0029 cruza al Upside Down hacia El Centro Comercial
+2026-05-09 20:24:34 - El niño N0011 ha cruzado el portal hacia CENTRO COMERCIAL
+2026-05-09 20:24:34 - Niño N0000 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:34 - El niño N0015 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:34 - Niño N0008 entra en el Sótano de los Byers
+2026-05-09 20:24:34 - Demogorgon D0000 aumenta sus capturas a 1
+2026-05-09 20:24:34 - El demogorgon D0000 ataca al niño N0030
+2026-05-09 20:24:34 - El niño N0030 ha sido capturado
+2026-05-09 20:24:34 - Niño N0030 ha sido capturado
+2026-05-09 20:24:34 - Niño N0033 cruza al Upside Down hacia El Alcantarillado
+2026-05-09 20:24:34 - El niño N0035 ha cruzado el portal hacia ALCANTARILLADO
+2026-05-09 20:24:34 - Niño N0031 cruza al Upside Down hacia El Laboratorio
+2026-05-09 20:24:35 - Niño N0011 cruza al Upside Down hacia El Centro Comercial
+2026-05-09 20:24:35 - Niño N0015 cruza al Upside Down hacia  El Bosque
+2026-05-09 20:24:35 - El niño N0016 ha cruzado el portal hacia BOSQUE
+2026-05-09 20:24:35 - Niño N0046 creado
+2026-05-09 20:24:35 - Niño N0046 inicia ejecución
+2026-05-09 20:24:37 - Niño N0047 creado
+2026-05-09 20:24:37 - Niño N0047 inicia ejecución

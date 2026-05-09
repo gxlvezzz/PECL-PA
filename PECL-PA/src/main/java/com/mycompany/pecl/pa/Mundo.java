@@ -103,17 +103,19 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
     
     public void esperarEnPortal(int zona, Niños n) {
         comprobarPausa();
+
         Portal p = getPortal(zona);
         String destino = nombreZona(zona);
 
         synchronized (p) {
             p.listaEsperaIda.add(n);
             System.out.println("Niño " + n.getIdNiño() + " espera portal hacia " + destino);
-            
-            while (!p.grupoIdaActual.contains(n)) {
 
-                if (!hayApagon()
-                        && !p.grupoFormado
+            while (true) {
+
+                // Si todavía no hay un grupo formado, se intenta formar uno.
+                if (!p.grupoFormado
+                        && !eventos.hayApagon()
                         && p.cruzando == 0
                         && p.listaEsperaVuelta.isEmpty()
                         && p.listaEsperaIda.size() >= p.capacidad) {
@@ -126,35 +128,49 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
                         p.grupoIdaActual.add(niñoGrupo);
                     }
 
-                    p.cruzando = p.capacidad;
                     p.notifyAll();
-                } else {
-                    try {
-                        p.wait();
-                    } catch (InterruptedException e) {
-                        Thread.currentThread().interrupt();
-                        return;
-                    }
+                }
+
+                /*
+                 * El niño solo puede cruzar si:
+                 * 1. Ya pertenece al grupo actual.
+                 * 2. Es el primero de ese grupo.
+                 * 3. Nadie está cruzando el portal.
+                 * 4. No hay apagón.
+                 * 5. No hay niños esperando para volver, porque la vuelta tiene prioridad.
+                 */
+                if (p.grupoIdaActual.contains(n)
+                        && p.grupoIdaActual.get(0) == n
+                        && p.cruzando == 0
+                        && !eventos.hayApagon()
+                        && p.listaEsperaVuelta.isEmpty()) {
+
+                    p.cruzando = 1;
+                    p.grupoIdaActual.remove(0);
+                    break;
+                }
+
+                try {
+                    p.wait();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    return;
                 }
             }
         }
 
         System.out.println("Niño " + n.getIdNiño() + " cruza hacia " + destino);
         LogHawkins.escribir("El niño " + n.getIdNiño() + " ha cruzado el portal hacia " + destino);
-        
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+
+        esperarConPausa(1000);
 
         synchronized (p) {
-            p.cruzando--;
-            p.grupoIdaActual.remove(n);
+            p.cruzando = 0;
 
-            if (p.cruzando == 0) {
+            // Cuando ya han cruzado todos los niños del grupo, el portal queda libre
+            // para formar un nuevo grupo.
+            if (p.grupoIdaActual.isEmpty()) {
                 p.grupoFormado = false;
-                p.grupoIdaActual.clear();
             }
 
             p.notifyAll();
@@ -162,6 +178,8 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
     }
 
     public void volverDePortal(int zona, Niños n) {
+        comprobarPausa();
+
         Portal p = getPortal(zona);
         String origen = nombreZona(zona);
 
@@ -169,11 +187,13 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
             p.listaEsperaVuelta.add(n);
             System.out.println("Niño " + n.getIdNiño() + " espera para volver desde " + origen);
             p.notifyAll();
-            
-        }
 
-        synchronized (p) {
-            while (hayApagon() || p.cruzando > 0) {
+            /*
+             * Para volver a Hawkins no hace falta formar grupo.
+             * Además, la vuelta tiene prioridad sobre la ida.
+             * Solo espera si hay apagón o si otro niño está cruzando.
+             */
+            while (eventos.hayApagon() || p.cruzando > 0) {
                 try {
                     p.wait();
                 } catch (InterruptedException e) {
@@ -189,21 +209,13 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         System.out.println("Niño " + n.getIdNiño() + " REGRESA desde " + origen);
         LogHawkins.escribir("El niño " + n.getIdNiño() + " ha regresado a Hawkins desde " + origen);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+        esperarConPausa(1000);
 
         synchronized (p) {
             p.cruzando = 0;
             p.notifyAll();
         }
     }
-    
-    public boolean hayApagon() {
-    return eventos != null && eventos.hayApagon();
-}
     
     
     public void despertarPortales() {
@@ -360,6 +372,23 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
 
         contadorSangreDuranteEleven = 0;
     }
+    
+    private void esperarConPausa(int milisegundos) {
+    int tiempoTranscurrido = 0;
+
+    while (tiempoTranscurrido < milisegundos) {
+        comprobarPausa();
+
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            return;
+        }
+
+        tiempoTranscurrido += 100;
+    }
+}
   
     
     public void demogorgonAtacar(int num, Demogorgons d){
@@ -369,7 +398,7 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         
         while(eventos.hayEleven()){
             try {
-                Thread.sleep(500);
+                esperarConPausa(500);
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());
             }
@@ -399,7 +428,7 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         }
         while(eventos.hayEleven()){
             try {
-                Thread.sleep(500);
+                esperarConPausa(500);
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());
             }
@@ -408,9 +437,9 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         if (objetivo == null) {
             try {
                 if(eventos.hayTormenta()){
-                    Thread.sleep(((int)(Math.random()*1000)+4000)/2);
+                    esperarConPausa(((int)(Math.random()*1000)+4000)/2);
                 }else{
-                    Thread.sleep((int)(Math.random()*1000)+4000);
+                    esperarConPausa((int)(Math.random()*1000)+4000);
                 }
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());
@@ -420,7 +449,7 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         
         while(eventos.hayEleven()){
             try {
-                Thread.sleep(500);
+                esperarConPausa(500);
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());
             }
@@ -428,9 +457,9 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         
         try {
                 if(eventos.hayTormenta()){
-                    Thread.sleep(((int)(Math.random() * 1000) + 500)/2);
+                    esperarConPausa(((int)(Math.random() * 1000) + 500)/2);
                 }else{
-                    Thread.sleep((int)(Math.random() * 1000) + 500);
+                    esperarConPausa((int)(Math.random() * 1000) + 500);
                 }
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());
@@ -438,7 +467,7 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         
         while(eventos.hayEleven()){
             try {
-                Thread.sleep(500);
+                esperarConPausa(500);
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());
             }
@@ -472,7 +501,7 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         }
         while(eventos.hayEleven()){
             try {
-                Thread.sleep(500);
+                esperarConPausa(500);
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());
             }
@@ -480,9 +509,9 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         if(capturado){
             try {
                 if(eventos.hayTormenta()){
-                    Thread.sleep(((int)(Math.random() * 500) + 500)/2);
+                    esperarConPausa(((int)(Math.random() * 500) + 500)/2);
                 }else{
-                    Thread.sleep((int)(Math.random() * 500) + 500);
+                    esperarConPausa((int)(Math.random() * 500) + 500);
                 }
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());

@@ -30,7 +30,7 @@ public class Demogorgons extends Thread {
     private void moverse(){
         while(evento.hayEleven()){
             try {
-                sleep(500);
+                esperar(500);
             } catch (Exception e) {
                 System.err.println("Error: " + e.getMessage());
             }
@@ -84,6 +84,16 @@ public class Demogorgons extends Thread {
     public synchronized int getCapturas() {
         return capturas;
     }
+    
+    private void esperar(int milisegundos) throws InterruptedException {
+    int tiempoTranscurrido = 0;
+
+    while (tiempoTranscurrido < milisegundos) {
+        Thread.sleep(100);
+        tiempoTranscurrido += 100;
+        mundo.comprobarPausa();
+    }
+}
 
     
     public void run(){
@@ -95,7 +105,9 @@ public class Demogorgons extends Thread {
         while(true){
             mundo.comprobarPausa();
             while(evento.hayEleven()){
-                try { Thread.sleep(500); } catch(Exception e) {
+                try { 
+                    esperar(500); 
+                } catch(Exception e) {
                 System.err.println("Error: " + e.getMessage());}
             }
 
