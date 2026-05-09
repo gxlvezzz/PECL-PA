@@ -85,6 +85,15 @@ public class Niños extends Thread {
         liberadoPorEleven = false;
     }
     
+    private void esperar(int milisegundos) throws InterruptedException {
+    int tiempoTranscurrido = 0;
+    while (tiempoTranscurrido < milisegundos) {
+        Thread.sleep(100); // Espera pequeña
+        tiempoTranscurrido += 100;
+        mundo.comprobarPausa(); // Si se pausa el juego, el hilo se queda bloqueado aquí
+    }
+}
+    
     
     @Override
     
@@ -93,95 +102,95 @@ public class Niños extends Thread {
     }
     
     public void run() {
-        mundo.registrarHilo(this);
-        LogHawkins.escribir("Niño " + id + " inicia ejecución");
-            while (true) {
-                mundo.comprobarPausa();
-                try {
-                    mundo.eliminarNiñoDeTodasLasListas(this);
-                    mundo.entrarNiño(5, this);
-                    System.out.println("Nino " + id + " en la Calle Principal.");
-                    LogHawkins.escribir("Niño " + id + " entra en Calle Principal");
-                    Thread.sleep((int) (Math.random() * 2000) + 3000);
+    mundo.registrarHilo(this);
+    LogHawkins.escribir("Niño " + id + " inicia ejecución");
+    while (true) {
+        mundo.comprobarPausa();
+        try {
+            mundo.eliminarNiñoDeTodasLasListas(this);
+            mundo.entrarNiño(5, this);
+            LogHawkins.escribir("Niño " + id + " entra en Calle Principal");
+            
+            esperar((int) (Math.random() * 2000) + 3000);
 
+            mundo.comprobarPausa();
+            mundo.salirNiño(5, this);
+            mundo.entrarNiño(6, this);
+            LogHawkins.escribir("Niño " + id + " entra en el Sótano de los Byers");
+            
+            esperar((int) (Math.random() * 1000) + 1000);
+            
+            mundo.comprobarPausa();
+            
+            int zonaElegida = (int) (Math.random() * 4) + 1;
+            mundo.salirNiño(6, this);
+            
+            mundo.esperarEnPortal(zonaElegida, this);
+            LogHawkins.escribir("Niño " + id + " cruza al Upside Down hacia " + zonaString(zonaElegida));
+            
+            mundo.comprobarPausa();
+            
+            while(esCapturado()){
+                try { 
+                    Thread.sleep(200); 
                     mundo.comprobarPausa();
-
-                    mundo.salirNiño(5, this);
-                    mundo.entrarNiño(6, this);
-                    System.out.println("Nino " + id + " entra al Sotano.");
-                    LogHawkins.escribir("Niño " + id + " entra en el Sótano de los Byers");
-                    Thread.sleep((int) (Math.random() * 1000) + 1000);
-                    
-                    mundo.comprobarPausa();
-                    
-                    int zonaElegida = (int) (Math.random() * 4) + 1;
-                    mundo.salirNiño(6, this);
-                    
-                    LogHawkins.escribir("Niño " + id + " espera para cruzar al portal de " + zonaString(zonaElegida));
-                    mundo.esperarEnPortal(zonaElegida, this);
-                    System.out.println("Nino " + id + " ha cruzado al Upside Down.");
-                    LogHawkins.escribir("Niño " + id + " cruza al Upside Down hacia " + zonaString(zonaElegida));
-                    
-                    mundo.comprobarPausa();
-                    
-                    while(esCapturado()){
-                        try { sleep(200); 
-                        mundo.comprobarPausa();
-                        } catch(Exception e){}
-                    }
-
-                    if (fueLiberadoPorEleven()) {
-                        resetLiberadoPorEleven();
-                        continue;
-                    }
-
-                    mundo.entrarNiño(zonaElegida, this);
-                    System.out.println("Nino " + id + " recolectando en " + zonaString(zonaElegida));
-
-                    if(mundo.hayTormenta()){
-                        Thread.sleep(((int) (Math.random() * 2000) + 3000)*2); 
-                    } else {
-                        Thread.sleep((int) (Math.random() * 2000) + 3000);
-                    }
-
-                    while(esCapturado()){
-                        try { sleep(200); 
-                        mundo.comprobarPausa();
-                        } catch(Exception e){}
-                    }
-
-                    if (fueLiberadoPorEleven()) {
-                        resetLiberadoPorEleven();
-                        continue;
-                    }
-                    mundo.comprobarPausa();
-                    LogHawkins.escribir("Niño " + id + " intenta regresar desde " + zonaString(zonaElegida));
-                    mundo.salirNiño(zonaElegida, this);
-                    mundo.volverDePortal(zonaElegida, this);
-                    
-                    mundo.comprobarPausa();
-                    mundo.incrementarSangre();
-                    LogHawkins.escribir("Niño " + id + " entrega sangre contaminada");
-                    mundo.entrarNiño(7, this);
-                    System.out.println("Nino " + id + " en Radio WSQK.");
-                    LogHawkins.escribir("Niño " + id + " entra en Radio WSQK");
-                    Thread.sleep((int) (Math.random() * 2000) + 2000);
-                    
-                    while(esCapturado()){
-                        try { sleep(200); 
-                        mundo.comprobarPausa();
-                        } catch(Exception e){}
-                    }
-
-                    if (fueLiberadoPorEleven()) {
-                        resetLiberadoPorEleven();
-                        continue;
-                    }
-
-                    mundo.salirNiño(7, this);
-                }
-             catch (Exception e) {
+                } catch(Exception e){}
             }
+
+            if (fueLiberadoPorEleven()) {
+                resetLiberadoPorEleven();
+                continue;
+            }
+
+            mundo.entrarNiño(zonaElegida, this);
+
+            
+            int tiempoRecolectando = (int) (Math.random() * 2000) + 3000;
+            if(mundo.hayTormenta()){
+                esperar(tiempoRecolectando * 2); 
+            } else {
+                esperar(tiempoRecolectando);
+            }
+
+            while(esCapturado()){
+                try { 
+                    Thread.sleep(200); 
+                    mundo.comprobarPausa();
+                } catch(Exception e){}
+            }
+
+            if (fueLiberadoPorEleven()) {
+                resetLiberadoPorEleven();
+                continue;
+            }
+            
+            mundo.comprobarPausa();
+            mundo.salirNiño(zonaElegida, this);
+            mundo.volverDePortal(zonaElegida, this);
+            
+            mundo.comprobarPausa();
+            mundo.incrementarSangre();
+            mundo.entrarNiño(7, this);
+            LogHawkins.escribir("Niño " + id + " entra en Radio WSQK");
+            
+            esperar((int) (Math.random() * 2000) + 2000);
+            
+            while(esCapturado()){
+                try { 
+                    Thread.sleep(200); 
+                    mundo.comprobarPausa();
+                } catch(Exception e){}
+            }
+
+            if (fueLiberadoPorEleven()) {
+                resetLiberadoPorEleven();
+                continue;
+            }
+
+            mundo.salirNiño(7, this);
+        } catch (Exception e) {
+
         }
     }
+  }
 }

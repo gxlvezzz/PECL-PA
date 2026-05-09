@@ -44,7 +44,7 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
     private Eventos eventos;
     
 
-    private final Object lockPausa = new Object(); // Objeto dedicado solo a la pausa
+    private final Object lockPausa = new Object(); 
     private volatile boolean pausado = false;
     
 

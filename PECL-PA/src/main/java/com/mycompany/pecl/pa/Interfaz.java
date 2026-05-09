@@ -233,7 +233,7 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Monospaced", 1, 13)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 153, 51));
         jLabel7.setText("Bosque");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 50, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 51));
@@ -243,17 +243,17 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Monospaced", 1, 13)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 153, 51));
         jLabel9.setText("Laboratorio");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 350, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Monospaced", 1, 13)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 51));
         jLabel10.setText("Centro Comercial");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 50, -1, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Monospaced", 1, 13)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 153, 51));
         jLabel11.setText("Alcantarillado");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 350, -1, -1));
 
         jScrollPane2.setBorder(null);
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -354,7 +354,7 @@ public class Interfaz extends javax.swing.JFrame {
         txtBosque.setWrapStyleWord(true);
         jScrollPane6.setViewportView(txtBosque);
 
-        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, 90, 60));
+        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, 90, 60));
 
         jScrollPane7.setBorder(null);
         jScrollPane7.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -371,7 +371,7 @@ public class Interfaz extends javax.swing.JFrame {
         txtLaboratorio.setWrapStyleWord(true);
         jScrollPane7.setViewportView(txtLaboratorio);
 
-        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 89, 60));
+        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, 89, 60));
 
         jScrollPane8.setBorder(null);
         jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -388,7 +388,7 @@ public class Interfaz extends javax.swing.JFrame {
         txtCentroComercial.setWrapStyleWord(true);
         jScrollPane8.setViewportView(txtCentroComercial);
 
-        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, 90, 60));
+        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, 90, 60));
 
         jScrollPane9.setBorder(null);
         jScrollPane9.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -439,7 +439,7 @@ public class Interfaz extends javax.swing.JFrame {
         txtAlcantarillado.setWrapStyleWord(true);
         jScrollPane11.setViewportView(txtAlcantarillado);
 
-        getContentPane().add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, 90, 60));
+        getContentPane().add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 90, 60));
 
         jScrollPane12.setBorder(null);
         jScrollPane12.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -541,7 +541,7 @@ public class Interfaz extends javax.swing.JFrame {
         txtBosqueDemo.setWrapStyleWord(true);
         jScrollPane13.setViewportView(txtBosqueDemo);
 
-        getContentPane().add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 180, 90, 60));
+        getContentPane().add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 80, 90, 60));
 
         jScrollPane14.setBorder(null);
         jScrollPane14.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -558,7 +558,7 @@ public class Interfaz extends javax.swing.JFrame {
         txtLaboratorioDemo.setWrapStyleWord(true);
         jScrollPane14.setViewportView(txtLaboratorioDemo);
 
-        getContentPane().add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, 89, 60));
+        getContentPane().add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 180, 89, 60));
 
         jScrollPane15.setBorder(null);
         jScrollPane15.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -575,7 +575,7 @@ public class Interfaz extends javax.swing.JFrame {
         txtCentroComercialDemo.setWrapStyleWord(true);
         jScrollPane15.setViewportView(txtCentroComercialDemo);
 
-        getContentPane().add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 80, 90, 60));
+        getContentPane().add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, 90, 60));
 
         jScrollPane16.setBorder(null);
         jScrollPane16.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -592,7 +592,7 @@ public class Interfaz extends javax.swing.JFrame {
         txtAlcantarilladoDemo.setWrapStyleWord(true);
         jScrollPane16.setViewportView(txtAlcantarilladoDemo);
 
-        getContentPane().add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, 90, 60));
+        getContentPane().add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, 90, 60));
 
         txtEventoActual.setEditable(false);
         txtEventoActual.setBackground(new java.awt.Color(5, 15, 5));
@@ -656,15 +656,13 @@ public class Interfaz extends javax.swing.JFrame {
     private void btnReanudarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReanudarActionPerformed
         // TODO add your handling code here:
         mundo.reanudar();
-        btnPausa.setEnabled(true);
-        btnReanudar.setEnabled(false);
+        System.out.println("Juego Reanudado");
     }//GEN-LAST:event_btnReanudarActionPerformed
 
     private void btnPausaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPausaActionPerformed
         // TODO add your handling code here:
         mundo.pausar();
-        btnPausa.setEnabled(false);    // Desactivar pausa si ya está pausado
-        btnReanudar.setEnabled(true);
+        System.out.println("Juego Pausado");
     }//GEN-LAST:event_btnPausaActionPerformed
 
     /**

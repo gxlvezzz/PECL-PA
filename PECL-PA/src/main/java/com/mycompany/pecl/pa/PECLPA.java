@@ -25,17 +25,23 @@ public class PECLPA {
 
             javax.swing.SwingUtilities.invokeLater(() -> {
                 try {
+                    
+                    
+                    InterfazRemota interfazRemota = new InterfazRemota(mundo);
+                    interfazRemota.setVisible(true);
                     Interfaz interfaz = new Interfaz(mundo);
                     interfaz.setVisible(true);
 
                     Thread hiloRefresco = new Thread(() -> {
                         while (true) {
                             try {
+                                
                                 javax.swing.SwingUtilities.invokeLater(() -> {
-                                    interfaz.actualizar();
+                                    interfaz.actualizar(); 
+                                    interfazRemota.actualizarRemoto();
                                 });
 
-                                Thread.sleep(250);
+                                Thread.sleep(250); // 4 veces por segundo es suficiente para que se vea fluido
                             } catch (Exception e) {
                                 System.err.println("Error en el hilo de refresco: " + e.getMessage());
                             }
