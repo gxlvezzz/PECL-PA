@@ -60462,3 +60462,73 @@
 2026-05-09 13:26:53 - Niño N0005 entra en el Sótano de los Byers
 2026-05-09 13:26:53 - Niño N0028 cruza al Upside Down hacia  El Bosque
 2026-05-09 13:26:53 - Niño N0029 cruza al Upside Down hacia  El Bosque
+2026-05-09 13:52:13 - Demogorgon D0000 creado
+2026-05-09 13:52:13 - Demogorgon D0000 inicia ejecución
+2026-05-09 13:52:13 - Niño N0000 creado
+2026-05-09 13:52:13 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-09 13:52:13 - Niño N0000 inicia ejecución
+2026-05-09 13:52:13 - Niño N0000 entra en Calle Principal
+2026-05-09 13:52:15 - Niño N0001 creado
+2026-05-09 13:52:15 - Niño N0001 inicia ejecución
+2026-05-09 13:52:15 - Niño N0001 entra en Calle Principal
+2026-05-09 13:52:16 - Niño N0002 creado
+2026-05-09 13:52:16 - Niño N0002 inicia ejecución
+2026-05-09 13:52:16 - Niño N0002 entra en Calle Principal
+2026-05-09 13:52:17 - Niño N0000 entra en el Sótano de los Byers
+2026-05-09 13:52:18 - Demogorgon D0000 abandona El Centro Comercial
+2026-05-09 13:52:18 - Demogorgon D0000 entra en El Bosque
+2026-05-09 13:52:18 - Niño N0003 creado
+2026-05-09 13:52:18 - Niño N0003 inicia ejecución
+2026-05-09 13:52:18 - Niño N0003 entra en Calle Principal
+2026-05-09 13:52:19 - Niño N0001 entra en el Sótano de los Byers
+2026-05-09 13:52:20 - Niño N0004 creado
+2026-05-09 13:52:20 - Niño N0004 inicia ejecución
+2026-05-09 13:52:20 - Niño N0004 entra en Calle Principal
+2026-05-09 13:52:20 - Niño N0002 entra en el Sótano de los Byers
+2026-05-09 13:52:21 - Niño N0005 creado
+2026-05-09 13:52:21 - Niño N0005 inicia ejecución
+2026-05-09 13:52:21 - Niño N0005 entra en Calle Principal
+2026-05-09 13:52:22 - Niño N0006 creado
+2026-05-09 13:52:22 - Niño N0006 inicia ejecución
+2026-05-09 13:52:22 - Niño N0006 entra en Calle Principal
+2026-05-09 13:52:22 - El niño N0001 ha cruzado el portal hacia LABORATORIO
+2026-05-09 13:52:22 - El niño N0000 ha cruzado el portal hacia LABORATORIO
+2026-05-09 13:52:22 - El niño N0002 ha cruzado el portal hacia LABORATORIO
+2026-05-09 13:52:23 - Demogorgon D0000 abandona El Bosque
+2026-05-09 13:52:23 - Demogorgon D0000 entra en El Laboratorio
+2026-05-09 13:52:23 - Niño N0003 entra en el Sótano de los Byers
+2026-05-09 13:52:23 - Niño N0007 creado
+2026-05-09 13:52:23 - Niño N0007 inicia ejecución
+2026-05-09 13:52:23 - Niño N0007 entra en Calle Principal
+2026-05-09 13:52:23 - Niño N0000 cruza al Upside Down hacia El Laboratorio
+2026-05-09 13:52:23 - Niño N0002 cruza al Upside Down hacia El Laboratorio
+2026-05-09 13:52:23 - Niño N0001 cruza al Upside Down hacia El Laboratorio
+2026-05-09 13:52:24 - Niño N0004 entra en el Sótano de los Byers
+2026-05-09 13:52:25 - Niño N0008 creado
+2026-05-09 13:52:25 - Niño N0008 inicia ejecución
+2026-05-09 13:52:25 - Niño N0008 entra en Calle Principal
+2026-05-09 13:52:26 - Niño N0009 creado
+2026-05-09 13:52:26 - Niño N0009 inicia ejecución
+2026-05-09 13:52:28 - Niño N0010 creado
+2026-05-09 13:52:28 - Niño N0010 inicia ejecución
+2026-05-09 13:52:29 - Niño N0011 creado
+2026-05-09 13:52:29 - Niño N0011 inicia ejecución
+2026-05-09 13:52:31 - Niño N0011 entra en Calle Principal
+2026-05-09 13:52:31 - Niño N0009 entra en Calle Principal
+2026-05-09 13:52:31 - Demogorgon D0000 abandona El Laboratorio
+2026-05-09 13:52:31 - Niño N0010 entra en Calle Principal
+2026-05-09 13:52:31 - Demogorgon D0000 entra en El Centro Comercial
+2026-05-09 13:52:31 - Niño N0012 creado
+2026-05-09 13:52:31 - Niño N0012 inicia ejecución
+2026-05-09 13:52:31 - Niño N0012 entra en Calle Principal
+2026-05-09 13:52:31 - Niño N0005 entra en el Sótano de los Byers
+2026-05-09 13:52:31 - Niño N0006 entra en el Sótano de los Byers
+2026-05-09 13:52:31 - Niño N0013 creado
+2026-05-09 13:52:31 - Niño N0013 inicia ejecución
+2026-05-09 13:52:31 - Niño N0013 entra en Calle Principal
+2026-05-09 13:52:32 - Niño N0007 entra en el Sótano de los Byers
+2026-05-09 13:52:32 - El niño N0000 ha regresado a Hawkins desde LABORATORIO
+2026-05-09 13:52:32 - Niño N0014 creado
+2026-05-09 13:52:32 - Niño N0014 inicia ejecución
+2026-05-09 13:52:32 - Niño N0014 entra en Calle Principal
+2026-05-09 13:52:33 - El niño N0005 ha cruzado el portal hacia BOSQUE
