@@ -11,116 +11,105 @@ import java.util.*;
  * @author julia_ntxs1ki
  */
 public class Demogorgons extends Thread {
-
-    private final Mundo mundo;
-    private final Eventos evento;
-    private final String id;
-
-    private int zona = 0;
-    private int zonaAnterior = 0;
+    private Mundo mundo;
+    private Eventos evento;
+    private String id;
+    private int zona=0;
+    private int zona_anterior=0;
     private int capturas = 0;
 
-    public Demogorgons(Mundo mundo, Eventos eventos, int numid) {
+    
+    
+    public Demogorgons(Mundo mundo, Eventos eventos, int numid){
         this.mundo = mundo;
         this.evento = eventos;
         this.id = String.format("D%04d", numid);
-
         LogHawkins.escribir("Demogorgon " + id + " creado");
     }
-
-    @Override
-    public void run() {
-        mundo.registrarHilo(this);
-        mundo.registrarDemogorgon(this);
-
-        System.out.println(id);
-        LogHawkins.escribir("Demogorgon " + id + " inicia ejecución");
-
-        while (true) {
-            mundo.comprobarPausa();
-
-            esperarSiIntervieneEleven();
-
-            if (!evento.hayApagon()) {
-                cambiarDeZona();
-            }
-
-            mundo.demogorgonAtacar(zona, this);
-        }
-    }
-
-    /**
-     * Durante la intervención de Eleven, los demogorgons no se mueven ni atacan.
-     */
-    private void esperarSiIntervieneEleven() {
-        while (evento.hayEleven()) {
+    
+    private void moverse(){
+        while(evento.hayEleven()){
             try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-                return;
+                sleep(500);
+            } catch (Exception e) {
+                System.err.println("Error: " + e.getMessage());
             }
         }
-    }
 
-    /**
-     * Mueve al demogorgon a una nueva zona.
-     * Si está activa la Red Mental, se dirige a la zona con más niños.
-     * En caso contrario, elige una zona aleatoria distinta de la anterior.
-     */
-    private void cambiarDeZona() {
-        if (zona != 0) {
-            mundo.eliminarListaDemogorgon(zona, this);
-            LogHawkins.escribir("Demogorgon " + id + " abandona " + zonaString(zona));
-        }
-
-        zonaAnterior = zona;
-
-        if (evento.hayRedMental()) {
+        
+        zona_anterior = zona;
+        if(evento.hayRedMental()){
             zona = mundo.zonaConMasNiños();
             LogHawkins.escribir("Demogorgon " + id + " se dirige por RED MENTAL hacia " + zonaString(zona));
+            
         } else {
-            zona = generarZonaAleatoriaDistinta();
+            zona = (int)(Math.random()*4)+1;
+            while(zona_anterior == zona){
+                zona = (int)(Math.random()*4)+1;
+            }
         }
-
         mundo.entrarDemogorgon(zona, this);
-
-        System.out.println("Demogorgon " + id + " ha entrado en " + zonaString(zona));
-        LogHawkins.escribir("Demogorgon " + id + " entra en " + zonaString(zona));
+        System.out.println("Demogorgon " + this.id + " ha entrado en " + zonaString(zona));
+        
+        LogHawkins.escribir("Demogorgon " + id +" entra en " + zonaString(zona));
     }
-
-    private int generarZonaAleatoriaDistinta() {
-        int nuevaZona = (int) (Math.random() * 4) + 1;
-
-        while (nuevaZona == zonaAnterior) {
-            nuevaZona = (int) (Math.random() * 4) + 1;
+    
+    private String zonaString(int zona){
+        switch(zona){
+            case 0:
+                return "Sin zona";
+            case 1:
+                return "El Bosque";
+            case 2: 
+                return "El Laboratorio";
+            case 3:
+                return "El Centro Comercial";
+            case 4:
+                return "El Alcantarillado";
+                
+                default:
+                return null;
         }
-
-        return nuevaZona;
     }
 
-    public synchronized void incrementar_capturas() {
+    public synchronized void incrementar_capturas(){
         capturas++;
-        LogHawkins.escribir("Demogorgon " + id + " aumenta sus capturas a " + capturas);
+         LogHawkins.escribir("Demogorgon " + id + " aumenta sus capturas a " + capturas);
     }
-
+    
+    public String toString() {
+        return id;
+    }
+    
     public synchronized int getCapturas() {
         return capturas;
     }
 
-    @Override
-    public String toString() {
-        return id;
-    }
+    
+    public void run(){
+        mundo.registrarHilo(this);
+        mundo.registrarDemogorgon(this);
+        System.out.println(this.id);
+         LogHawkins.escribir("Demogorgon " + id + " inicia ejecución");
 
-    private String zonaString(int zona) {
-        return switch (zona) {
-            case 0 -> "Sin zona";
-            case 1 -> "El Bosque";
-            case 2 -> "El Laboratorio";
-            case 3 -> "El Centro Comercial";
-            case 4 -> "El Alcantarillado";
-            default -> "Zona desconocida";
-        };
+        while(true){
+            mundo.comprobarPausa();
+            while(evento.hayEleven()){
+                try { Thread.sleep(500); } catch(Exception e) {
+                System.err.println("Error: " + e.getMessage());}
+            }
+
+            if (!evento.hayApagon()) {
+                if (zona != 0) {
+                    mundo.eliminarListaDemogorgon(zona, this);
+                    
+                    LogHawkins.escribir("Demogorgon " + id +" abandona " + zonaString(zona));
+                }
+
+                moverse();
+            }
+
+            mundo.demogorgonAtacar(zona, this);        
+        }
     }
 }

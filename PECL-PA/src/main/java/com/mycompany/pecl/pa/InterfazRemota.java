@@ -20,8 +20,12 @@ public class InterfazRemota extends javax.swing.JFrame {
     /**
      * Creates new form InterfazRemota
      */
-    public InterfazRemota() {
+    public InterfazRemota(Mundo mundo) {
         initComponents();
+        this.getContentPane().setBackground(new java.awt.Color(45, 55, 45));
+        
+        btnReanudar1.setEnabled(false); 
+        btnPausa1.setEnabled(true);
 
         try {
             mundoRemoto = (InterfazMundo) Naming.lookup("rmi://localhost:1099/MundoStranger");
@@ -45,7 +49,7 @@ public class InterfazRemota extends javax.swing.JFrame {
         }
     }
     
-    private void actualizarRemoto() {
+    void actualizarRemoto() {
     try {
         int hawkins = mundoRemoto.getHawkinsRemoto();
 
@@ -69,7 +73,7 @@ public class InterfazRemota extends javax.swing.JFrame {
         int tiempoEvento = mundoRemoto.getTiempoEventoRemoto();
 
         SwingUtilities.invokeLater(() -> {
-            niñosHawkingstxt.setText(String.valueOf(hawkins));
+            niñosHawkinstxt.setText(String.valueOf(hawkins));
 
             niñosBosquetxt.setText(String.valueOf(nBosque));
             niñosLaboratoriotxt.setText(String.valueOf(nLab));
@@ -111,7 +115,7 @@ public class InterfazRemota extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        niñosHawkingstxt = new javax.swing.JTextField();
+        tiempoEventotxt = new javax.swing.JTextField();
         portal1txt = new javax.swing.JTextField();
         portal2txt = new javax.swing.JTextField();
         portal3txt = new javax.swing.JTextField();
@@ -126,103 +130,351 @@ public class InterfazRemota extends javax.swing.JFrame {
         demogorgonsCentroComercialtxt = new javax.swing.JTextField();
         demogorgonsAlcantarilladotxt = new javax.swing.JTextField();
         eventotxt = new javax.swing.JTextField();
-        tiempoEventotxt = new javax.swing.JTextField();
+        niñosHawkinstxt = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         rankingtxt = new javax.swing.JTextArea();
-        btnReanudar = new javax.swing.JButton();
-        btnPausa = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        btnReanudar1 = new javax.swing.JButton();
+        btnPausa1 = new javax.swing.JButton();
+        demogorgonsBosquetxt1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1150, 600));
+        setMinimumSize(new java.awt.Dimension(930, 430));
+        setPreferredSize(new java.awt.Dimension(969, 461));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        niñosHawkingstxt.setEditable(false);
-        getContentPane().add(niñosHawkingstxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 50, 40));
+        tiempoEventotxt.setEditable(false);
+        tiempoEventotxt.setBackground(new java.awt.Color(5, 15, 5));
+        tiempoEventotxt.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        tiempoEventotxt.setForeground(new java.awt.Color(50, 255, 100));
+        tiempoEventotxt.setBorder(null);
+        tiempoEventotxt.addActionListener(this::tiempoEventotxtActionPerformed);
+        getContentPane().add(tiempoEventotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, 70, 60));
 
         portal1txt.setEditable(false);
-        getContentPane().add(portal1txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+        portal1txt.setBackground(new java.awt.Color(5, 15, 5));
+        portal1txt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        portal1txt.setForeground(new java.awt.Color(50, 255, 100));
+        portal1txt.setBorder(null);
+        getContentPane().add(portal1txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 50, -1));
 
         portal2txt.setEditable(false);
-        getContentPane().add(portal2txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+        portal2txt.setBackground(new java.awt.Color(5, 15, 5));
+        portal2txt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        portal2txt.setForeground(new java.awt.Color(50, 255, 100));
+        portal2txt.setBorder(null);
+        getContentPane().add(portal2txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, 50, -1));
 
         portal3txt.setEditable(false);
-        getContentPane().add(portal3txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
+        portal3txt.setBackground(new java.awt.Color(5, 15, 5));
+        portal3txt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        portal3txt.setForeground(new java.awt.Color(50, 255, 100));
+        portal3txt.setBorder(null);
+        getContentPane().add(portal3txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 50, -1));
 
         portal4txt.setEditable(false);
-        getContentPane().add(portal4txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, -1));
+        portal4txt.setBackground(new java.awt.Color(5, 15, 5));
+        portal4txt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        portal4txt.setForeground(new java.awt.Color(50, 255, 100));
+        portal4txt.setBorder(null);
+        getContentPane().add(portal4txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 50, -1));
 
         niñosBosquetxt.setEditable(false);
-        getContentPane().add(niñosBosquetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, -1, -1));
+        niñosBosquetxt.setBackground(new java.awt.Color(5, 15, 5));
+        niñosBosquetxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        niñosBosquetxt.setForeground(new java.awt.Color(50, 255, 100));
+        niñosBosquetxt.setBorder(null);
+        getContentPane().add(niñosBosquetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, 70, 30));
 
         niñosLaboratoriotxt.setEditable(false);
-        getContentPane().add(niñosLaboratoriotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
+        niñosLaboratoriotxt.setBackground(new java.awt.Color(5, 15, 5));
+        niñosLaboratoriotxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        niñosLaboratoriotxt.setForeground(new java.awt.Color(50, 255, 100));
+        niñosLaboratoriotxt.setBorder(null);
+        getContentPane().add(niñosLaboratoriotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 70, 30));
 
         niñosCentroComercialtxt.setEditable(false);
-        getContentPane().add(niñosCentroComercialtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, -1, -1));
+        niñosCentroComercialtxt.setBackground(new java.awt.Color(5, 15, 5));
+        niñosCentroComercialtxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        niñosCentroComercialtxt.setForeground(new java.awt.Color(50, 255, 100));
+        niñosCentroComercialtxt.setBorder(null);
+        getContentPane().add(niñosCentroComercialtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 70, 30));
 
         niñosAlcantarilladotxt.setEditable(false);
-        getContentPane().add(niñosAlcantarilladotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, -1, -1));
+        niñosAlcantarilladotxt.setBackground(new java.awt.Color(5, 15, 5));
+        niñosAlcantarilladotxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        niñosAlcantarilladotxt.setForeground(new java.awt.Color(50, 255, 100));
+        niñosAlcantarilladotxt.setBorder(null);
+        getContentPane().add(niñosAlcantarilladotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, 70, 30));
 
         niñosColmenatxt.setEditable(false);
-        getContentPane().add(niñosColmenatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, -1));
+        niñosColmenatxt.setBackground(new java.awt.Color(5, 15, 5));
+        niñosColmenatxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        niñosColmenatxt.setForeground(new java.awt.Color(50, 255, 100));
+        niñosColmenatxt.setBorder(null);
+        getContentPane().add(niñosColmenatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 70, 30));
 
         demogorgonsBosquetxt.setEditable(false);
-        getContentPane().add(demogorgonsBosquetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 70, -1, -1));
+        demogorgonsBosquetxt.setBackground(new java.awt.Color(5, 15, 5));
+        demogorgonsBosquetxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        demogorgonsBosquetxt.setForeground(new java.awt.Color(50, 255, 100));
+        demogorgonsBosquetxt.setBorder(null);
+        getContentPane().add(demogorgonsBosquetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 70, 30));
 
         demogorgonsLaboratoriotxt.setEditable(false);
-        getContentPane().add(demogorgonsLaboratoriotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, -1, -1));
+        demogorgonsLaboratoriotxt.setBackground(new java.awt.Color(5, 15, 5));
+        demogorgonsLaboratoriotxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        demogorgonsLaboratoriotxt.setForeground(new java.awt.Color(50, 255, 100));
+        demogorgonsLaboratoriotxt.setBorder(null);
+        getContentPane().add(demogorgonsLaboratoriotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 130, 70, 30));
 
         demogorgonsCentroComercialtxt.setEditable(false);
-        getContentPane().add(demogorgonsCentroComercialtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, -1, -1));
+        demogorgonsCentroComercialtxt.setBackground(new java.awt.Color(5, 15, 5));
+        demogorgonsCentroComercialtxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        demogorgonsCentroComercialtxt.setForeground(new java.awt.Color(50, 255, 100));
+        demogorgonsCentroComercialtxt.setBorder(null);
+        getContentPane().add(demogorgonsCentroComercialtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 180, 70, 30));
 
         demogorgonsAlcantarilladotxt.setEditable(false);
-        getContentPane().add(demogorgonsAlcantarilladotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 190, -1, -1));
+        demogorgonsAlcantarilladotxt.setBackground(new java.awt.Color(5, 15, 5));
+        demogorgonsAlcantarilladotxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        demogorgonsAlcantarilladotxt.setForeground(new java.awt.Color(50, 255, 100));
+        demogorgonsAlcantarilladotxt.setBorder(null);
+        getContentPane().add(demogorgonsAlcantarilladotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 70, 30));
 
         eventotxt.setEditable(false);
-        getContentPane().add(eventotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 310, 240, 50));
+        eventotxt.setBackground(new java.awt.Color(5, 15, 5));
+        eventotxt.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        eventotxt.setForeground(new java.awt.Color(50, 255, 100));
+        eventotxt.setBorder(null);
+        getContentPane().add(eventotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 250, 220, 50));
 
-        tiempoEventotxt.setEditable(false);
-        getContentPane().add(tiempoEventotxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 370, -1, 50));
+        niñosHawkinstxt.setEditable(false);
+        niñosHawkinstxt.setBackground(new java.awt.Color(5, 15, 5));
+        niñosHawkinstxt.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        niñosHawkinstxt.setForeground(new java.awt.Color(50, 255, 100));
+        niñosHawkinstxt.setBorder(null);
+        niñosHawkinstxt.addActionListener(this::niñosHawkinstxtActionPerformed);
+        getContentPane().add(niñosHawkinstxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 80, 50));
+
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jScrollPane1.setOpaque(false);
 
         rankingtxt.setEditable(false);
+        rankingtxt.setBackground(new java.awt.Color(5, 15, 5));
         rankingtxt.setColumns(20);
+        rankingtxt.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        rankingtxt.setForeground(new java.awt.Color(50, 255, 100));
         rankingtxt.setRows(5);
         jScrollPane1.setViewportView(rankingtxt);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 60, 120, 110));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 70, 120, 110));
 
-        btnReanudar.setText("REANUDAR");
-        btnReanudar.addActionListener(this::btnReanudarActionPerformed);
-        getContentPane().add(btnReanudar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, -1, -1));
+        jLabel1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel1.setText("MÓDULO REMOTO");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
-        btnPausa.setText("PAUSAR");
-        btnPausa.addActionListener(this::btnPausaActionPerformed);
-        getContentPane().add(btnPausa, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 380, -1, -1));
+        jLabel10.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel10.setText("Alcantarillado");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel2.setText("Total Niños en Hawkins");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel3.setText("Portal 1");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel4.setText("niños");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, -1, 20));
+
+        jLabel5.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel5.setText("Ubicaciones (Demogorgons)");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel6.setText("Capturados (Colmena)");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel7.setText("Ranking Demogorgons (Capturas)");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel8.setText("Evento Global Activo");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 220, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Monospaced", 1, 13)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel9.setText("Tiempo Restante");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 310, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel13.setText("Estado de los Portales");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel11.setText("Portal 1");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel12.setText("Portal 1");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel14.setText("Portal 1");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel15.setText("niños");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, -1, 20));
+
+        jLabel16.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel16.setText("niños");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, 20));
+
+        jLabel17.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel17.setText("niños");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, -1, 20));
+
+        jLabel18.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel18.setText("Ubicaciones (Niños)");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel19.setText("Centro Comercial");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel20.setText("Centro Comercial");
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 160, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel21.setText("Laboratorio");
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel22.setText("Bosque");
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel23.setText("Bosque");
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 60, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel24.setText("Laboratorio");
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel25.setText("Alcantarillado");
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, -1, -1));
+
+        btnReanudar1.setBackground(new java.awt.Color(0, 102, 0));
+        btnReanudar1.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        btnReanudar1.setForeground(new java.awt.Color(204, 255, 204));
+        btnReanudar1.setText("REANUDAR");
+        btnReanudar1.addActionListener(this::btnReanudar1ActionPerformed);
+        getContentPane().add(btnReanudar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 130, 60));
+
+        btnPausa1.setBackground(new java.awt.Color(0, 102, 0));
+        btnPausa1.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        btnPausa1.setForeground(new java.awt.Color(204, 255, 204));
+        btnPausa1.setText("PAUSAR");
+        btnPausa1.addActionListener(this::btnPausa1ActionPerformed);
+        getContentPane().add(btnPausa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, 130, 60));
+
+        demogorgonsBosquetxt1.setEditable(false);
+        demogorgonsBosquetxt1.setBackground(new java.awt.Color(5, 15, 5));
+        demogorgonsBosquetxt1.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
+        demogorgonsBosquetxt1.setForeground(new java.awt.Color(50, 255, 100));
+        demogorgonsBosquetxt1.setBorder(null);
+        getContentPane().add(demogorgonsBosquetxt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 70, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnReanudarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReanudarActionPerformed
+    
+    
+    private void btnReanudar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReanudar1ActionPerformed
         // TODO add your handling code here:
-        btnPausa.setEnabled(true);
-        btnReanudar.setEnabled(false);
+        btnPausa1.setEnabled(true);
+        btnReanudar1.setEnabled(false);
         try {
             mundoRemoto.reanudarRemoto();
         } catch (RemoteException ex) {
             System.getLogger(InterfazRemota.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
         }
-    }//GEN-LAST:event_btnReanudarActionPerformed
+    }//GEN-LAST:event_btnReanudar1ActionPerformed
 
-    private void btnPausaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPausaActionPerformed
-        // TODO add your handling code here:
-        btnPausa.setEnabled(false);    // Desactivar pausa si ya está pausado
-        btnReanudar.setEnabled(true);
+    private void btnPausa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPausa1ActionPerformed
+        btnPausa1.setEnabled(false);    // Desactivar pausa si ya está pausado
+        btnReanudar1.setEnabled(true);
         try {
             mundoRemoto.pausarRemoto();
         } catch (RemoteException ex) {
             System.getLogger(InterfazRemota.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
         }
-    }//GEN-LAST:event_btnPausaActionPerformed
+    
+    }//GEN-LAST:event_btnPausa1ActionPerformed
+
+    private void tiempoEventotxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tiempoEventotxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tiempoEventotxtActionPerformed
+
+    private void niñosHawkinstxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_niñosHawkinstxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_niñosHawkinstxtActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,25 +496,52 @@ public class InterfazRemota extends javax.swing.JFrame {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        Mundo mundo = null;
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new InterfazRemota().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new InterfazRemota(mundo).setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnPausa;
-    private javax.swing.JButton btnReanudar;
+    private javax.swing.JButton btnPausa1;
+    private javax.swing.JButton btnReanudar1;
     private javax.swing.JTextField demogorgonsAlcantarilladotxt;
     private javax.swing.JTextField demogorgonsBosquetxt;
+    private javax.swing.JTextField demogorgonsBosquetxt1;
     private javax.swing.JTextField demogorgonsCentroComercialtxt;
     private javax.swing.JTextField demogorgonsLaboratoriotxt;
     private javax.swing.JTextField eventotxt;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField niñosAlcantarilladotxt;
     private javax.swing.JTextField niñosBosquetxt;
     private javax.swing.JTextField niñosCentroComercialtxt;
     private javax.swing.JTextField niñosColmenatxt;
-    private javax.swing.JTextField niñosHawkingstxt;
+    private javax.swing.JTextField niñosHawkinstxt;
     private javax.swing.JTextField niñosLaboratoriotxt;
     private javax.swing.JTextField portal1txt;
     private javax.swing.JTextField portal2txt;

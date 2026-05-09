@@ -8,12 +8,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Niños extends Thread {
-
-    private final Mundo mundo;
-    private final Eventos eventos;
-    private final String id;
-
-    private boolean capturado = false;
+    private Mundo mundo;
+    private Eventos eventos;
+    private String id;
+    private boolean capturado = false; 
     private boolean siendoAtacado = false;
     private boolean liberadoPorEleven = false;
 
@@ -21,7 +19,6 @@ public class Niños extends Thread {
         this.mundo = mundo;
         this.eventos = eventos;
         this.id = String.format("N%04d", numid);
-
         LogHawkins.escribir("Niño " + id + " creado");
     }
 
@@ -30,54 +27,56 @@ public class Niños extends Thread {
     }
 
     public synchronized boolean esCapturado() {
-        return capturado;
+    return capturado;
     }
-
-    public String getIdNiño() {
+    
+    public String getIdNiño(){
         return id;
     }
-
-    /**
-     * Intenta reservar al niño como objetivo de un ataque.
-     * Devuelve false si el niño ya está capturado o si otro demogorgon lo está atacando.
-     */
+    
+    private String zonaString(int zona){
+        switch(zona){
+            case 1:
+                return " El Bosque";
+            case 2: 
+                return "El Laboratorio";
+            case 3:
+                return "El Centro Comercial";
+            case 4:
+                return "El Alcantarillado";
+                
+                default:
+                return null;
+        }
+    }
+    
     public synchronized boolean intentarSerAtacado() {
         if (capturado || siendoAtacado) {
-            LogHawkins.escribir("Niño " + id + " no puede ser atacado porque ya está capturado o en ataque");
+            LogHawkins.escribir("Niño " + id + " está siendo atacado");
             return false;
         }
-
         siendoAtacado = true;
         return true;
+        
     }
 
-    /**
-     * Finaliza el ataque. Si capturado es true, el niño queda en estado de captura.
-     * Si es false, vuelve a poder continuar su ciclo normal.
-     */
     public synchronized void finalizarAtaque(boolean capturado) {
         this.capturado = capturado;
         this.siendoAtacado = false;
-
-        if (capturado) {
+        if(capturado){
             LogHawkins.escribir("Niño " + id + " ha sido capturado");
-        } else {
+        }else{
             LogHawkins.escribir("Niño " + id + " ha sobrevivido al ataque");
         }
     }
-
-    /**
-     * Eleven libera al niño de la Colmena.
-     * Se activa una bandera para que el hilo del niño reinicie su ciclo desde Hawkins.
-     */
+    
     public synchronized void liberarPorEleven() {
         capturado = false;
         siendoAtacado = false;
         liberadoPorEleven = true;
-
         LogHawkins.escribir("Niño " + id + " ha sido liberado por Eleven");
     }
-
+    
     public synchronized boolean fueLiberadoPorEleven() {
         return liberadoPorEleven;
     }
@@ -85,163 +84,116 @@ public class Niños extends Thread {
     public synchronized void resetLiberadoPorEleven() {
         liberadoPorEleven = false;
     }
-
+    
+    private void esperar(int milisegundos) throws InterruptedException {
+    int tiempoTranscurrido = 0;
+    while (tiempoTranscurrido < milisegundos) {
+        Thread.sleep(100); // Espera pequeña
+        tiempoTranscurrido += 100;
+        mundo.comprobarPausa(); // Si se pausa el juego, el hilo se queda bloqueado aquí
+    }
+}
+    
+    
     @Override
+    
     public String toString() {
-        return id;
+        return id; // Devuelve directamente "N0001", "N0002", etc.
     }
-
-    @Override
+    
     public void run() {
-        mundo.registrarHilo(this);
-        LogHawkins.escribir("Niño " + id + " inicia ejecución");
+    mundo.registrarHilo(this);
+    LogHawkins.escribir("Niño " + id + " inicia ejecución");
+    while (true) {
+        mundo.comprobarPausa();
+        try {
+            mundo.eliminarNiñoDeTodasLasListas(this);
+            mundo.entrarNiño(5, this);
+            LogHawkins.escribir("Niño " + id + " entra en Calle Principal");
+            
+            esperar((int) (Math.random() * 2000) + 3000);
 
-        while (true) {
             mundo.comprobarPausa();
-
-            try {
-                cicloCompleto();
-
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-                return;
-
-            } catch (Exception e) {
-                e.printStackTrace();
+            mundo.salirNiño(5, this);
+            mundo.entrarNiño(6, this);
+            LogHawkins.escribir("Niño " + id + " entra en el Sótano de los Byers");
+            
+            esperar((int) (Math.random() * 1000) + 1000);
+            
+            mundo.comprobarPausa();
+            
+            int zonaElegida = (int) (Math.random() * 4) + 1;
+            mundo.salirNiño(6, this);
+            
+            mundo.esperarEnPortal(zonaElegida, this);
+            LogHawkins.escribir("Niño " + id + " cruza al Upside Down hacia " + zonaString(zonaElegida));
+            
+            mundo.comprobarPausa();
+            
+            while(esCapturado()){
+                try { 
+                    Thread.sleep(200); 
+                    mundo.comprobarPausa();
+                } catch(Exception e){
+                System.err.println("Error: " + e.getMessage());}
             }
-        }
-    }
 
-    /**
-     * Ciclo completo de vida del niño:
-     * Calle Principal -> Sótano -> Portal -> Upside Down -> vuelta -> Radio WSQK.
-     */
-    private void cicloCompleto() throws InterruptedException {
-        entrarEnCallePrincipal();
-        prepararseEnSotano();
+            if (fueLiberadoPorEleven()) {
+                resetLiberadoPorEleven();
+                continue;
+            }
 
-        int zonaElegida = (int) (Math.random() * 4) + 1;
+            mundo.entrarNiño(zonaElegida, this);
 
-        cruzarAlUpsideDown(zonaElegida);
+            
+            int tiempoRecolectando = (int) (Math.random() * 2000) + 3000;
+            if(mundo.hayTormenta()){
+                esperar(tiempoRecolectando * 2); 
+            } else {
+                esperar(tiempoRecolectando);
+            }
 
-        if (esperarSiEstaCapturado()) return;
+            while(esCapturado()){
+                try { 
+                    Thread.sleep(200); 
+                    mundo.comprobarPausa();
+                } catch(Exception e){
+                System.err.println("Error: " + e.getMessage());}
+            }
 
-        recolectarSangre(zonaElegida);
+            if (fueLiberadoPorEleven()) {
+                resetLiberadoPorEleven();
+                continue;
+            }
+            
+            mundo.comprobarPausa();
+            mundo.salirNiño(zonaElegida, this);
+            mundo.volverDePortal(zonaElegida, this);
+            
+            mundo.comprobarPausa();
+            mundo.incrementarSangre();
+            mundo.entrarNiño(7, this);
+            LogHawkins.escribir("Niño " + id + " entra en Radio WSQK");
+            
+            esperar((int) (Math.random() * 2000) + 2000);
+            
+            while(esCapturado()){
+                try { 
+                    Thread.sleep(200); 
+                    mundo.comprobarPausa();
+                } catch(Exception e){
+                System.err.println("Error: " + e.getMessage());}
+            }
 
-        if (esperarSiEstaCapturado()) return;
+            if (fueLiberadoPorEleven()) {
+                resetLiberadoPorEleven();
+                continue;
+            }
 
-        regresarAHawkins(zonaElegida);
-
-        descansarEnRadio();
-
-        esperarSiEstaCapturado();
-    }
-
-    private void entrarEnCallePrincipal() throws InterruptedException {
-        mundo.eliminarNiñoDeTodasLasListas(this);
-        mundo.entrarNiño(5, this);
-
-        System.out.println("Niño " + id + " en la Calle Principal.");
-        LogHawkins.escribir("Niño " + id + " entra en Calle Principal");
-
-        Thread.sleep((int) (Math.random() * 2000) + 3000);
-        mundo.comprobarPausa();
-    }
-
-    private void prepararseEnSotano() throws InterruptedException {
-        mundo.salirNiño(5, this);
-        mundo.entrarNiño(6, this);
-
-        System.out.println("Niño " + id + " entra al Sótano.");
-        LogHawkins.escribir("Niño " + id + " entra en el Sótano de los Byers");
-
-        Thread.sleep((int) (Math.random() * 1000) + 1000);
-        mundo.comprobarPausa();
-    }
-
-    private void cruzarAlUpsideDown(int zonaElegida) {
-        mundo.salirNiño(6, this);
-
-        LogHawkins.escribir("Niño " + id + " espera para cruzar al portal de " + zonaString(zonaElegida));
-
-        mundo.esperarEnPortal(zonaElegida, this);
-
-        System.out.println("Niño " + id + " ha cruzado al Upside Down.");
-        LogHawkins.escribir("Niño " + id + " cruza al Upside Down hacia " + zonaString(zonaElegida));
-
-        mundo.comprobarPausa();
-    }
-
-    private void recolectarSangre(int zonaElegida) throws InterruptedException {
-        mundo.entrarNiño(zonaElegida, this);
-
-        System.out.println("Niño " + id + " recolectando en " + zonaString(zonaElegida));
-
-        int tiempoRecoleccion = (int) (Math.random() * 2000) + 3000;
-
-        if (mundo.hayTormenta()) {
-            tiempoRecoleccion *= 2;
-        }
-
-        Thread.sleep(tiempoRecoleccion);
-    }
-
-    private void regresarAHawkins(int zonaElegida) {
-        mundo.comprobarPausa();
-
-        LogHawkins.escribir("Niño " + id + " intenta regresar desde " + zonaString(zonaElegida));
-
-        mundo.salirNiño(zonaElegida, this);
-        mundo.volverDePortal(zonaElegida, this);
-
-        mundo.incrementarSangre();
-        LogHawkins.escribir("Niño " + id + " entrega sangre contaminada");
-    }
-
-    private void descansarEnRadio() throws InterruptedException {
-        mundo.comprobarPausa();
-
-        mundo.entrarNiño(7, this);
-
-        System.out.println("Niño " + id + " en Radio WSQK.");
-        LogHawkins.escribir("Niño " + id + " entra en Radio WSQK");
-
-        Thread.sleep((int) (Math.random() * 2000) + 2000);
-
-        if (!fueLiberadoPorEleven()) {
             mundo.salirNiño(7, this);
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
         }
     }
-
-    /**
-     * Si el niño ha sido capturado, queda esperando hasta que Eleven lo libere.
-     * Si fue liberado, se reinicia el ciclo desde Calle Principal.
-     */
-    private boolean esperarSiEstaCapturado() {
-        while (esCapturado()) {
-            try {
-                Thread.sleep(200);
-                mundo.comprobarPausa();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (fueLiberadoPorEleven()) {
-            resetLiberadoPorEleven();
-            return true;
-        }
-
-        return false;
-    }
-
-    private String zonaString(int zona) {
-        return switch (zona) {
-            case 1 -> "El Bosque";
-            case 2 -> "El Laboratorio";
-            case 3 -> "El Centro Comercial";
-            case 4 -> "El Alcantarillado";
-            default -> "Zona desconocida";
-        };
-    }
+  }
 }
