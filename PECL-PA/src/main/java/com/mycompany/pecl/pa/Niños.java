@@ -88,9 +88,9 @@ public class Niños extends Thread {
     private void esperar(int milisegundos) throws InterruptedException {
     int tiempoTranscurrido = 0;
     while (tiempoTranscurrido < milisegundos) {
-        Thread.sleep(100); // Espera pequeña
+        Thread.sleep(100); 
         tiempoTranscurrido += 100;
-        mundo.comprobarPausa(); // Si se pausa el juego, el hilo se queda bloqueado aquí
+        mundo.comprobarPausa(); 
     }
 }
     
@@ -98,7 +98,7 @@ public class Niños extends Thread {
     @Override
     
     public String toString() {
-        return id; // Devuelve directamente "N0001", "N0002", etc.
+        return id;
     }
     
     public void run() {
@@ -132,7 +132,7 @@ public class Niños extends Thread {
             
             while(esCapturado()){
                 try { 
-                    Thread.sleep(200); 
+                    esperar(200); 
                     mundo.comprobarPausa();
                 } catch(Exception e){
                 System.err.println("Error: " + e.getMessage());}
@@ -155,8 +155,7 @@ public class Niños extends Thread {
 
             while(esCapturado()){
                 try { 
-                    Thread.sleep(200); 
-                    mundo.comprobarPausa();
+                    esperar(200); 
                 } catch(Exception e){
                 System.err.println("Error: " + e.getMessage());}
             }
@@ -179,8 +178,7 @@ public class Niños extends Thread {
             
             while(esCapturado()){
                 try { 
-                    Thread.sleep(200); 
-                    mundo.comprobarPausa();
+                    esperar(200); 
                 } catch(Exception e){
                 System.err.println("Error: " + e.getMessage());}
             }

@@ -133,11 +133,11 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
 
                 /*
                  * El niño solo puede cruzar si:
-                 * 1. Ya pertenece al grupo actual.
-                 * 2. Es el primero de ese grupo.
-                 * 3. Nadie está cruzando el portal.
-                 * 4. No hay apagón.
-                 * 5. No hay niños esperando para volver, porque la vuelta tiene prioridad.
+                 * Ya pertenece al grupo actual.
+                 * Es el primero de ese grupo.
+                 * Nadie está cruzando el portal.
+                 * No hay apagón.
+                 * No hay niños esperando para volver, porque la vuelta tiene prioridad.
                  */
                 if (p.grupoIdaActual.contains(n)
                         && p.grupoIdaActual.get(0) == n
@@ -189,8 +189,6 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
             p.notifyAll();
 
             /*
-             * Para volver a Hawkins no hace falta formar grupo.
-             * Además, la vuelta tiene prioridad sobre la ida.
              * Solo espera si hay apagón o si otro niño está cruzando.
              */
             while (eventos.hayApagon() || p.cruzando > 0) {
@@ -628,7 +626,7 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
         synchronized (lockPausa) {
             while (pausado) {
                 try {
-                    lockPausa.wait(); // El hilo se duerme aquí sin bloquear a Mundo
+                    lockPausa.wait(); 
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
@@ -637,13 +635,13 @@ public class Mundo extends UnicastRemoteObject implements InterfazMundo{
     }
 
     public void pausar() {
-        pausado = true; // No necesita synchronized(this)
+        pausado = true; 
     }
 
     public void reanudar() {
         synchronized (lockPausa) {
             pausado = false;
-            lockPausa.notifyAll(); // Despierta a todos los hilos
+            lockPausa.notifyAll();
         }
     }
     
